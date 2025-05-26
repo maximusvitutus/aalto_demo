@@ -1,0 +1,12 @@
+{
+  "name": "aalto_demo",
+  "description": "automated summaries of the week's research findings",
+  "devDependencies": {
+    "@types/node": "^22.15.21",
+    "dotenv": "^16.5.0",
+    "tsx": "^4.19.4"
+  },
+  "scripts": {
+    "test": "tsx tests/openAIProvider.test.ts"
+  }
+}
