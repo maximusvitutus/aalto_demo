@@ -1,0 +1,29 @@
+FediLive: A Framework for Collecting and Preprocessing Snapshots of Decentralized Online Social Networks
+Shaojie Min, Shaobin Wang, Yaxiao Luo, Min Gao, Qingyuan Gong, Yu Xiao, Yang Chen
+
+Department of Information and Communications EngineeringMobile Cloud Computing
+Fudan University
+Research output: Contribution to conference › Paper › Scientific › peer-review
+
+ Overview
+ Fingerprint
+Abstract
+Decentralized online social networks such as Mastodon have emerged quickly during the past years, and offer unique opportunities to investigate user behavior, moderation strategies, and community evolution. However, their decentralized nature imposes challenges for data collection and preprocessing, particularly for obtaining
+a real-time snapshot in a timely manner. This paper introduces FediLive, a framework designed to rapidly collect and preprocess the live feeds from Mastodon, generate a comprehensive snapshot in real-time, including user-generated contents, interaction networks, and users’ demographic attributes. Such a snapshot could further be
+leveraged for data analysis from different angles, leading to a deeper understanding of user activities on Mastodon. Using FediLive, we collected a 13-day snapshot of Mastodon, covering the publicly visible activities of all Mastodon users. Our study demonstrates the usefulness of FediLive, and reveals its potential in facilitating
+data-driven analysis for decentralized online social networks.
+Original languageEnglish
+Number of pages4
+Publication statusAccepted/In press - 2025
+MoE publication typeNot Eligible
+EventThe Web Conference - Sydney, Australia
+Duration: 28 Apr 2025 → 2 May 2025
+https://www2025.thewebconf.org/
+Conference
+ConferenceThe Web Conference
+Abbreviated titleWWW
+Country/TerritoryAustralia
+CitySydney
+Period28/04/2025 → 02/05/2025
+Internet address
+https://www2025.thewebconf.org/
