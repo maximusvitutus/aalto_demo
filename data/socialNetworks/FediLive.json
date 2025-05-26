@@ -1,6 +1,14 @@
 {
   "title": "FediLive: A Framework for Collecting and Preprocessing Snapshots of Decentralized Online Social Networks",
-  "abstract": "FediLive is a social network that allows you to connect with your friends and family.",
-  "authors": ["Shaojie Min", "Shaobin Wang", "Yaxiao Luo", "Min Gao", "Qingyuan Gong", "Yu Xiao", "Yang Chen"],
-  "publicationYear": 2024
+  "abstract": "Decentralized online social networks such as Mastodon have emerged quickly during the past years, and offer unique opportunities to investigate user behavior, moderation strategies, and community evolution. However, their decentralized nature imposes challenges for data collection and preprocessing, particularly for obtaining a real-time snapshot in a timely manner. This paper introduces FediLive, a framework designed to rapidly collect and preprocess the live feeds from Mastodon, generate a comprehensive snapshot in real-time, including user-generated contents, interaction networks, and users’ demographic attributes. Such a snapshot could further be leveraged for data analysis from different angles, leading to a deeper understanding of user activities on Mastodon. Using FediLive, we collected a 13-day snapshot of Mastodon, covering the publicly visible activities of all Mastodon users. Our study demonstrates the usefulness of FediLive, and reveals its potential in facilitating data-driven analysis for decentralized online social networks.",
+  "authors": [
+    "Shaojie Min",
+    "Shaobin Wang",
+    "Yaxiao Luo",
+    "Min Gao",
+    "Qingyuan Gong",
+    "Yu Xiao",
+    "Yang Chen"
+  ],
+  "publicationYear": 2025
 }
