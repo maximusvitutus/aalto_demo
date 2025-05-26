@@ -2,11 +2,17 @@
   "name": "aalto_demo",
   "description": "automated summaries of the week's research findings",
   "devDependencies": {
+    "@types/js-yaml": "^4.0.9",
     "@types/node": "^22.15.21",
     "dotenv": "^16.5.0",
     "tsx": "^4.19.4"
   },
   "scripts": {
-    "test": "tsx tests/openAIProvider.test.ts"
+    "test": "tsx tests/openAIProvider.test.ts",
+    "extract": "tsx scripts/extractDataToJson.ts"
+  },
+  "dependencies": {
+    "js-yaml": "^4.1.0",
+    "zod": "^3.25.28"
   }
 }
