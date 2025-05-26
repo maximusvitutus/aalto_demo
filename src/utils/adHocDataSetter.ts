@@ -73,6 +73,12 @@ export class AdHocDataSetter {
         const jsonFileName = txtFile.replace('.txt', '.json');
         const jsonFilePath = path.join(dataDir, jsonFileName);
 
+        // Check if JSON file already exists
+        if (fs.existsSync(jsonFilePath)) {
+          console.log(`⏭️  Skipping ${txtFile} - JSON already exists: ${jsonFileName}`);
+          continue;
+        }
+
         // Parse the .txt file using OpenAI
         const structuredData = await this.parseTxtFile(txtFilePath);
         
