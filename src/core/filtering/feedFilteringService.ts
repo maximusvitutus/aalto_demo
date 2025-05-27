@@ -118,4 +118,66 @@ export class FeedFilteringService {
   private delay(ms: number): Promise<void> {
     return new Promise(resolve => setTimeout(resolve, ms));
   }
+
+  /**
+   * Filters studies based on relevance to a specific feed configuration (parallelized version)
+   */
+  async filterStudiesForFeedParallel(
+    studies: ResearchStudyMetadata[], 
+    feedConfig: FeedConfig,
+    concurrency: number = 3 // Limit concurrent requests to avoid rate limits
+  ): Promise<FilteredStudy[]> {
+    const threshold = feedConfig.relevanceThreshold ?? this.defaultThreshold;
+    const filteredStudies: FilteredStudy[] = [];
+
+    console.log(`🔍 Filtering ${studies.length} studies for feed: ${feedConfig.category} (${concurrency} concurrent)`);
+
+    // Process studies in batches to control concurrency
+    for (let i = 0; i < studies.length; i += concurrency) {
+      const batch = studies.slice(i, i + concurrency);
+      
+      console.log(`📦 Processing batch ${Math.floor(i/concurrency) + 1}/${Math.ceil(studies.length/concurrency)} (${batch.length} studies)`);
+      
+      // Process batch in parallel
+      const batchPromises = batch.map(async (study) => {
+        try {
+          const relevanceScore = await this.scoreStudyRelevance(study, feedConfig);
+          
+          if (relevanceScore.affinityScore >= threshold) {
+            return {
+              study,
+              relevanceScore,
+              feedCategory: feedConfig.category,
+              feedConfig
+            } as FilteredStudy;
+          }
+          return null;
+        } catch (error) {
+          console.error(`❌ Error scoring study "${study.title}":`, error);
+          return null;
+        }
+      });
+
+      // Wait for batch to complete
+      const batchResults = await Promise.all(batchPromises);
+      
+      // Add successful results to filtered studies
+      batchResults.forEach(result => {
+        if (result) {
+          filteredStudies.push(result);
+        }
+      });
+
+      // Add delay between batches to be respectful to API
+      if (i + concurrency < studies.length) {
+        await this.delay(1000);
+      }
+    }
+
+    // Sort by relevance score (highest first)
+    filteredStudies.sort((a, b) => b.relevanceScore.affinityScore - a.relevanceScore.affinityScore);
+
+    console.log(`✅ Found ${filteredStudies.length} relevant studies (threshold: ${threshold})`);
+    return filteredStudies;
+  }
 }
