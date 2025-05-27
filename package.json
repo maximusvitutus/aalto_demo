@@ -9,7 +9,8 @@
   },
   "scripts": {
     "test": "tsx tests/openAIProvider.test.ts",
-    "extract": "tsx scripts/extractDataToJson.ts"
+    "extract": "tsx scripts/extractDataToJson.ts",
+    "filter": "tsx scripts/filteringScript.ts"
   },
   "dependencies": {
     "js-yaml": "^4.1.0",
