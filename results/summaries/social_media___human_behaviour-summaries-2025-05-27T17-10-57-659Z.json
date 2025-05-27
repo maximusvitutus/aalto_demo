@@ -1,0 +1,20 @@
+[
+  {
+    "topic": "The role of digital traces in understanding human behavior and social networks",
+    "methodology": "This study analyzes digital data to model personal and population social networks over time, revealing patterns in social behavior and mobility.",
+    "findings": "Digital traces indicate that social networks persist through both gradual changes and sudden disturbances, unveiling universal and individual characteristics of social ties.",
+    "implications": "Understanding these patterns can help researchers and mental health professionals develop strategies for fostering healthy online interactions and mitigating negative impacts of social media on behavior."
+  },
+  {
+    "topic": "Real-time analysis of user behavior in decentralized social networks",
+    "methodology": "The research introduces FediLive, a tool for collecting and processing data from Mastodon, enabling real-time insights into user activities and demographics.",
+    "findings": "FediLive successfully captures a comprehensive snapshot of user interactions on Mastodon, revealing significant trends in online behavior.",
+    "implications": "This tool can help researchers and practitioners understand user dynamics in decentralized networks, informing strategies for community management and user engagement."
+  },
+  {
+    "topic": "Temporal reciprocity and its role in human communication",
+    "methodology": "This paper examines communication patterns across various platforms, focusing on how the timing of interactions fosters reciprocity in social networks.",
+    "findings": "Temporal analysis reveals distinct trends in reciprocal interactions that affect social stability and cooperation, highlighting the influence of memory in communication.",
+    "implications": "Insights from this study can enhance our understanding of social norms and cooperation in digital spaces, aiding mental health professionals in addressing communication dynamics in online interactions."
+  }
+]

@@ -1,0 +1,20 @@
+[
+  {
+    "topic": "Understanding social networks through digital behavior analysis",
+    "methodology": "The research analyzes vast digital traces to model social networks and commuting patterns over time.",
+    "findings": "Digital traces reveal both persistent and dynamic characteristics of social networks and commuting behaviors, with implications for understanding human interactions.",
+    "implications": "This study offers insights for policymakers and analysts to anticipate how digital behavior shifts might influence social cohesion and mobility patterns in a rapidly evolving society."
+  },
+  {
+    "topic": "Epidemic dynamics in interconnected societies",
+    "methodology": "The thesis uses theoretical models based on real-world data to examine how disease spreads through complex human interaction networks.",
+    "findings": "Strategies like vaccination and contact tracing can be optimized based on network structures to improve epidemic response.",
+    "implications": "This research underscores the importance of analyzing social networks for effective public health policies, urging stakeholders to rethink their approaches to epidemic preparedness."
+  },
+  {
+    "topic": "Adapting landscapes to climate change through social networks",
+    "methodology": "The study investigates 15 European landscapes to identify effective community-based networks for climate adaptation planning.",
+    "findings": "Local co-creation and social learning processes are essential for developing effective landscape adaptation strategies.",
+    "implications": "These insights can guide civic leaders and planners in fostering adaptive community strategies that align with local context, enhancing resilience to climate change."
+  }
+]
