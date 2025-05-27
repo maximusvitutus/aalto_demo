@@ -5,6 +5,7 @@ import { OpenAIProvider } from '../src/core/llm/openAIProvider';
 import { ResearchStudyMetadata } from '../data/dataInterface';
 import { FeedConfig } from '../src/types/feeds/feedConfig';
 import { FilteredStudy } from '../src/types/filtering/filteredStudy';
+import { jsonrepair } from 'jsonrepair';
 
 // Load environment variables
 import { config } from 'dotenv';
@@ -55,7 +56,8 @@ function loadStudiesFromDirectory(directoryPath: string): ResearchStudyMetadata[
     try {
       const filePath = path.join(directoryPath, jsonFile);
       const fileContent = fs.readFileSync(filePath, 'utf8');
-      const study = JSON.parse(fileContent) as ResearchStudyMetadata;
+      const repairedJson = jsonrepair(fileContent);
+      const study = JSON.parse(repairedJson) as ResearchStudyMetadata;
       
       // Validate that the study has required fields
       if (study.title && study.abstract && study.authors && study.publicationYear) {

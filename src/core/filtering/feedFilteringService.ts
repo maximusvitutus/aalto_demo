@@ -5,6 +5,7 @@ import { FilteredStudy } from '../../types/filtering/filteredStudy';
 import { FeedConfig } from '../../types/feeds/feedConfig';
 import { AffinityScore } from '../../types/filtering/affinityScore';
 import { PromptLoader } from '../prompting/promptLoader';
+import { jsonrepair } from 'jsonrepair';
 
 // Zod schema for LLM response validation
 const AffinityScoreSchema = z.object({
@@ -98,9 +99,9 @@ export class FeedFilteringService {
    */
   private parseAffinityScore(response: string): AffinityScore {
     try {
-      // TODO: Robust Parsing
-      const jsonResponse = JSON.parse(response);
-      const result = AffinityScoreSchema.safeParse(jsonResponse);
+      const jsonResponse = jsonrepair(response);
+      const parsedResponse = JSON.parse(jsonResponse);
+      const result = AffinityScoreSchema.safeParse(parsedResponse);
       
       if (result.success) {
         return result.data;

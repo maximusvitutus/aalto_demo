@@ -4,6 +4,7 @@ import { z } from 'zod';
 import { ResearchStudyMetadata } from '../../data/dataInterface';
 import { OpenAIProvider } from '../core/llm/openAIProvider';
 import * as yaml from 'js-yaml';
+import { jsonrepair } from 'jsonrepair';
 
 // Zod schema for validating OpenAI response
 const DataInterfaceSchema = z.object({
@@ -21,11 +22,11 @@ const DataInterfaceSchema = z.object({
 function parseOpenAIResponse(response: string): ResearchStudyMetadata {
   try {
     // Try to parse as JSON
-    // TODO: Robust Parsing
-    const jsonResponse = JSON.parse(response);
+    const jsonResponse = jsonrepair(response);
+    const parsedResponse = JSON.parse(jsonResponse);
     
     // Validate with Zod schema
-    const result = DataInterfaceSchema.safeParse(jsonResponse);
+    const result = DataInterfaceSchema.safeParse(parsedResponse);
     
     if (result.success) {
       return result.data;

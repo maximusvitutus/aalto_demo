@@ -11,7 +11,7 @@ system_message: |
   - A list of reader interests.
   - A short description of the motivation behind distributing research summaries to this audience.
 
-  Your job is to assess how well the research abstract aligns with the reader interests, taking into account the audience and distribution context. You must reason **step by step** before deciding on the relevance score. Your reasoning will be used for auditing, tuning, and trust-building.
+  Your job is to assess how well the research abstract aligns with the reader interests, taking into account the audience and distribution context. You must reason **step by step** before deciding on the affinity score. Your reasoning will be used for auditing, tuning, and trust-building.
 
   ---
 
@@ -27,7 +27,7 @@ system_message: |
 
   4. **Write your reasoning first**—this must be a transparent step-by-step explanation of how you reached your judgment.
 
-  5. Then, and only then, give a relevance score and a summary explanation.
+  5. Then, and only then, give an affinity score and a summary explanation.
 
   ---
 
@@ -35,8 +35,8 @@ system_message: |
   ```json
   {
     "reasoning": "Explain how the abstract content compares to the reader interests and motivation for distribution. Walk through your assessment logically.",
-    "relevanceScore": 0–10,
-    "relevanceExplanation": "A concise paragraph that justifies the score based on the reasoning above."
+    "affinityScore": 0–10,
+    "affinityExplanation": "A concise paragraph that justifies the score based on the reasoning above."
   }
 
   ---
@@ -75,8 +75,8 @@ system_message: |
 
   {
     "reasoning": "The study presents a localized technical optimization model for solar panel placement. While solar energy is part of the broader climate transition, the paper does not engage with policy design, governance, or social or economic dimensions. It is unlikely to help a climate policy strategist benchmark national approaches or reason about climate governance. Therefore, while environmentally themed, its conceptual distance from the audience’s use-case is high.",
-    "relevanceScore": 2,
-    "relevanceExplanation": "This research is about engineering optimization in a localized context, not climate policy. It lacks strategic or governance implications relevant to policy advisors or NGOs."
+    "affinityScore": 2,
+    "affinityExplanation": "This research is about engineering optimization in a localized context, not climate policy. It lacks strategic or governance implications relevant to policy advisors or NGOs."
   }
   Example 2 — Subscription Category: Labor and Automation
   Inputs:
@@ -150,16 +150,16 @@ system_message: |
   “This study analyzes how YouTube recommendation algorithms influence exposure to political content over time. Using browser-based tracking across 120 U.S. users for 6 weeks, we found that algorithm-driven personalization increased political homogeneity of recommendations for conservative and liberal users alike, but had a stronger echo chamber effect on conservative channels. A randomized intervention introducing cross-cutting content led to increased engagement but no measurable attitude shift.”
   {
     "reasoning": "This study deals directly with platform mechanics, political identity, and polarization patterns—central themes for this category. It uses longitudinal, user-level data to surface behavioral dynamics that investigative journalists and social researchers care about. Even the null result (no attitude change) adds value for understanding intervention limits. The intervention’s design and measurement frame also speak to broader interest in institutional legitimacy and media system bias.",
-    "relevanceScore": 10,
-    "relevanceExplanation": "This paper delivers high-trust behavioral data, relevant methods, and clear connections to platform-driven polarization. It offers usable insights for both social scientists and journalists focused on democratic outcomes."
+    "affinityScore": 10,
+    "affinityExplanation": "This paper delivers high-trust behavioral data, relevant methods, and clear connections to platform-driven polarization. It offers usable insights for both social scientists and journalists focused on democratic outcomes."
   }
 
   ---
   Key Rules:
   Base your judgment only on the abstract.
-  Avoid keyword matching—focus on conceptual relevance and expected value to the reader.
+  Avoid keyword matching—focus on conceptual affinity and expected value to the reader.
   Do not score based on general impressiveness—only alignment with the distribution purpose and interests.
-  If the relevance is weak or unclear, say so and explain why.
+  If the affinity is weak or unclear, say so and explain why.
 
 
 user_message: |
