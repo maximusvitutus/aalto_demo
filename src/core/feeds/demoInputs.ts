@@ -1,3 +1,4 @@
+// Example feeds for 
 export const DEMO_FEEDS = [
   // DEMO: expect these to have ≈ 0 results, because we are not going to have any papers specifically about these topics
   "generative artificial intelligence (genAI)",
@@ -7,6 +8,16 @@ export const DEMO_FEEDS = [
   "social media & human behaviour",
   "future of society"
 ]
+
+// Distribution Channel
+export const DEMO_DISTRIBUTION_CHANNEL = "a newsletter which users subscribe to through a website with different categories to choose from"
+
+// Distribution Motives
+export const DEMO_SOCIAL_MEDIA_DISTRIBUTION_MOTIVE = "disseminate research done at aalto university to a wider audience in a succinct and understandable manner"
+export const DEMO_FUTURE_OF_SOCIETY_DISTRIBUTION_MOTIVE = "disseminate research done at aalto university to a wider audience in a succinct and understandable manner"
+export const DEMO_SPACE_EXPLORATION_DISTRIBUTION_MOTIVE = "disseminate research done at aalto university to a wider audience in a succinct and understandable manner"
+export const DEMO_GENAI_DISTRIBUTION_MOTIVE = "disseminate research done at aalto university to a wider audience in a succinct and understandable manner"
+
 
 // Social Media Feed
 
