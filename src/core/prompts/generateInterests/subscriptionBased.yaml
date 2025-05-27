@@ -16,11 +16,9 @@ system_message: |
   ---
 
   Input Variables:
-  - Subscription Category: {SUBSCRIPTION_CATEGORY}
-  - Intended Readers: {LIST_OF_READER_PROFILES}
-    (e.g. ["AI researchers", "policy analysts"], or ["journalists", "general public"])
-  - Distribution Channel: {DISTRIBUTION_CHANNEL}
-    (e.g. "specialist newsletter", "university blog", "science journalism site")
+  - Subscription Category
+  - Intended Readers
+  - Distribution Channel
 
   ---
 
