@@ -4,7 +4,8 @@ export const DEMO_FEEDS = [
   "space exploration",
 
   // For these feeds, expect some results
-  "social media's effects on human behaviour",
+  "social media & human behaviour",
+  "future of society"
 ]
 
 export const SOCIAL_MEDIA_FEED_READERS = [
@@ -24,7 +25,7 @@ export const SOCIAL_MEDIA_FEED_INTERESTS= [
 export const FUTURE_OF_SOCIETY_FEED_READERS = [
   "interdisciplinary thinkers and systems analysts interested in signals that suggest transformative shifts in human organization, governance, or belief systems",
   "emerging technology observers, including researchers and entrepreneurs, looking to anticipate second- and third-order societal effects of disruptive innovations",
-  "civic-minded professionals and strategists who want to identify weak signals and large-scale patterns influencing the evolution of public institutions, norms, and collective decision-making"
+  "civic-minded professionals and strategists who want to identify weak, intermediate and strong signals and large-scale patterns influencing the future evolution human life through public institutions, norms, habits, technologies, beliefs, historical context, trends, and collective decision-making"
 ]
 
 export const FUTURE_OF_SOCIETY_FEED_INTERESTS = [
