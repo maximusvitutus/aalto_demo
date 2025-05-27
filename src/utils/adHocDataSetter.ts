@@ -1,7 +1,7 @@
 import * as fs from 'fs';
 import * as path from 'path';
 import { z } from 'zod';
-import { DataInterface } from '../../data/dataInterface';
+import { ResearchStudyMetadata } from '../../data/dataInterface';
 import { OpenAIProvider } from '../core/llm/openAIProvider';
 import * as yaml from 'js-yaml';
 
@@ -18,7 +18,7 @@ const DataInterfaceSchema = z.object({
  * @param response - Raw response from OpenAI
  * @returns Validated DataInterface object
  */
-function parseOpenAIResponse(response: string): DataInterface {
+function parseOpenAIResponse(response: string): ResearchStudyMetadata {
   try {
     // Try to parse as JSON
     const jsonResponse = JSON.parse(response);
@@ -97,7 +97,7 @@ export class AdHocDataSetter {
    * @param filePath - Path to the .txt file
    * @returns Structured data object
    */
-  private async parseTxtFile(filePath: string): Promise<DataInterface> {
+  private async parseTxtFile(filePath: string): Promise<ResearchStudyMetadata> {
     const rawText = fs.readFileSync(filePath, 'utf8');
     
     // Load the prompt template

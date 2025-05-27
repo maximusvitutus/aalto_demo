@@ -6,7 +6,7 @@
  * @property {string[]} authors - The authors of the study
  * @property {number} publicationYear - The publication year of the study
  */
-export interface DataInterface {
+export interface ResearchStudyMetadata {
   title: string;
   abstract: string;
   authors: string[];
