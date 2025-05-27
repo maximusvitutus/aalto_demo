@@ -21,6 +21,7 @@ const DataInterfaceSchema = z.object({
 function parseOpenAIResponse(response: string): ResearchStudyMetadata {
   try {
     // Try to parse as JSON
+    // TODO: Robust Parsing
     const jsonResponse = JSON.parse(response);
     
     // Validate with Zod schema
