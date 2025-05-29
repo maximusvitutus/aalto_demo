@@ -191,8 +191,34 @@ export function parseJSONLSummaries(response: string): ResearchSummary[] {
     cleanedResponse = cleanedResponse.replace(/^```\s*/, '').replace(/\s*```$/, '');
   }
   
+  // Try to parse as a single JSON object first (multi-line)
+  try {
+    const jsonData = jsonrepair(cleanedResponse);
+    const parsedData = JSON.parse(jsonData);
+    
+    // If it's an array, process each item
+    if (Array.isArray(parsedData)) {
+      for (const item of parsedData) {
+        const result = ResearchSummarySchema.safeParse(item);
+        if (result.success) {
+          summaries.push(result.data);
+        }
+      }
+      return summaries;
+    }
+    
+    // If it's a single object, validate and add it
+    const result = ResearchSummarySchema.safeParse(parsedData);
+    if (result.success) {
+      summaries.push(result.data);
+      return summaries;
+    }
+  } catch (error) {
+    // If single JSON parsing fails, try JSONL format
+  }
+  
+  // Fall back to JSONL parsing (one JSON per line)
   const lines = cleanedResponse.trim().split('\n');
-
   for (const line of lines) {
     const trimmedLine = line.trim();
     if (trimmedLine && !trimmedLine.startsWith('```')) {
