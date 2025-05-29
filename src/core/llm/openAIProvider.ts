@@ -48,7 +48,7 @@ export class OpenAIProvider extends LLMProvider {
    */
   private logInteraction(prompt: string, response: string): void {
     try {
-      const logEntry = `prompt: ${prompt}\n\nresponse: ${response}\n\n`;
+      const logEntry = `prompt: ${prompt}\n\nresponse (${this.fallbackModel}): ${response}\n\n`;
       fs.appendFileSync(this.logFilePath, logEntry, 'utf8');
     } catch (error) {
       console.warn('⚠️ Failed to write to log file:', error);
@@ -96,5 +96,13 @@ export class OpenAIProvider extends LLMProvider {
     } catch (error) {
       throw new Error(`Failed to get response from OpenAI: ${error instanceof Error ? error.message : 'Unknown error'}`);
     }
+  }
+
+  /**
+   * Get the current model name
+   * @returns The model name being used
+   */
+  getModelName(): string {
+    return this.fallbackModel;
   }
 }

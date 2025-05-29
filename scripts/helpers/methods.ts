@@ -247,14 +247,15 @@ export function parseJSONLSummaries(response: string): ResearchSummary[] {
 export function saveFeedSummaries(
   feedCategory: string,
   summaries: ResearchSummary[],
-  timestamp: string
+  timestamp: string,
+  model: string
 ): void {
   const sanitizedCategory = feedCategory.replace(/[^a-zA-Z0-9]/g, '_');
   const outputPath = path.join(
     process.cwd(), 
     'results', 
     'summaries',
-    `${sanitizedCategory}-${timestamp}.json`
+    `${sanitizedCategory}-${model}-${timestamp}.json`
   );
   
   const outputDir = path.dirname(outputPath);

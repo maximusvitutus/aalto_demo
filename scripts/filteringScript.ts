@@ -45,6 +45,14 @@ async function runFilteringScript(): Promise<void> {
     const llmProvider = new OpenAIProvider(apiKey);
     const filteringService = new FeedFilteringService(llmProvider);
 
+    // Create timestamp format
+    const now = new Date();
+    const month = String(now.getMonth() + 1).padStart(2, '0');
+    const date = String(now.getDate()).padStart(2, '0');
+    const hour = String(now.getHours()).padStart(2, '0');
+    const minutes = String(now.getMinutes()).padStart(2, '0');
+    const timestamp = `${month}-${date}-${hour}:${minutes}`;
+
     // Load studies
     console.log('\n📖 Loading studies...');
     const studiesPath = path.join(process.cwd(), 'data', 'studies', 'socialNetworks');
@@ -106,8 +114,6 @@ async function runFilteringScript(): Promise<void> {
     }
 
     // Generate summaries for feeds with relevant studies
-    const timestamp = new Date().toISOString().replace(/[:.]/g, '-');
-
     for (const [feedName, result] of acceptedStudiesPerFeed) {
       if (result.relevantStudiesFound > 0) {
         console.log(`\n📄 Generating summaries for "${feedName}" (${result.relevantStudiesFound} studies)`);
@@ -119,7 +125,7 @@ async function runFilteringScript(): Promise<void> {
           );
           
           if (summaries.length > 0) {
-            saveFeedSummaries(feedName, summaries, timestamp);
+            saveFeedSummaries(feedName, summaries, timestamp, llmProvider.getModelName());
             console.log(`✅ Generated ${summaries.length} summaries for "${feedName}"`);
           } else {
             console.log(`⚠️ No summaries generated for "${feedName}"`);
@@ -135,7 +141,7 @@ async function runFilteringScript(): Promise<void> {
 
     // Save results
     console.log('\n💾 Saving filtering results...');
-    const outputPath = path.join(process.cwd(), 'results', `filtering-${timestamp}.json`);
+    const outputPath = path.join(process.cwd(), 'results', `results-${llmProvider.getModelName()}-${timestamp}.json`);
     saveResults(Array.from(acceptedStudiesPerFeed.values()), outputPath);
 
     // Print summary
