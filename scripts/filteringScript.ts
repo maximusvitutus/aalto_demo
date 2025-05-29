@@ -9,7 +9,7 @@ import { config } from 'dotenv';
 config(); // load environment variables from .env file
 
 // Configuration
-const MODEL_TO_USE = 'gpt-4o-mini'; // Change this to use a different model
+const MODEL_TO_USE = 'gpt-4o'; // Change this to use a different model
 
 /**
  * Result of the filtering process for a feed.
