@@ -10,7 +10,7 @@ import { ResearchStudyMetadata } from "../../../data/dataInterface";
  * @property {string} feedCategory - The category of the feed.
  * @property {FeedConfig} feedConfig - The configuration for the feed.
  */
-export interface FilteredStudy {
+export interface StudyFilterResult {
   study: ResearchStudyMetadata;
   relevanceScore: AffinityScore;
   feedCategory: string;

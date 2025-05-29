@@ -1,7 +1,7 @@
 import { z } from 'zod';
 import { ResearchStudyMetadata } from '../../../data/dataInterface';
 import { OpenAIProvider } from '../llm/openAIProvider';
-import { FilteredStudy } from '../../types/filtering/filteredStudy';
+import { StudyFilterResult } from '../../types/filtering/filteredStudy';
 import { FeedConfig } from '../../types/feeds/feedConfig';
 import { AffinityScore } from '../../types/filtering/affinityScore';
 import { PromptLoader } from '../prompting/promptLoader';
@@ -33,9 +33,9 @@ export class FeedFilteringService {
   async filterStudiesForFeed(
     studies: ResearchStudyMetadata[], 
     feedConfig: FeedConfig
-  ): Promise<FilteredStudy[]> {
+  ): Promise<StudyFilterResult[]> {
     const threshold = feedConfig.relevanceThreshold ?? this.defaultThreshold;
-    const filteredStudies: FilteredStudy[] = [];
+    const filteredStudies: StudyFilterResult[] = [];
 
     console.log(`🔍 Filtering ${studies.length} studies for feed: ${feedConfig.category}`);
 
@@ -126,9 +126,9 @@ export class FeedFilteringService {
     studies: ResearchStudyMetadata[], 
     feedConfig: FeedConfig,
     concurrency: number = 3 // Limit concurrent requests to avoid rate limits
-  ): Promise<FilteredStudy[]> {
+  ): Promise<StudyFilterResult[]> {
     const threshold = feedConfig.relevanceThreshold ?? this.defaultThreshold;
-    const filteredStudies: FilteredStudy[] = [];
+    const filteredStudies: StudyFilterResult[] = [];
 
     console.log(`🔍 Filtering ${studies.length} studies for feed: ${feedConfig.category} (${concurrency} concurrent)`);
 
@@ -149,7 +149,7 @@ export class FeedFilteringService {
               relevanceScore,
               feedCategory: feedConfig.category,
               feedConfig
-            } as FilteredStudy;
+            } as StudyFilterResult;
           }
           return null;
         } catch (error) {
