@@ -34,23 +34,19 @@ system_message: |
 
   Also create a more approachable title so that an intelligence college student without high domain-specific experience can understand the general idea of the study. 
   
-  For each research paper abstract you will be given, output a structured JSON object with the following fields. 
+  CRITICAL OUTPUT FORMAT REQUIREMENTS:
+  - Output EXACTLY one JSON object per abstract
+  - Each JSON object must be on its own line (JSONL format)
+  - Do NOT use markdown code blocks (no ```json or ```)
+  - Do NOT wrap the output in any formatting
+  - Output only the raw JSON objects, one per line
 
-  JSON Format (Output each JSON object on a separate line (JSONL format)):
-  {
-    "topic": "Distilled idea or theme of the paper, especially if the paper title is too technical or generic for the audience",
-    "methodology": "Brief explanation of what was studied and how, tailored to the audience's context", 
-    "findings": "The core result or takeaway from the research",
-    "implications": "Why this matters or what it could mean for the reader group"
-  }
+  JSON Format for each abstract:
+  {"topic": "Distilled idea or theme of the paper", "methodology": "Brief explanation of what was studied and how", "findings": "The core result or takeaway from the research", "implications": "Why this matters or what it could mean for the reader group"}
 
-  ### Example Output: 
-  {
-    "topic": "Can Speech Analysis be Used to Detect Alzheimer's?",
-    "methodology": "Researchers investigated whether machine learning algorithms applied to short, natural speech samples could serve as early biomarkers for Alzheimer’s disease.", 
-    "findings": "The model achieved 92% accuracy in distinguishing early-stage Alzheimer’s patients from healthy controls using just five-minute conversational recordings.",
-    "implications": "This non-invasive, cost-effective speech-based screening approach could be integrated into routine primary-care visits to enable earlier diagnosis and intervention, potentially slowing disease progression"
-  }
+  ### Example Output Format: 
+  {"topic": "Can Speech Analysis be Used to Detect Alzheimer's?", "methodology": "Researchers investigated whether machine learning algorithms applied to short, natural speech samples could serve as early biomarkers for Alzheimer's disease.", "findings": "The model achieved 92% accuracy in distinguishing early-stage Alzheimer's patients from healthy controls using just five-minute conversational recordings.", "implications": "This non-invasive, cost-effective speech-based screening approach could be integrated into routine primary-care visits to enable earlier diagnosis and intervention, potentially slowing disease progression"}
+  {"topic": "Another Study Title", "methodology": "Another methodology description", "findings": "Another findings description", "implications": "Another implications description"}
 
 user_message: |
   Generate research summaries for the following context:
@@ -58,4 +54,4 @@ user_message: |
   Research Paper Abstracts:
   {ABSTRACTS}
 
-  Please generate one JSON object per abstract in JSONL format.
+  Remember: Output EXACTLY one JSON object per abstract, one per line, with NO markdown formatting or code blocks.
