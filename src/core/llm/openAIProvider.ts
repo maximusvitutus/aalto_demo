@@ -1,4 +1,6 @@
 import { LLMProvider } from './llmProvider';
+import * as fs from 'fs';
+import * as path from 'path';
 
 /**
  * Class for interacting with OpenAI
@@ -8,6 +10,7 @@ import { LLMProvider } from './llmProvider';
 export class OpenAIProvider extends LLMProvider {
   private apiKey: string;
   private fallbackModel: string = 'gpt-4o-mini';
+  private logFilePath: string;
 
   /**
    * Constructor for OpenAI provider
@@ -19,6 +22,36 @@ export class OpenAIProvider extends LLMProvider {
     this.apiKey = apiKey;
     if (model) {
       this.fallbackModel = model;
+    }
+    
+    // Create log file path with simple timestamp format
+    const now = new Date();
+    const month = String(now.getMonth() + 1).padStart(2, '0');
+    const date = String(now.getDate()).padStart(2, '0');
+    const hour = String(now.getHours()).padStart(2, '0');
+    const minutes = String(now.getMinutes()).padStart(2, '0');
+    const timestamp = `${month}-${date}-${hour}:${minutes}`;
+    
+    this.logFilePath = path.join(process.cwd(), 'logs', `openai-${timestamp}.log`);
+    
+    // Ensure logs directory exists
+    const logDir = path.dirname(this.logFilePath);
+    if (!fs.existsSync(logDir)) {
+      fs.mkdirSync(logDir, { recursive: true });
+    }
+  }
+
+  /**
+   * Logs prompt and response to file
+   * @param prompt - The input prompt
+   * @param response - The response from OpenAI
+   */
+  private logInteraction(prompt: string, response: string): void {
+    try {
+      const logEntry = `prompt: ${prompt}\n\nresponse: ${response}\n\n`;
+      fs.appendFileSync(this.logFilePath, logEntry, 'utf8');
+    } catch (error) {
+      console.warn('⚠️ Failed to write to log file:', error);
     }
   }
 
@@ -54,7 +87,12 @@ export class OpenAIProvider extends LLMProvider {
         throw new Error('No text response from OpenAI');
       }
 
-      return textContent.text;
+      const responseText = textContent.text;
+      
+      // Log the interaction
+      this.logInteraction(prompt, responseText);
+      
+      return responseText;
     } catch (error) {
       throw new Error(`Failed to get response from OpenAI: ${error instanceof Error ? error.message : 'Unknown error'}`);
     }
