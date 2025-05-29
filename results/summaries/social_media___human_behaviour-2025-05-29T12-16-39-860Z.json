@@ -1,0 +1,20 @@
+[
+  {
+    "topic": "Real-Time Data Collection from Decentralized Social Networks",
+    "methodology": "The study developed FediLive, a framework for rapid data collection and preprocessing of Mastodon user activities over a 13-day period.",
+    "findings": "FediLive successfully gathered comprehensive real-time snapshots of user interactions and demographics on Mastodon.",
+    "implications": "This framework could enhance understanding of user behavior in decentralized networks, facilitating more informed discussions on community dynamics and moderation."
+  },
+  {
+    "topic": "Understanding Reciprocity in Human Communication",
+    "methodology": "This research analyzes temporal patterns of reciprocal interactions across various communication channels like calls and social media.",
+    "findings": "The study identifies memory as a key factor driving temporal reciprocity, revealing both persistent trends and distinct roles of different communication types.",
+    "implications": "These insights could deepen our understanding of social norms and cooperation mechanisms in human interactions."
+  },
+  {
+    "topic": "Digital Traces and Human Behavior Analysis",
+    "methodology": "The thesis examines digital traces to model social networks and population commuting patterns, highlighting both dynamics and persistence in behaviors.",
+    "findings": "It establishes predictive models for human mobility and reveals universal patterns and individual variations in social networks.",
+    "implications": "This work bridges digital data with traditional social science, enhancing our ability to predict human behavior and understand the complexity of social connections."
+  }
+]

@@ -1,0 +1,26 @@
+[
+  {
+    "topic": "Understanding Human Behavior Through Digital Traces",
+    "methodology": "This study analyzed digital traces of human behavior to model social networks and commuting patterns, revealing both persistent features and dynamic changes.",
+    "findings": "It was found that personal social networks maintain certain characteristics while also evolving, and that these networks can provide insights into predictive models of mobility.",
+    "implications": "These findings suggest that digital trace data can enhance our understanding of human behavior and could influence the development of computational social science."
+  },
+  {
+    "topic": "Epidemic Dynamics in Social Networks",
+    "methodology": "The research explored disease transmission dynamics using theoretical models based on real-world epidemiological data, focusing on complex human interaction networks.",
+    "findings": "The study identified key intervention strategies, providing new insights into how diseases spread through social networks and the effectiveness of different strategies.",
+    "implications": "These insights can inform public health policies and lead to better preparedness for future epidemics by understanding the social structures that facilitate disease spread."
+  },
+  {
+    "topic": "Planning for Climate Change Adaptation",
+    "methodology": "This research evaluated landscape adaptation planning by examining factors affecting local networks in 15 European landscapes and promoting social learning and co-creation processes.",
+    "findings": "Key conditions for successful climate change adaptation in landscapes were identified, emphasizing the importance of community involvement and social networks.",
+    "implications": "The framework developed could be applied in other regions to enhance community resilience to climate change through collaborative planning."
+  },
+  {
+    "topic": "The Timing of Reciprocity in Communication",
+    "methodology": "This study investigated the temporal patterns of reciprocal interactions in various communication channels, employing measures that reflect the time order of exchanges.",
+    "findings": "It revealed that memory-driven interactions significantly influence temporal reciprocity, highlighting differences between one-to-one communication and information broadcasting.",
+    "implications": "Understanding these patterns can improve our grasp of how norms emerge in social exchanges and enhance cooperation on larger scales."
+  }
+]
