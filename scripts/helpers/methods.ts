@@ -143,7 +143,6 @@ import { OpenAIProvider } from '../../src/core/llm/openAIProvider';
  */
 export async function generateSummariesForFeed(
   filteredStudies: StudyFilterResult[],
-  feedConfig: FeedConfig,
   llmProvider: OpenAIProvider
 ): Promise<ResearchSummary[]> {
   if (filteredStudies.length === 0) {
@@ -158,12 +157,6 @@ export async function generateSummariesForFeed(
 
   // Build the prompt
   const prompt = template
-    .replace('{SUBSCRIPTION_CATEGORY}', feedConfig.category)
-    .replace('{INTENDED_READERS}', feedConfig.intendedReaders.join(', '))
-    .replace('{DISTRIBUTION_CHANNEL}', feedConfig.distributionChannel)
-    .replace('{READER_INTERESTS}', feedConfig.readerInterests.join('\n'))
-    .replace('{MOTIVATION_FOR_DISTRIBUTION}', feedConfig.motivationForDistribution)
-    .replace('{WRITING_INSTRUCTIONS}', 'Focus on practical implications and actionable insights for the target audience.')
     .replace('{ABSTRACTS}', abstracts.map((abstract, i) => `${i + 1}. ${abstract}`).join('\n\n'));
 
   try {

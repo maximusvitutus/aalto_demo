@@ -115,7 +115,6 @@ async function runFilteringScript(): Promise<void> {
         try {
           const summaries = await generateSummariesForFeed(
             result.relevantStudies,
-            result.relevantStudies[0].feedConfig,
             llmProvider
           );
           
