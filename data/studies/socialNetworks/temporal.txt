@@ -1,0 +1,29 @@
+Temporal patterns of reciprocity in communication networks
+Sandeep Chowdhary, Elsa Andres, Adriana Manna, Luka Blagojević, Leonardo Di Gaetano, Gerardo Iñiguez*
+
+*Corresponding author for this work
+Department of Computer Science
+Tampere UniversityUniversidad Nacional Autónoma de MéxicoCentral European University Vienna
+Research output: Contribution to journal › Article › Scientific › peer-review
+
+3
+Citations
+(Scopus)
+50
+Downloads
+(Pure)
+Article has an altmetric score of 13
+ Overview
+
+Abstract
+Human communication, the essence of collective social phenomena ranging from small-scale organizations to worldwide online platforms, features intense reciprocal interactions between members in order to achieve stability, cohesion, and cooperation in social networks. While high levels of reciprocity are well known in aggregated communication data, temporal patterns of reciprocal information exchange have received far less attention. Here we propose measures of reciprocity based on the time ordering of interactions and explore them in data from multiple communication channels, including calls, messaging and social media. By separating each channel into reciprocal and non-reciprocal temporal networks, we find persistent trends that point to the distinct roles of one-to-one exchange versus information broadcast. We implement several null models of communication activity, which identify memory, a higher tendency to repeat interactions with past contacts, as a key source of temporal reciprocity. When adding memory to a model of activity-driven, time-varying networks, we reproduce the levels of temporal reciprocity seen in empirical data. Our work adds to the theoretical understanding of the emergence of reciprocity in human communication systems, hinting at the mechanisms behind the formation of norms in social exchange and large-scale cooperation.
+
+Original languageEnglish
+Article number7
+Pages (from-to)1-15
+Number of pages15
+JournalEPJ Data Science
+Volume12
+Issue number1
+Publication statusPublished - Dec 2023
+MoE publication typeA1 Journal article-refereed

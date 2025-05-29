@@ -1,0 +1,24 @@
+Dynamic yet Persistent: Investigating Digital Traces of Human Behaviour
+Sara Heydari
+
+Department of Computer ScienceComputer Science - Complex Systems (Cxsys) - Research area
+Research output: Thesis › Doctoral Thesis › Collection of Articles
+
+ Overview
+ Fingerprint
+ Infrastructure (1)
+Abstract
+We are citizens of the digital age, an age in which our smallest everyday actions leave digital traces behind. These traces can be used to reconstruct and analyse the patterns of human behaviour at both individual and societal levels. The growing abundance of quantitative data on almost every aspect of human behaviour is driving a paradigm shift from traditional social sciences to computational social sciences. This thesis utilises a wide range of digital traces of human behaviour to study and model the structure of social networks, as well as population-level patterns of commuting and travelling. A longitudinal study of these patterns reveals that while both personal social networks and population commuting networks are dynamic and undergo gradual changes and abrupt external disturbances, they also exhibit persistence in certain aspects and retain some of their distinctive features. Our work advances the knowledge of personal networks by identifying their universal and individual features through the study of a large population and multiple communication media. To clarify the generative mechanisms behind the observed universal patterns and individual variations within them, we present an ego-network model that connects the structure of ego-networks to the communication strategies of egos. Furthermore, we utilise rich and high-resolution digital communication logs and computational methods to validate the predictions of sociological theories that predate the emergence of computational social science as a field. Particularly, we show that the temporal manifestation of social ties can indicate the extent of their multiplexity (i.e., whether multiple social contexts underlie the tie) and that the multiplexity of ties impacts their functional features, such as their role in network connectivity. In addition to social networks, this thesis enriches our understanding of human mobility patterns by building predictive models that employ digital traces data. These models are capable of real-time estimation of country-wide mobility flows, even amidst rapid and significant distortions in mobility patterns. Taken together, my results highlight the potential of digital trace data and computational methods for advancing our understanding of various aspects of human behaviour. It applies these insights to predict human behaviour, identify universal and individual human traits, and contribute to bridging the new field of computational social science with the rich tradition of classical social science.
+Translated title of the contributionDynamic yet Persistent: Investigating Digital Traces of Human Behaviour
+Original languageEnglish
+QualificationDoctor's degree
+Awarding Institution
+Aalto University
+Supervisors/Advisors
+Saramäki, Jari, Supervising Professor
+Publisher
+Aalto University
+Print ISBNs978-952-64-1962-6
+Electronic ISBNs978-952-64-1963-3
+Publication statusPublished - 2024
+MoE publication typeG5 Doctoral dissertation (article)

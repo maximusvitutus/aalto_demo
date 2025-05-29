@@ -1,0 +1,27 @@
+Effectiveness of contact tracing on networks with cliques
+Abbas K. Rizi, Leah Keating, James P. Gleeson, David O'Sullivan, Mikko Kivelä
+
+Department of Computer ScienceProfessorship Kivelä MikkoComputer Science ProfessorsComputer Science - Complex Systems (Cxsys) - Research area
+University of LimerickUniversity of California
+Research output: Contribution to journal › Article › Scientific › peer-review
+
+4
+Citations
+(Scopus)
+24
+Downloads
+(Pure)
+Article has an altmetric score of 11
+ Overview
+ Fingerprint
+
+Abstract
+Contact tracing, the practice of isolating individuals who have been in contact with infected individuals, is an effective and practical way of containing disease spread. Here we show that this strategy is particularly effective in the presence of social groups: Once the disease enters a group, contact tracing not only cuts direct infection paths but can also pre-emptively quarantine group members such that it will cut indirect spreading routes. We show these results by using a deliberately stylized model that allows us to isolate the effect of contact tracing within the clique structure of the network where the contagion is spreading. This will enable us to derive mean-field approximations and epidemic thresholds to demonstrate the efficiency of contact tracing in social networks with small groups. This analysis shows that contact tracing in networks with groups is more efficient the larger the groups are. We show how these results can be understood by approximating the combination of disease spreading and contact tracing with a complex contagion process where every failed infection attempt will lead to a lower infection probability in the following attempts. Our results illustrate how contact tracing in real-world settings can be more efficient than predicted by models that treat the system as fully mixed or the network structure as locally treelike.
+Original languageEnglish
+Article number024303
+Pages (from-to)24303
+JournalPhysical Review E
+Volume109
+Issue number2
+Publication statusPublished - 9 Feb 2024
+MoE publication typeA1 Journal article-refereed

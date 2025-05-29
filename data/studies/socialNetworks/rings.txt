@@ -1,0 +1,32 @@
+On Sustainable Ring-Based Anonymous Systems
+Sherman S.M. Chow, Christoph Egger, Russell W.F. Lai, Viktoria Ronge, Ivy K.Y. Woo
+
+Department of Computer ScienceProfessorship Lai RussellComputer Science ProfessorsAlgebra and Discrete MathematicsDepartment of Mathematics and Systems Analysis
+Chinese University of Hong KongInstitut de Recherche en Informatique FondamentaleFriedrich-Alexander University Erlangen-Nürnberg
+Research output: Chapter in Book/Report/Conference proceeding › Conference article in proceedings › Scientific › peer-review
+
+4
+Citations
+(Scopus)
+ Overview
+ Fingerprint
+Abstract
+Anonymous systems (e.g. anonymous cryptocurrencies and updatable anonymous credentials) often follow a construction template where an account can only perform a single anonymous action, which in turn potentially spawns new (and still single-use) accounts (e.g. UTXO with a balance to spend or session with a score to claim). Due to the anonymous nature of the action, no party can be sure which account has taken part in an action and, therefore, must maintain an ever-growing list of potentially unused accounts to ensure that the system keeps running correctly. Consequently, anonymous systems constructed based on this common template are seemingly not sustainable. In this work, we study the sustainability of ring-based anonymous systems, where a user performing an anonymous action is hidden within a set of decoy users, traditionally called a 'ring'. On the positive side, we propose a general technique for ring-based anonymous systems to achieve sustainability. Along the way, we define a general model of decentralised anonymous systems (DAS) for arbitrary anonymous actions, and provide a generic construction which provably achieves sustainability. As a special case, we obtain the first construction of anonymous cryptocurrencies achieving sustainability without compromising availability. We also demonstrate the generality of our model by constructing sustainable decentralised anonymous social networks. On the negative side, we show empirically that Monero, one of the most popular anonymous cryptocurrencies, is unlikely to be sustainable without altering its current ring sampling strategy. The main subroutine is a sub-quadratic-time algorithm for detecting used accounts in a ring-based anonymous system.
+
+Original languageEnglish
+Title of host publicationProceedings - 2023 IEEE 36th Computer Security Foundations Symposium, CSF 2023
+PublisherIEEE
+Pages568-583
+Number of pages16
+ISBN (Electronic)979-8-3503-2192-0
+Publication statusPublished - 28 Aug 2023
+MoE publication typeA4 Conference publication
+EventIEEE Computer Security Foundations Symposium - Haifa, Israel
+Duration: 9 Jul 2023 → 13 Jul 2023
+Conference number: 36
+Publication series
+NameProceedings - IEEE Computer Security Foundations Symposium
+Volume2023-July
+ISSN (Print)1940-1434
+Conference
+ConferenceIEEE Computer Security Foundations Symposium

@@ -1,0 +1,24 @@
+Spreading and Epidemic Interventions - Effects of Network Structure and Dynamics
+Abbas K. Rizi
+
+Department of Computer ScienceProfessorship Kivelä Mikko
+Research output: Thesis › Doctoral Thesis › Collection of Articles
+
+ Overview
+ Fingerprint
+ Infrastructure (1)
+Abstract
+The COVID-19 pandemic has highlighted the critical importance of understanding epidemic dynamics, particularly the significant gaps in our knowledge that need addressing to better prepare for future pandemics. This thesis delves into the intricacies of disease spread within complex human interaction networks, underlining the pivotal role of individual connectedness in influencing epidemic outcomes. By developing theoretical models inspired by real-world epidemiological data, this work provides a nuanced exploration of disease transmission dynamics across networked populations, emphasizing the heterogeneous, spatial, homophilic, and temporal characteristics inherent in human social structures. A primary focus of this research is the investigation of intervention strategies, encompassing pharmaceutical measures, such as vaccination campaigns, and non-pharmaceutical interventions, including contact tracing techniques. These interventions are evaluated within more realistic network topologies, characterized by degree heterogeneity and group structures, to assess their effectiveness in mitigating epidemic spread. The thesis leverages mathematical and computational epidemiology to offer profound insights into optimizing intervention strategies within the complex web of human interactions, thereby contributing to the academic discourse and providing actionable intelligence for public health policy formulation and epidemic preparedness. The avenues of research opened by this work offer deeper insights into the mechanisms of epidemic spread in social networks. By using stylized modeling, the study was able to delve into the nontrivial ways epidemics spread through social networks. This modeling approach simplified the realworld dynamics into more analytically tractable forms, allowing the researchers to capture the essence of contact network structures and their crucial role in transmitting infectious diseases. The primary objective of this study was to identify new pathways for academic exploration and offer valuable perspectives that can enhance public health policies and epidemic response strategies. Ultimately, this work seeks to contribute to a better understanding of epidemic dynamics by bridging knowledge gaps and fostering a more resilient response to public health challenges in the face of complex human interactions.
+Translated title of the contributionSpreading and Epidemic Interventions - Effects of Network Structure and Dynamics
+Original languageEnglish
+QualificationDoctor's degree
+Awarding Institution
+Aalto University
+Supervisors/Advisors
+Kivelä, Mikko, Supervising Professor
+Publisher
+Aalto University
+Print ISBNs978-952-64-1704-2
+Electronic ISBNs978-952-64-1705-9
+Publication statusPublished - 2024
+MoE publication typeG5 Doctoral dissertation (article)

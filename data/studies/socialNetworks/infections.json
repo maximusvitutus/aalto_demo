@@ -1,0 +1,9 @@
+{
+  "title": "Network-based control of epidemic via flattening the infection curve: high-clustered vs. low-clustered social networks",
+  "abstract": "Recent studies in network science and control have shown a meaningful relationship between the epidemic processes (e.g., COVID-19 spread) and some network properties. This paper studies how such network properties, namely clustering coefficient and centrality measures (or node influence metrics), affect the spread of viruses and the growth of epidemics over scale-free networks. The results can be used to target individuals (the nodes in the network) to flatten the infection curve. This so-called flattening of the infection curve is to reduce the health service costs and burden to the authorities/governments. Our Monte-Carlo simulation results show that clustered networks are, in general, easier to flatten the infection curve, i.e., with the same connectivity and the same number of isolated individuals they result in more flattened curves. Moreover, distance-based centrality measures, which target the nodes based on their average network distance to other nodes (and not the node degrees), are better choices for targeting individuals for isolation/vaccination.",
+  "authors": [
+    "Mohammadreza Doostmohammadian",
+    "Hamid R. Rabiee"
+  ],
+  "publicationYear": 2023
+}
