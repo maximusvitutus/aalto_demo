@@ -8,6 +8,9 @@ import { loadStudiesFromDirectory, createFeedConfigs, saveResults, saveFeedSumma
 import { config } from 'dotenv';
 config(); // load environment variables from .env file
 
+// Configuration
+const MODEL_TO_USE = 'gpt-4o-mini'; // Change this to use a different model
+
 /**
  * Result of the filtering process for a feed.
  * 
@@ -27,6 +30,7 @@ interface FilteringResult {
   processingTimeMs?: number;
   totalFailedStudies?: number;
 }
+
 /**
  * Main filtering script
  */
@@ -42,8 +46,10 @@ async function runFilteringScript(): Promise<void> {
 
     // Initialize services
     console.log('🔧 Initializing services...');
-    const llmProvider = new OpenAIProvider(apiKey);
+    const llmProvider = new OpenAIProvider(apiKey, MODEL_TO_USE);
     const filteringService = new FeedFilteringService(llmProvider);
+
+    console.log(`📋 Using model: ${llmProvider.getModelName()}`);
 
     // Create timestamp format
     const now = new Date();
