@@ -126,11 +126,18 @@ async function runFilteringScript(): Promise<void> {
       const startTime = Date.now();
       
       try {
-        // Use parallel filtering with controlled concurrency
-        const acceptedStudies = await filteringService.filterStudiesForFeedParallel(
+        // Create progress callback for filtering updates
+        const progressCallback = (processed: number, total: number) => {
+          const percentage = Math.round((processed / total) * 100);
+          emitProgress('filtering', `Analyzing studies: ${processed}/${total} (${percentage}%)`);
+        };
+        
+        // Use parallel filtering with controlled concurrency and progress updates
+        const acceptedStudies = await filteringService.filterStudiesForFeedParallelWithProgress(
           studies, 
           feedConfig, 
-          3 // Process 3 studies concurrently
+          3, // Process 3 studies concurrently
+          progressCallback
         );
         
         const processingTime = Date.now() - startTime;
@@ -151,7 +158,7 @@ async function runFilteringScript(): Promise<void> {
         console.log(`   ⏱️  Processing time: ${Math.round(processingTime / 1000)}s`);
         
         // PROGRESS: Filtering completed (AFTER filtering is done)
-        emitProgress('filtering', `Found ${acceptedStudies.length} relevant studies`);
+        emitProgress('filtering', `Found ${acceptedStudies.length} relevant studies (100%)`);
         
         if (acceptedStudies.length > 0) {
           console.log(`   🏆 Top study: "${acceptedStudies[0].study.title}" (score: ${acceptedStudies[0].relevanceScore.affinityScore})`);

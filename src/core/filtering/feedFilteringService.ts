@@ -180,4 +180,74 @@ export class FeedFilteringService {
     console.log(`✅ Found ${filteredStudies.length} relevant studies (threshold: ${threshold})`);
     return filteredStudies;
   }
+
+  /**
+   * Filters studies based on relevance to a specific feed configuration (parallelized version with progress)
+   */
+  async filterStudiesForFeedParallelWithProgress(
+    studies: ResearchStudyMetadata[], 
+    feedConfig: FeedConfig,
+    concurrency: number = 3, // Limit concurrent requests to avoid rate limits
+    progressCallback?: (processed: number, total: number) => void
+  ): Promise<StudyFilterResult[]> {
+    const threshold = feedConfig.relevanceThreshold ?? this.defaultThreshold;
+    const filteredStudies: StudyFilterResult[] = [];
+    let processedCount = 0;
+
+    console.log(`🔍 Filtering ${studies.length} studies for feed: ${feedConfig.category} (${concurrency} concurrent)`);
+
+    // Process studies in batches to control concurrency
+    for (let i = 0; i < studies.length; i += concurrency) {
+      const batch = studies.slice(i, i + concurrency);
+      
+      console.log(`📦 Processing batch ${Math.floor(i/concurrency) + 1}/${Math.ceil(studies.length/concurrency)} (${batch.length} studies)`);
+      
+      // Process batch in parallel
+      const batchPromises = batch.map(async (study) => {
+        try {
+          const relevanceScore = await this.scoreStudyRelevance(study, feedConfig);
+          
+          if (relevanceScore.affinityScore >= threshold) {
+            return {
+              study,
+              relevanceScore,
+              feedCategory: feedConfig.category,
+              feedConfig
+            } as StudyFilterResult;
+          }
+          return null;
+        } catch (error) {
+          console.error(`❌ Error scoring study "${study.title}":`, error);
+          return null;
+        }
+      });
+
+      // Wait for batch to complete
+      const batchResults = await Promise.all(batchPromises);
+      
+      // Add successful results to filtered studies
+      batchResults.forEach(result => {
+        if (result) {
+          filteredStudies.push(result);
+        }
+      });
+
+      // Update progress count and call callback
+      processedCount += batch.length;
+      if (progressCallback) {
+        progressCallback(processedCount, studies.length);
+      }
+
+      // Add delay between batches to be respectful to API
+      if (i + concurrency < studies.length) {
+        await this.delay(1000);
+      }
+    }
+
+    // Sort by relevance score (highest first)
+    filteredStudies.sort((a, b) => b.relevanceScore.affinityScore - a.relevanceScore.affinityScore);
+
+    console.log(`✅ Found ${filteredStudies.length} relevant studies (threshold: ${threshold})`);
+    return filteredStudies;
+  }
 }
