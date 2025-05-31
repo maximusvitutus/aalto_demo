@@ -1,0 +1,44 @@
+[
+  {
+    "topic": "How Digital Data Traces Map Our Social Lives and Daily Movements",
+    "methodology": "Researchers analyzed large-scale digital data on communication and mobility to model how social and commuting networks change over time and validate existing sociological theories with computational approaches.",
+    "findings": "Personal and population networks show both persistency and gradual or abrupt changes, and digital traces reveal universal and unique patterns in social ties and mobility, providing new insights into network connectivity and behavior prediction.",
+    "implications": "Using digital data can bridge computational and traditional social sciences, enabling better prediction of human behavior and more informed strategies for managing social networks and mobility at scale."
+  },
+  {
+    "topic": "Understanding How Diseases Spread in Human Social Networks",
+    "methodology": "The study used theoretical and computational models inspired by real epidemiological data to examine the spread of diseases on realistic, heterogeneous social networks, focusing on both pharmaceutical and non-pharmaceutical interventions.",
+    "findings": "The structure and connectedness within human networks greatly affect epidemic dynamics, and modeling these complexities helps identify effective strategies for epidemic mitigation.",
+    "implications": "These insights can guide public health policy, improve epidemic preparedness, and inform more effective response strategies during health crises."
+  },
+  {
+    "topic": "Building Local Networks for Adapting Landscapes to Climate Change",
+    "methodology": "Researchers examined 15 European landscapes to identify key factors for creating local networks that support participatory, adaptive responses to climate change, emphasizing social learning and co-creation processes.",
+    "findings": "Effective landscape adaptation requires integrating social, cultural, and governance factors through collaborative local networks, improving the quality of plans and overcoming implementation barriers.",
+    "implications": "This framework can help other communities create stronger, more legitimate climate adaptation plans by harnessing collective knowledge and cooperation."
+  },
+  {
+    "topic": "Making Anonymous Cryptocurrencies and Systems More Sustainable",
+    "methodology": "The work analyzed the common structure of anonymous systems and proposed a general model and construction for sustainable ring-based anonymous systems, with special applications to cryptocurrencies and anonymous social networks.",
+    "findings": "The new construction allows for sustainable operation of anonymous systems without growing lists of unused accounts, but current systems like Monero may be unsustainable without changes.",
+    "implications": "This research can guide the development of privacy-preserving digital systems and help existing anonymous cryptocurrencies adapt for long-term viability."
+  },
+  {
+    "topic": "Why Contact Tracing Works Better in Social Groups",
+    "methodology": "Researchers used stylized network models to evaluate how contact tracing impacts infection spread in social networks with group structures (cliques).",
+    "findings": "Contact tracing is especially effective in larger groups because it can preemptively isolate potential transmission paths beyond direct contacts.",
+    "implications": "Understanding group dynamics can help public health authorities design more efficient, targeted contact tracing policies during outbreaks."
+  },
+  {
+    "topic": "How Reciprocity and Memory Shape Our Communication Networks",
+    "methodology": "The study analyzed temporal communication data across various platforms, measuring reciprocity in the timing of interactions and employing models to explore the emergence of social norms.",
+    "findings": "Memory, or the tendency to repeatedly interact with familiar contacts, drives high levels of temporal reciprocity, supporting stable relationships and cooperation within social systems.",
+    "implications": "These insights can help design better communication platforms and foster cooperation, highlighting the importance of repeated, reciprocal exchanges in building strong communities."
+  },
+  {
+    "topic": "Capturing Real-Time Insights from Decentralized Social Media (Mastodon)",
+    "methodology": "Researchers introduced a new framework (FediLive) to quickly collect and process real-time data from Mastodon, enabling comprehensive snapshots for user and network analysis.",
+    "findings": "FediLive enabled detailed and timely analysis of Mastodon activity, providing valuable data about user behaviors, interactions, and demographics across the entire network.",
+    "implications": "This approach can significantly improve research and understanding of decentralized social media, supporting better platform management, moderation, and community studies."
+  }
+]

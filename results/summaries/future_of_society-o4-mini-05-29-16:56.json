@@ -1,0 +1,32 @@
+[
+  {
+    "topic": "Building Local Networks for Climate-Resilient Landscapes",
+    "methodology": "Researchers implemented social learning and co-creation processes in 15 European pilot landscapes to identify key factors and conditions for forming representative local networks in climate change adaptation planning.",
+    "findings": "They found that co-produced outcomes help local communities overcome barriers and address critical issues in adaptive planning by leveraging network composition and social learning.",
+    "implications": "This framework can guide the creation of similar networks in other landscapes, supporting effective development of Landscape Adaptation Plans to Climate Change"
+  },
+  {
+    "topic": "Sustainable Ring-Based Anonymous Systems",
+    "methodology": "We define a general model for decentralized anonymous systems, propose a ring-based sustainability construction, and empirically analyze its application to anonymous cryptocurrencies and social networks, including Monero.",
+    "findings": "Our generic construction provably achieves sustainability without sacrificing availability while revealing that Monero’s current ring sampling strategy is unlikely to sustain its anonymity set.",
+    "implications": "This work offers a blueprint for building long-term sustainable anonymous systems and highlights necessary improvements in existing cryptocurrencies to maintain privacy"
+  },
+  {
+    "topic": "Real-Time Snapshots for Decentralized Social Networks",
+    "methodology": "We developed FediLive, a framework that rapidly collects and preprocesses live Mastodon feeds to generate real-time snapshots of user content, interaction networks, and demographic attributes over a continuous period.",
+    "findings": "Applying FediLive to a 13-day data collection, we captured all publicly visible Mastodon activity and demonstrated the framework’s effectiveness in obtaining comprehensive, timely datasets.",
+    "implications": "FediLive paves the way for data-driven research on decentralized online social networks, enabling deeper, real-time insights into user behavior and community evolution"
+  },
+  {
+    "topic": "Digital Traces Reveal Social and Mobility Dynamics",
+    "methodology": "This thesis analyzes large-scale digital trace data to study the structure and dynamics of personal social and population commuting networks, develops an ego-network model linking communication strategies to network structure, and builds predictive mobility models robust to disruptions.",
+    "findings": "It shows that both social and commuting networks exhibit dynamic and persistent features, confirms sociological theories about tie multiplexity through communication logs, and achieves accurate real-time mobility flow predictions amid major disturbances.",
+    "implications": "These findings and models demonstrate the potential of digital trace data to deepen understanding of human behavior and bridge computational social science with classical theory"
+  },
+  {
+    "topic": "Timing and Mechanisms of Reciprocity in Communication",
+    "methodology": "We introduce time-based reciprocity measures and separate temporal networks from calls, messaging, and social media into reciprocal and non-reciprocal interactions, using null models to assess the role of memory.",
+    "findings": "We uncover persistent differences between one-to-one exchanges and broadcasts, identify memory as a key source of temporal reciprocity, and reproduce empirical reciprocity levels by incorporating memory into activity-driven network models.",
+    "implications": "This study advances theoretical understanding of reciprocity mechanisms in human communication, informing the formation of social norms and cooperation models"
+  }
+]
