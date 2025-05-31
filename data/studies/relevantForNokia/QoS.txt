@@ -1,0 +1,37 @@
+QoS-oriented capacity planning for edge computing
+Marius Noreikis, Yu Xiao, Antti Ylä-Jääski
+
+Department of Computer ScienceProfessorship Ylä-Jääski A.Helsinki Institute for Information Technology (HIIT)Mobile Cloud Computing
+Research output: Chapter in Book/Report/Conference proceeding › Conference article in proceedings › Scientific › peer-review
+
+37
+Citations
+(Scopus)
+Article has an altmetric score of 3
+ Overview
+ Fingerprint
+ Projects (1)
+ Publications and artistic outputs (1)
+Abstract
+An increasing number of online services are hosted on public clouds. However, since a centralized cloud architecture imposes high network latency, researchers suggested moving latency sensitive applications, such as virtual and augmented reality ones, to the edge of the network. Nevertheless, little has been done for edge layer capacity estimation resulting in a great need towards practical tools and techniques for initial capacity planning. In this work we provide a novel capacity planning solution for hierarchical edge cloud that considers QoS requirements in terms of response delay, and diverse demands for CPU, GPU and network resources. Our solution improves edge utilization by combining complementary resource demands while satisfying QoS requirements. We prove effectiveness of our solution through a case study where we plan edge capacity for deploying an AR navigation and information system.
+
+Original languageEnglish
+Title of host publication2017 IEEE International Conference on Communications, ICC 2017
+PublisherIEEE
+Number of pages6
+ISBN (Electronic)9781467389990
+Publication statusPublished - 28 Jul 2017
+MoE publication typeA4 Conference publication
+EventIEEE International Conference on Communications - Paris, France
+Duration: 21 May 2017 → 25 May 2017
+Publication series
+NameIEEE International Conference on Communications
+PublisherIEEE
+ISSN (Print)1550-3607
+ISSN (Electronic)1938-1883
+Conference
+ConferenceIEEE International Conference on Communications
+Abbreviated titleICC
+Country/TerritoryFrance
+CityParis
+Period21/05/2017 → 25/05/2017

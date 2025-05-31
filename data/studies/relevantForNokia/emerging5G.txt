@@ -1,0 +1,14 @@
+Abstract
+Multi-access edge computing (MEC) is an emerging ecosystem, which aims at converging telecommunication and IT services, providing a cloud computing platform at the edge of the radio access network. MEC offers storage and computational resources at the edge, reducing latency for mobile end users and utilizing more efficiently the mobile backhaul and core networks. This paper introduces a survey on MEC and focuses on the fundamental key enabling technologies. It elaborates MEC orchestration considering both individual services and a network of MEC platforms supporting mobility, bringing light into the different orchestration deployment options. In addition, this paper analyzes the MEC reference architecture and main deployment scenarios, which offer multi-tenancy support for application developers, content providers, and third parties. Finally, this paper overviews the current standardization activities and elaborates further on open research challenges.
+
+Original languageEnglish
+Article number7931566
+Pages (from-to)1657-1681
+Number of pages25
+JournalIEEE Communications Surveys and Tutorials
+Volume19
+Issue number3
+Publication statusPublished - 1 Jul 2017
+MoE publication typeA1 Journal article-refereed
+Keywords
+5G Mobile CommunicationsApplication VirtualizationEdge ComputingMECMobile Edge ComputingMulti-Access Edge ComputingNetwork Function VirtualizationNetwork SoftwarizationSoftware Defined Networking

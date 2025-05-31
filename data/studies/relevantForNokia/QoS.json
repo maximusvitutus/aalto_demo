@@ -1,0 +1,10 @@
+{
+  "title": "QoS-oriented capacity planning for edge computing",
+  "abstract": "An increasing number of online services are hosted on public clouds. However, since a centralized cloud architecture imposes high network latency, researchers suggested moving latency sensitive applications, such as virtual and augmented reality ones, to the edge of the network. Nevertheless, little has been done for edge layer capacity estimation resulting in a great need towards practical tools and techniques for initial capacity planning. In this work we provide a novel capacity planning solution for hierarchical edge cloud that considers QoS requirements in terms of response delay, and diverse demands for CPU, GPU and network resources. Our solution improves edge utilization by combining complementary resource demands while satisfying QoS requirements. We prove effectiveness of our solution through a case study where we plan edge capacity for deploying an AR navigation and information system.",
+  "authors": [
+    "Marius Noreikis",
+    "Yu Xiao",
+    "Antti Ylä-Jääski"
+  ],
+  "publicationYear": 2017
+}
