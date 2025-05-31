@@ -72,6 +72,7 @@ import {
   DEMO_FUTURE_OF_SOCIETY_DISTRIBUTION_MOTIVE,
   DEMO_SPACE_EXPLORATION_DISTRIBUTION_MOTIVE,
   DEMO_GENAI_DISTRIBUTION_MOTIVE,
+  DEMO_NOKIA_DISTRIBUTION_MOTIVE,
   SOCIAL_MEDIA_FEED_READERS,
   SOCIAL_MEDIA_FEED_INTERESTS,
   FUTURE_OF_SOCIETY_FEED_READERS,
@@ -79,7 +80,9 @@ import {
   SPACE_EXPLORATION_FEED_READERS,
   SPACE_EXPLORATION_FEED_INTERESTS,
   GENAI_FEED_READERS,
-  GENAI_FEED_INTERESTS
+  GENAI_FEED_INTERESTS,
+  NOKIA_FEED_READERS,
+  NOKIA_FEED_INTERESTS
 } from '../../src/core/feeds/demoInputs';
 
 /**
@@ -93,7 +96,7 @@ export function createFeedConfigs(): FeedConfig[] {
       intendedReaders: SOCIAL_MEDIA_FEED_READERS,
       readerInterests: SOCIAL_MEDIA_FEED_INTERESTS,
       motivationForDistribution: DEMO_SOCIAL_MEDIA_DISTRIBUTION_MOTIVE,
-      relevanceThreshold: 7
+      relevanceThreshold: 8
     },
     {
       category: "future of society",
@@ -101,16 +104,24 @@ export function createFeedConfigs(): FeedConfig[] {
       intendedReaders: FUTURE_OF_SOCIETY_FEED_READERS,
       readerInterests: FUTURE_OF_SOCIETY_FEED_INTERESTS,
       motivationForDistribution: DEMO_FUTURE_OF_SOCIETY_DISTRIBUTION_MOTIVE,
-      relevanceThreshold: 6
+      relevanceThreshold: 8
     },
     {
+      category: "Nokia",
+      distributionChannel: DEMO_DISTRIBUTION_CHANNEL,
+      intendedReaders: NOKIA_FEED_READERS,
+      readerInterests: NOKIA_FEED_INTERESTS,
+      motivationForDistribution: DEMO_NOKIA_DISTRIBUTION_MOTIVE,
+      relevanceThreshold: 8
+    }
+/*     {
       category: "space exploration",
       distributionChannel: DEMO_DISTRIBUTION_CHANNEL,
       intendedReaders: SPACE_EXPLORATION_FEED_READERS,
       readerInterests: SPACE_EXPLORATION_FEED_INTERESTS,
       motivationForDistribution: DEMO_SPACE_EXPLORATION_DISTRIBUTION_MOTIVE,
       relevanceThreshold: 6
-    }
+    } */
 /*     {
       category: "generative artificial intelligence (genAI)",
       distributionChannel: DEMO_DISTRIBUTION_CHANNEL,

@@ -6,7 +6,10 @@ export const DEMO_FEEDS = [
 
   // For these feeds, expect some results
   "social media & human behaviour",
-  "future of society"
+  "future of society",
+
+  // An example company feed
+  "Nokia"
 ]
 
 // Distribution Channel
@@ -17,7 +20,7 @@ export const DEMO_SOCIAL_MEDIA_DISTRIBUTION_MOTIVE = "disseminate research done 
 export const DEMO_FUTURE_OF_SOCIETY_DISTRIBUTION_MOTIVE = "disseminate research done at aalto university to a wider audience in a succinct and understandable manner"
 export const DEMO_SPACE_EXPLORATION_DISTRIBUTION_MOTIVE = "disseminate research done at aalto university to a wider audience in a succinct and understandable manner"
 export const DEMO_GENAI_DISTRIBUTION_MOTIVE = "disseminate research done at aalto university to a wider audience in a succinct and understandable manner"
-
+export const DEMO_NOKIA_DISTRIBUTION_MOTIVE = "inform the Finnish company Nokia about relevant research done at Aalto University"
 
 // Social Media Feed
 
@@ -81,4 +84,21 @@ export const GENAI_FEED_INTERESTS = [
   "readers are alert to the institutional adaptations—such as in law, education, and governance—that follow the integration of generative AI into core workflows",
   "readers want to understand emerging norms around human-machine co-agency, responsibility, and authorship in decision-making and storytelling",
   "readers are looking for early signs of systemic disruption caused by genAI in sectors like media, design, programming, and research—especially where power dynamics or value creation shifts"
+]
+
+// Nokia Feed
+export const NOKIA_FEED_READERS = [
+  "technology strategists identifying long-term research priorities and disruptive opportunities in the telecom and network domains",
+  "R&D engineers and architects looking for emerging solutions in wireless systems, AI, energy efficiency, and network security",
+  "product and platform leaders seeking foundational insights to inform roadmap decisions and cross-domain collaboration",
+  "innovation program managers and academic partnership leads coordinating joint projects and funding opportunities",
+  "sustainability and circular economy officers aiming to translate research into systemic infrastructure improvements"
+]
+
+export const NOKIA_FEED_INTERESTS = [
+  "how foundational research in wireless technologies, edge AI, and security architectures is shaping the future of 6G and intelligent networks",
+  "how academic advances in energy-aware computing and sustainable materials impact infrastructure-level decisions",
+  "how interdisciplinary studies on trust, user experience, and digital inclusion inform the human layer of networked services",
+  "how algorithmic and AI research influences the design of scalable, resilient, and adaptive telecom systems",
+  "how collaborative research models between academia and industry accelerate technology transfer and IP generation"
 ]
