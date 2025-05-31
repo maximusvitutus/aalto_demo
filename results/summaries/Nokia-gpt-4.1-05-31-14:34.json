@@ -1,0 +1,26 @@
+[
+  {
+    "topic": "Smart Ways to Plan Edge Computing Power for Fast Apps",
+    "methodology": "Researchers developed and tested a new solution for efficiently planning edge cloud capacity to run latency-sensitive applications by considering the different needs for CPU, GPU, and network resources while ensuring quick response times.",
+    "findings": "Their method improved edge resource use and met quality-of-service requirements, as demonstrated by successfully planning capacity for an augmented reality navigation system.",
+    "implications": "This approach can help organizations deploy advanced applications like AR more effectively at the network edge, making services faster and more reliable for users."
+  },
+  {
+    "topic": "How Safe is Your Data at the Network Edge? A Review of Secure Analytics for IoT",
+    "methodology": "The study reviewed existing methods and challenges in ensuring data security and privacy when analyzing data on edge computing platforms for IoT applications.",
+    "findings": "The review found a lack of comprehensive, secure solutions for data analytics at the edge and identified gaps where security threats are not fully addressed.",
+    "implications": "Improving security and privacy in edge data analytics is critical as more real-time, location-aware IoT applications rely on edge processing, and this review offers guidance for future research priorities."
+  },
+  {
+    "topic": "Gaming on the Edge: Why IoT Needs Local Computing for Speed",
+    "methodology": "Researchers surveyed current edge computing designs and tested how running a 3D mobile game at the network edge compared to traditional cloud setups in terms of response time.",
+    "findings": "They showed that only edge computing met the fast response needs of interactive applications like VR and AR gaming, achieving significantly lower delay than cloud-based solutions.",
+    "implications": "Edge computing is essential for the future of interactive IoT apps, enabling smoother experiences for technologies like augmented and virtual reality."
+  },
+  {
+    "topic": "Bringing the Cloud Closer: Making Mobile Apps Faster with Edge Computing",
+    "methodology": "This study surveyed multi-access edge computing (MEC), detailing key technologies, orchestration strategies, and deployment scenarios for reducing latency by placing computing resources near mobile users.",
+    "findings": "The paper provides a comprehensive overview of MEC architectures, enables options for managing services and applications at the edge, and highlights current industry standards and unresolved challenges.",
+    "implications": "Understanding and advancing MEC is vital for developers and companies aiming to offer fast, reliable mobile services and infrastructure for future networked applications."
+  }
+]

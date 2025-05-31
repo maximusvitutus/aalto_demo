@@ -1,0 +1,367 @@
+[
+  {
+    "feed": "social media & human behaviour",
+    "totalStudiesProcessed": 12,
+    "relevantStudiesFound": 0,
+    "relevantStudies": [],
+    "processingTimeMs": 70742,
+    "totalFailedStudies": 0
+  },
+  {
+    "feed": "future of society",
+    "totalStudiesProcessed": 12,
+    "relevantStudiesFound": 5,
+    "relevantStudies": [
+      {
+        "study": {
+          "title": "Dynamic yet Persistent: Investigating Digital Traces of Human Behaviour",
+          "abstract": "We are citizens of the digital age, an age in which our smallest everyday actions leave digital traces behind. These traces can be used to reconstruct and analyse the patterns of human behaviour at both individual and societal levels. The growing abundance of quantitative data on almost every aspect of human behaviour is driving a paradigm shift from traditional social sciences to computational social sciences. This thesis utilises a wide range of digital traces of human behaviour to study and model the structure of social networks, as well as population-level patterns of commuting and travelling. A longitudinal study of these patterns reveals that while both personal social networks and population commuting networks are dynamic and undergo gradual changes and abrupt external disturbances, they also exhibit persistence in certain aspects and retain some of their distinctive features. Our work advances the knowledge of personal networks by identifying their universal and individual features through the study of a large population and multiple communication media. To clarify the generative mechanisms behind the observed universal patterns and individual variations within them, we present an ego-network model that connects the structure of ego-networks to the communication strategies of egos. Furthermore, we utilise rich and high-resolution digital communication logs and computational methods to validate the predictions of sociological theories that predate the emergence of computational social science as a field. Particularly, we show that the temporal manifestation of social ties can indicate the extent of their multiplexity (i.e., whether multiple social contexts underlie the tie) and that the multiplexity of ties impacts their functional features, such as their role in network connectivity. In addition to social networks, this thesis enriches our understanding of human mobility patterns by building predictive models that employ digital traces data. These models are capable of real-time estimation of country-wide mobility flows, even amidst rapid and significant distortions in mobility patterns. Taken together, my results highlight the potential of digital trace data and computational methods for advancing our understanding of various aspects of human behaviour. It applies these insights to predict human behaviour, identify universal and individual human traits, and contribute to bridging the new field of computational social science with the rich tradition of classical social science.",
+          "authors": [
+            "Sara Heydari"
+          ],
+          "publicationYear": 2024
+        },
+        "relevanceScore": {
+          "reasoning": "The abstract discusses the use of digital trace data and computational methods to model and understand changes in human social networks and mobility patterns at both the individual and population levels. The research aims to identify universal and individual features of social networks, illuminate mechanisms behind these patterns, and demonstrate predictive modeling of large-scale human mobility. The focus is on leveraging digital data to advance computational social science and integrate it with classical social science. Comparing this with reader interests: (1) the work directly relates to the emergence of computational social science—a key technological and methodological shift with implications for how societies self-organize and adapt; (2) the modeling of social networks and human mobility through digital traces signals new ways societies may be governed, coordinated, or understood, addressing how technology influences agency, institution, and collective behavior; (3) the work's focus on predictive modeling and responding to abrupt changes in societal patterns (like mobility) ties into economics, crisis response, infrastructure, and the adaptation of societal systems; (4) the analysis of multiplexity, network structure, and validation of sociological theories touches on the evolution of collective meaning-making and adaptation of norms under technological disruption. The readers’ stated interest is explicitly in the kinds of systemic, technology-driven shifts that this research both investigates and models. The motivation—to explain cutting-edge university research to a broad, thoughtful audience—fits well, as the study provides foundational insights into methods and findings relevant to societal future thinking. The work does not address every reader interest equally (e.g., less on belief systems and direct policy implications), but its conceptual and methodological thrust is highly aligned with the feed's theme and readers' long-range concerns about societal transformation.",
+          "affinityScore": 9,
+          "affinityExplanation": "This paper offers direct conceptual and methodological value for readers interested in systemic societal change in the digital age. It exemplifies the kinds of technological and social shifts (rise of computational social science, use of digital traces) that are reshaping organization, governance, and societal norms. There may be a slightly lower directness regarding belief systems or policy debates, but the work provides high relevance as a foundational signal and analytic toolkit for anticipating and interpreting emerging societal dynamics."
+        },
+        "feedCategory": "future of society",
+        "feedConfig": {
+          "category": "future of society",
+          "distributionChannel": "a newsletter which users subscribe to through a website with different categories to choose from",
+          "intendedReaders": [
+            "interdisciplinary thinkers and systems analysts interested in signals that suggest transformative shifts in human organization, governance, or belief systems",
+            "emerging technology observers, including researchers and entrepreneurs, looking to anticipate second- and third-order societal effects of disruptive innovations",
+            "civic-minded professionals and strategists who want to identify weak, intermediate and strong signals and large-scale patterns influencing the future evolution human life through public institutions, norms, habits, technologies, beliefs, historical context, trends, and collective decision-making"
+          ],
+          "readerInterests": [
+            "readers are interested in identifying emerging trends and events that signal systemic shifts in how societies organize power, coordinate action, and resolve conflict",
+            "readers want to understand how technologies, crises, or cultural shifts may alter human agency, governance structures, or institutional legitimacy over time",
+            "readers seek to track how collective meaning-making systems—such as education, religion, media, and science—are adapting or fragmenting in the face of complexity and change",
+            "readers are attentive to transitions in economic systems, social contracts, and infrastructure that could redefine work, mobility, identity, or cooperation at scale",
+            "readers aim to detect how human values, cognitive patterns, societal norms, politics, and imagined futures shape, and are shaped by, changing planetary constraints, technologies, media, and trends attracting human attention, thought and effort"
+          ],
+          "motivationForDistribution": "disseminate research done at aalto university to a wider audience in a succinct and understandable manner",
+          "relevanceThreshold": 8
+        }
+      },
+      {
+        "study": {
+          "title": "Landscape adaptation to climate change: Local networks, social learning and co-creation processes for adaptive planning",
+          "abstract": "The development of legitimate, operative, and feasible landscape adaptation planning for climate change is dependent on the specific characteristics of the landscape and its inhabitants. Spatial patterns, culture, governance systems, socio-economic structures, planning methods, history, and collectively envisioned futures need to be accommodated. The literature suggests that landscape is a complex and dynamic socio-ecological system, the management and adaptation of which requires systemic and integrative approaches to respond to a wide variety of drivers of change, challenges, and interests. Based on activities developed in 15 European pilot landscapes, we identify some of the key factors and conditions affecting the generation of representative local networks for landscape adaptation to climate change. We illustrate how social learning and co-creation processes can be implemented in them and how their co-produced outcomes can help local communities overcome barriers and address critical issues in adaptive planning. Our results provide a framework for the creation of similar networks in other landscapes, exploring at the same time the interactions between the composition of networks, social learning, and the quality of the co-produced outputs as a fundamental step for the development of Landscape Adaptation Plans to Climate Change.",
+          "authors": [
+            "Juanjo Galan",
+            "Francisco Galiana",
+            "D. Johan Kotze",
+            "Kevin Lynch",
+            "Daniele Torreggiani",
+            "Bas Pedroli"
+          ],
+          "publicationYear": 2023
+        },
+        "relevanceScore": {
+          "reasoning": "The abstract reports on a study of landscape adaptation planning in response to climate change, focusing on the creation of local networks that employ social learning and co-creation. It highlights the importance of integrating cultural, socio-economic, governance, and historical factors to create legitimate and effective adaptation strategies. The work is deeply systemic, dealing with socio-ecological complexity, and emphasizes collective processes and emergent, participatory institutions for managing change. Comparing this to the reader interests, there is a strong thematic resonance: the readers seek early signals and frameworks for systemic transformation in governance, collective action, and social contracts, especially in response to major drivers like climate change. The processes of social learning, co-creation, network formation, and the negotiation of collective futures directly relate to how power is organized, how agency is expressed, how communities govern themselves under stress, and how institutions adapt. Although the study is specific to landscape and environmental planning, the methods and dynamics it explores are clear analogs (and potential signals) for broader shifts in how societies mobilize, deliberate, and adapt at scale. Furthermore, the newsletter's purpose is to present succinct, thought-provoking research to future-oriented, systems-thinking audiences looking for precisely these kinds of signals and frameworks.",
+          "affinityScore": 9,
+          "affinityExplanation": "This paper aligns strongly with the interests and purpose of the newsletter's audience. Its focus on emergent, participatory approaches to complex societal problems, the negotiation of collective futures, and systemic adaptation frameworks are highly relevant for those tracking transformative shifts in governance, agency, and collective meaning-making in response to planetary-scale challenges. While its context is landscape adaptation, its concepts and findings offer valuable cross-domain insights."
+        },
+        "feedCategory": "future of society",
+        "feedConfig": {
+          "category": "future of society",
+          "distributionChannel": "a newsletter which users subscribe to through a website with different categories to choose from",
+          "intendedReaders": [
+            "interdisciplinary thinkers and systems analysts interested in signals that suggest transformative shifts in human organization, governance, or belief systems",
+            "emerging technology observers, including researchers and entrepreneurs, looking to anticipate second- and third-order societal effects of disruptive innovations",
+            "civic-minded professionals and strategists who want to identify weak, intermediate and strong signals and large-scale patterns influencing the future evolution human life through public institutions, norms, habits, technologies, beliefs, historical context, trends, and collective decision-making"
+          ],
+          "readerInterests": [
+            "readers are interested in identifying emerging trends and events that signal systemic shifts in how societies organize power, coordinate action, and resolve conflict",
+            "readers want to understand how technologies, crises, or cultural shifts may alter human agency, governance structures, or institutional legitimacy over time",
+            "readers seek to track how collective meaning-making systems—such as education, religion, media, and science—are adapting or fragmenting in the face of complexity and change",
+            "readers are attentive to transitions in economic systems, social contracts, and infrastructure that could redefine work, mobility, identity, or cooperation at scale",
+            "readers aim to detect how human values, cognitive patterns, societal norms, politics, and imagined futures shape, and are shaped by, changing planetary constraints, technologies, media, and trends attracting human attention, thought and effort"
+          ],
+          "motivationForDistribution": "disseminate research done at aalto university to a wider audience in a succinct and understandable manner",
+          "relevanceThreshold": 8
+        }
+      },
+      {
+        "study": {
+          "title": "On Sustainable Ring-Based Anonymous Systems",
+          "abstract": "Anonymous systems (e.g. anonymous cryptocurrencies and updatable anonymous credentials) often follow a construction template where an account can only perform a single anonymous action, which in turn potentially spawns new (and still single-use) accounts (e.g. UTXO with a balance to spend or session with a score to claim). Due to the anonymous nature of the action, no party can be sure which account has taken part in an action and, therefore, must maintain an ever-growing list of potentially unused accounts to ensure that the system keeps running correctly. Consequently, anonymous systems constructed based on this common template are seemingly not sustainable. In this work, we study the sustainability of ring-based anonymous systems, where a user performing an anonymous action is hidden within a set of decoy users, traditionally called a 'ring'. On the positive side, we propose a general technique for ring-based anonymous systems to achieve sustainability. Along the way, we define a general model of decentralised anonymous systems (DAS) for arbitrary anonymous actions, and provide a generic construction which provably achieves sustainability. As a special case, we obtain the first construction of anonymous cryptocurrencies achieving sustainability without compromising availability. We also demonstrate the generality of our model by constructing sustainable decentralised anonymous social networks. On the negative side, we show empirically that Monero, one of the most popular anonymous cryptocurrencies, is unlikely to be sustainable without altering its current ring sampling strategy. The main subroutine is a sub-quadratic-time algorithm for detecting used accounts in a ring-based anonymous system.",
+          "authors": [
+            "Sherman S.M. Chow",
+            "Christoph Egger",
+            "Russell W.F. Lai",
+            "Viktoria Ronge",
+            "Ivy K.Y. Woo"
+          ],
+          "publicationYear": 2023
+        },
+        "relevanceScore": {
+          "reasoning": "First, the abstract discusses the technical shortcomings of current anonymous systems—especially anonymous cryptocurrencies like Monero—regarding their long-term sustainability, and proposes new general models and constructions for sustainable ring-based anonymous systems. It also highlights broader applications such as decentralised anonymous social networks. The contribution includes both theoretical models and practical algorithms addressing scalability and viability of technologies that promise privacy and decentralization. Comparing to the reader interests, there is strong indirect and some direct alignment: anonymous cryptocurrencies and decentralized social networks are at the vanguard of reimagining economic organization, identity, privacy, and even governance. How these systems sustain themselves over time is crucial for understanding possible future shifts in societal power, coordination, and norms—key concerns for this audience. The work may illuminate risks, new patterns of digital agency, shifts in trust paradigms, and the evolution or fragmentation of institutional legitimacy (especially in a world of increasing digital-native social contracts). While the abstract is quite technical, the implications it carries are highly relevant for understanding large-scale transitions in identity, agency, cooperation, and public infrastructure that this audience tracks. The motivation to disseminate university research more broadly is very well served by including this paper, especially if the summary can highlight these broader implications for society.",
+          "affinityScore": 9,
+          "affinityExplanation": "This research sits at the intersection of emerging technologies and societal transformation—precisely the focus of the readership. Its examination of the sustainability of privacy-preserving, decentralized systems addresses deep, systemic questions about future infrastructure, identity, agency, and governance. While the technical depth of the abstract may be a barrier for some general readers, the relevance of the core findings to the interests and purpose of the distribution is extremely high. A summary that draws out the implications for societal evolution would make this an excellent fit."
+        },
+        "feedCategory": "future of society",
+        "feedConfig": {
+          "category": "future of society",
+          "distributionChannel": "a newsletter which users subscribe to through a website with different categories to choose from",
+          "intendedReaders": [
+            "interdisciplinary thinkers and systems analysts interested in signals that suggest transformative shifts in human organization, governance, or belief systems",
+            "emerging technology observers, including researchers and entrepreneurs, looking to anticipate second- and third-order societal effects of disruptive innovations",
+            "civic-minded professionals and strategists who want to identify weak, intermediate and strong signals and large-scale patterns influencing the future evolution human life through public institutions, norms, habits, technologies, beliefs, historical context, trends, and collective decision-making"
+          ],
+          "readerInterests": [
+            "readers are interested in identifying emerging trends and events that signal systemic shifts in how societies organize power, coordinate action, and resolve conflict",
+            "readers want to understand how technologies, crises, or cultural shifts may alter human agency, governance structures, or institutional legitimacy over time",
+            "readers seek to track how collective meaning-making systems—such as education, religion, media, and science—are adapting or fragmenting in the face of complexity and change",
+            "readers are attentive to transitions in economic systems, social contracts, and infrastructure that could redefine work, mobility, identity, or cooperation at scale",
+            "readers aim to detect how human values, cognitive patterns, societal norms, politics, and imagined futures shape, and are shaped by, changing planetary constraints, technologies, media, and trends attracting human attention, thought and effort"
+          ],
+          "motivationForDistribution": "disseminate research done at aalto university to a wider audience in a succinct and understandable manner",
+          "relevanceThreshold": 8
+        }
+      },
+      {
+        "study": {
+          "title": "Temporal patterns of reciprocity in communication networks",
+          "abstract": "Human communication, the essence of collective social phenomena ranging from small-scale organizations to worldwide online platforms, features intense reciprocal interactions between members in order to achieve stability, cohesion, and cooperation in social networks. While high levels of reciprocity are well known in aggregated communication data, temporal patterns of reciprocal information exchange have received far less attention. Here we propose measures of reciprocity based on the time ordering of interactions and explore them in data from multiple communication channels, including calls, messaging and social media. By separating each channel into reciprocal and non-reciprocal temporal networks, we find persistent trends that point to the distinct roles of one-to-one exchange versus information broadcast. We implement several null models of communication activity, which identify memory, a higher tendency to repeat interactions with past contacts, as a key source of temporal reciprocity. When adding memory to a model of activity-driven, time-varying networks, we reproduce the levels of temporal reciprocity seen in empirical data. Our work adds to the theoretical understanding of the emergence of reciprocity in human communication systems, hinting at the mechanisms behind the formation of norms in social exchange and large-scale cooperation.",
+          "authors": [
+            "Sandeep Chowdhary",
+            "Elsa Andres",
+            "Adriana Manna",
+            "Luka Blagojević",
+            "Leonardo Di Gaetano",
+            "Gerardo Iñiguez"
+          ],
+          "publicationYear": 2023
+        },
+        "relevanceScore": {
+          "reasoning": "First, the study investigates reciprocity in human communication across various platforms (calls, messaging, social media), focusing on time-ordered exchanges and the persistence of one-to-one vs. broadcast forms. It models social interaction patterns and identifies 'memory'—the tendency to repeat interactions—as a key factor in temporal reciprocity, connecting this to broader mechanisms underpinning social cohesion and norms. Directly comparing the findings to reader interests: the readers seek to identify systemic shifts in societal organization, coordination, and norm development—core themes of the paper, given its exploration of how communication mechanics underpin stability, cooperation, and large-scale social structures. While the work is theoretical and focuses on fundamental mechanisms (rather than, say, a disruptive technology or a direct institutional change), its implications—how reciprocity and memory contribute to the emergence of social norms and cooperation—are highly germane to those monitoring undercurrents that could signal future transformations in governance, collective action, and institutional legitimacy. The paper does not focus on policy, crises, or explicit technological disruptions, but its insights into communication patterns and normative emergence are of high conceptual relevance for anticipating second- and third-order effects in how societies coordinate and make meaning. Given the interdisciplinary and systems-oriented nature of the intended readers, this abstract aligns well with their aims, offering new conceptual tools and signals for understanding societal evolution and the formation of new social contracts. Distributing this research in a succinct way serves the goal of exposing a broad audience to emerging theoretical frameworks with practical relevance for anticipating systemic change.",
+          "affinityScore": 9,
+          "affinityExplanation": "The research provides foundational insights into the emergence of reciprocity and norms in human communication—a central concern for readers interested in systemic societal change, collective organization, and future governance. While it is not focused on a specific institution, technology, or explicit crisis, its deep analysis of interaction patterns and the formation of social order is conceptually aligned with the audience's core interests. It offers valuable frameworks and signals for the readership's focus on detecting and interpreting transformative societal shifts."
+        },
+        "feedCategory": "future of society",
+        "feedConfig": {
+          "category": "future of society",
+          "distributionChannel": "a newsletter which users subscribe to through a website with different categories to choose from",
+          "intendedReaders": [
+            "interdisciplinary thinkers and systems analysts interested in signals that suggest transformative shifts in human organization, governance, or belief systems",
+            "emerging technology observers, including researchers and entrepreneurs, looking to anticipate second- and third-order societal effects of disruptive innovations",
+            "civic-minded professionals and strategists who want to identify weak, intermediate and strong signals and large-scale patterns influencing the future evolution human life through public institutions, norms, habits, technologies, beliefs, historical context, trends, and collective decision-making"
+          ],
+          "readerInterests": [
+            "readers are interested in identifying emerging trends and events that signal systemic shifts in how societies organize power, coordinate action, and resolve conflict",
+            "readers want to understand how technologies, crises, or cultural shifts may alter human agency, governance structures, or institutional legitimacy over time",
+            "readers seek to track how collective meaning-making systems—such as education, religion, media, and science—are adapting or fragmenting in the face of complexity and change",
+            "readers are attentive to transitions in economic systems, social contracts, and infrastructure that could redefine work, mobility, identity, or cooperation at scale",
+            "readers aim to detect how human values, cognitive patterns, societal norms, politics, and imagined futures shape, and are shaped by, changing planetary constraints, technologies, media, and trends attracting human attention, thought and effort"
+          ],
+          "motivationForDistribution": "disseminate research done at aalto university to a wider audience in a succinct and understandable manner",
+          "relevanceThreshold": 8
+        }
+      },
+      {
+        "study": {
+          "title": "FediLive: A Framework for Collecting and Preprocessing Snapshots of Decentralized Online Social Networks",
+          "abstract": "Decentralized online social networks such as Mastodon have emerged quickly during the past years, and offer unique opportunities to investigate user behavior, moderation strategies, and community evolution. However, their decentralized nature imposes challenges for data collection and preprocessing, particularly for obtaining a real-time snapshot in a timely manner. This paper introduces FediLive, a framework designed to rapidly collect and preprocess the live feeds from Mastodon, generate a comprehensive snapshot in real-time, including user-generated contents, interaction networks, and users’ demographic attributes. Such a snapshot could further be leveraged for data analysis from different angles, leading to a deeper understanding of user activities on Mastodon. Using FediLive, we collected a 13-day snapshot of Mastodon, covering the publicly visible activities of all Mastodon users. Our study demonstrates the usefulness of FediLive, and reveals its potential in facilitating data-driven analysis for decentralized online social networks.",
+          "authors": [
+            "Shaojie Min",
+            "Shaobin Wang",
+            "Yaxiao Luo",
+            "Min Gao",
+            "Qingyuan Gong",
+            "Yu Xiao",
+            "Yang Chen"
+          ],
+          "publicationYear": 2025
+        },
+        "relevanceScore": {
+          "reasoning": "The abstract discusses the development and demonstration of FediLive, a tool for real-time data collection and analysis of decentralized social networks like Mastodon. The study's immediate focus is technical: solving difficulties in collecting comprehensive, live snapshots of decentralized platforms. However, the implications of such tools connect meaningfully to the interests of the designated audience. These readers are especially keen on understanding how new technologies (such as decentralized social networks) might signal or enable shifts in power, governance, collective action, and meaning-making. Decentralized platforms challenge established socio-technical architectures of control, moderation, and identity, which are core concerns outlined in the reader interests—such as emerging trends in organizational power, the redefinition of social contracts, and the fragmentation or evolution of collective meaning-making systems. Furthermore, the ability to observe user behavior, moderation, and community evolution in a decentralized context aligns with the readers’ quest to track shifts in governance structures and understand new forms of agency. While the paper does not present direct sociological findings—focusing instead on the enabling technology—it is clearly a prerequisite that empowers such societal inquiry. For these foresight-oriented, systems-focused readers, this research not only signals an important trend but also provides a new avenue to empirically explore how technology may drive—or reflect—systemic societal shifts. The motivation for distribution is satisfied, as the audience stands to benefit from timely knowledge about tools that may shape future research and public discourse in their field.",
+          "affinityScore": 8,
+          "affinityExplanation": "FediLive is highly relevant to the newsletter's audience interested in systemic societal change, as it enables the very kinds of analysis and monitoring they value regarding decentralized social networks. The connection is indirect—the research primarily offers an enabling platform, not immediate societal insights—but its utility for tracking, analyzing, and anticipating transformative shifts is readily apparent. Therefore, a high affinity score of 8 is warranted."
+        },
+        "feedCategory": "future of society",
+        "feedConfig": {
+          "category": "future of society",
+          "distributionChannel": "a newsletter which users subscribe to through a website with different categories to choose from",
+          "intendedReaders": [
+            "interdisciplinary thinkers and systems analysts interested in signals that suggest transformative shifts in human organization, governance, or belief systems",
+            "emerging technology observers, including researchers and entrepreneurs, looking to anticipate second- and third-order societal effects of disruptive innovations",
+            "civic-minded professionals and strategists who want to identify weak, intermediate and strong signals and large-scale patterns influencing the future evolution human life through public institutions, norms, habits, technologies, beliefs, historical context, trends, and collective decision-making"
+          ],
+          "readerInterests": [
+            "readers are interested in identifying emerging trends and events that signal systemic shifts in how societies organize power, coordinate action, and resolve conflict",
+            "readers want to understand how technologies, crises, or cultural shifts may alter human agency, governance structures, or institutional legitimacy over time",
+            "readers seek to track how collective meaning-making systems—such as education, religion, media, and science—are adapting or fragmenting in the face of complexity and change",
+            "readers are attentive to transitions in economic systems, social contracts, and infrastructure that could redefine work, mobility, identity, or cooperation at scale",
+            "readers aim to detect how human values, cognitive patterns, societal norms, politics, and imagined futures shape, and are shaped by, changing planetary constraints, technologies, media, and trends attracting human attention, thought and effort"
+          ],
+          "motivationForDistribution": "disseminate research done at aalto university to a wider audience in a succinct and understandable manner",
+          "relevanceThreshold": 8
+        }
+      }
+    ],
+    "processingTimeMs": 59781,
+    "totalFailedStudies": 0
+  },
+  {
+    "feed": "Nokia",
+    "totalStudiesProcessed": 12,
+    "relevantStudiesFound": 4,
+    "relevantStudies": [
+      {
+        "study": {
+          "title": "QoS-oriented capacity planning for edge computing",
+          "abstract": "An increasing number of online services are hosted on public clouds. However, since a centralized cloud architecture imposes high network latency, researchers suggested moving latency sensitive applications, such as virtual and augmented reality ones, to the edge of the network. Nevertheless, little has been done for edge layer capacity estimation resulting in a great need towards practical tools and techniques for initial capacity planning. In this work we provide a novel capacity planning solution for hierarchical edge cloud that considers QoS requirements in terms of response delay, and diverse demands for CPU, GPU and network resources. Our solution improves edge utilization by combining complementary resource demands while satisfying QoS requirements. We prove effectiveness of our solution through a case study where we plan edge capacity for deploying an AR navigation and information system.",
+          "authors": [
+            "Marius Noreikis",
+            "Yu Xiao",
+            "Antti Ylä-Jääski"
+          ],
+          "publicationYear": 2017
+        },
+        "relevanceScore": {
+          "reasoning": "The research paper investigates capacity planning for hierarchical edge cloud infrastructures, focusing on meeting QoS requirements, particularly for latency-sensitive applications like AR. The method involves combining CPU, GPU, and network demand data to optimize edge utilization. This aligns directly with reader interests in foundational wireless technology, edge AI, and scalable, adaptive telecom systems. The deployment scenario (AR navigation) is specifically relevant for intelligent networks. The technical approach has clear implications for both R&D engineers (emerging solutions for edge and wireless systems) and product/platform leaders (inform roadmap decisions for edge resource management). For technology strategists, the work highlights disruptive opportunities in transitioning from centralized to edge-centric architectures—a core concern for 6G and beyond. While it doesn’t directly address sustainability or trust, it does have indirect relevance for infrastructure design and systemic efficiency, resonating with sustainability officers and cross-domain managers. The focus on practical planning tools is likely to interest both innovation leads (for tech transfer and collaboration potential) and architectural R&D staff, meeting multiple distribution motives.",
+          "affinityScore": 9,
+          "affinityExplanation": "This abstract presents a highly relevant study for Nokia’s interests and the targeted audience segments. It connects directly with edge computing, resource optimization at the network periphery, and latency-sensitive use cases—areas central to the evolution of intelligent networks and 6G. The capacity planning tool described provides actionable insights for both strategic and technical roles covered in the intended readership, supporting the motivation to surface impactful Aalto research to Nokia stakeholders. Its limitations for the sustainability or human layer audiences slightly lower the score, but overall alignment is strong and valuable."
+        },
+        "feedCategory": "Nokia",
+        "feedConfig": {
+          "category": "Nokia",
+          "distributionChannel": "a newsletter which users subscribe to through a website with different categories to choose from",
+          "intendedReaders": [
+            "technology strategists identifying long-term research priorities and disruptive opportunities in the telecom and network domains",
+            "R&D engineers and architects looking for emerging solutions in wireless systems, AI, energy efficiency, and network security",
+            "product and platform leaders seeking foundational insights to inform roadmap decisions and cross-domain collaboration",
+            "innovation program managers and academic partnership leads coordinating joint projects and funding opportunities",
+            "sustainability and circular economy officers aiming to translate research into systemic infrastructure improvements"
+          ],
+          "readerInterests": [
+            "how foundational research in wireless technologies, edge AI, and security architectures is shaping the future of 6G and intelligent networks",
+            "how academic advances in energy-aware computing and sustainable materials impact infrastructure-level decisions",
+            "how interdisciplinary studies on trust, user experience, and digital inclusion inform the human layer of networked services",
+            "how algorithmic and AI research influences the design of scalable, resilient, and adaptive telecom systems",
+            "how collaborative research models between academia and industry accelerate technology transfer and IP generation"
+          ],
+          "motivationForDistribution": "inform the Finnish company Nokia about relevant research done at Aalto University",
+          "relevanceThreshold": 8
+        }
+      },
+      {
+        "study": {
+          "title": "A survey on secure data analytics in edge computing",
+          "abstract": "Internet of Things (IoT) is gaining increasing popularity. Overwhelming volumes of data are generated by IoT devices. Those data after analytics provide significant information that could greatly benefit IoT applications. Different from traditional applications, IoT applications, such as environmental monitoring, smart navigation, and smart healthcare come with new requirements, such as mobility, real-time response, and location awareness. However, traditional cloud computing paradigm cannot satisfy these demands due to centralized processing and being far away from local devices. Hence, edge computing was introduced to perform data processing and storage in the edge of networks, which is closer to data sources than cloud computing, thus efficient and location-aware. Unfortunately, edge computing brings new security and privacy challenges when applied to data analytics. The literature still lacks a thorough review on the recent advances in secure data analytics in edge computing. In this paper, we first introduce the concept and features of edge computing, and then propose a number of requirements for its secure data analytics by analyzing potential security threats in edge computing. Furthermore, we give a comprehensive review on the pros and cons of the existing works on data analytics in edge computing based on our proposed requirements. Based on our literature survey, we highlight current open issues and propose future research directions.",
+          "authors": [
+            "Dan Liu",
+            "Zheng Yan",
+            "Wenxiu Ding",
+            "Mohammed Atiquzzaman"
+          ],
+          "publicationYear": 2019
+        },
+        "relevanceScore": {
+          "reasoning": "The abstract presents a comprehensive literature review on secure data analytics in edge computing, focusing on emerging security and privacy challenges as IoT data processing moves from centralized cloud paradigms to distributed edge environments. Key themes include data analytics methods, edge computing infrastructure, and a systematic identification of security requirements and research gaps.\n\nWhen examining the reader interests:\n- There is a strong thematic and technological match for technology strategists, R&D engineers, and product/platform leaders because edge computing is a core enabler for 6G and future intelligent networks, especially in managing data from wireless and IoT devices.\n- The emphasis on security in edge analytics directly aligns with concerns over security architectures in next-generation networks.\n- Although the abstract doesn't explicitly address energy-aware computing, sustainability, or digital inclusion, edge computing's potential implications for these issues are implicit (e.g., by reducing data transmission to the cloud, edge computing can support energy efficiency and enable localized access, which may enhance digital inclusion—though these links are not central in this work).\n- The review’s identification of open issues and future research directions is valuable for innovation program managers, partnership leads, and those managing research priorities.\n- There is a less direct connection to sustainability officers and those focused on energy/materials, but the infrastructure angle may still be tangentially relevant.\n\nRegarding the motivation for distribution (informing Nokia about relevant Aalto University research): This paper is highly pertinent, as it surveys a foundational area (secure edge analytics) influencing network evolution—a key concern for Nokia in strategic, R&D, and innovation contexts.\nOverall, the abstract is conceptually well-aligned with most reader interests and the distribution goal, particularly for those involved in security, edge/cloud architectures, future networks, and technology scouting.",
+          "affinityScore": 8,
+          "affinityExplanation": "The research abstract is a highly relevant review for this feed. It addresses secure data analytics at the edge, a core area impacting wireless, security, AI-enabled, and future network system design—key interests for technology strategists, engineers, and product leaders at Nokia. Although it is less focused on topics like sustainability or digital inclusion, the direct relationship to evolving network infrastructure and security justifies a strong score."
+        },
+        "feedCategory": "Nokia",
+        "feedConfig": {
+          "category": "Nokia",
+          "distributionChannel": "a newsletter which users subscribe to through a website with different categories to choose from",
+          "intendedReaders": [
+            "technology strategists identifying long-term research priorities and disruptive opportunities in the telecom and network domains",
+            "R&D engineers and architects looking for emerging solutions in wireless systems, AI, energy efficiency, and network security",
+            "product and platform leaders seeking foundational insights to inform roadmap decisions and cross-domain collaboration",
+            "innovation program managers and academic partnership leads coordinating joint projects and funding opportunities",
+            "sustainability and circular economy officers aiming to translate research into systemic infrastructure improvements"
+          ],
+          "readerInterests": [
+            "how foundational research in wireless technologies, edge AI, and security architectures is shaping the future of 6G and intelligent networks",
+            "how academic advances in energy-aware computing and sustainable materials impact infrastructure-level decisions",
+            "how interdisciplinary studies on trust, user experience, and digital inclusion inform the human layer of networked services",
+            "how algorithmic and AI research influences the design of scalable, resilient, and adaptive telecom systems",
+            "how collaborative research models between academia and industry accelerate technology transfer and IP generation"
+          ],
+          "motivationForDistribution": "inform the Finnish company Nokia about relevant research done at Aalto University",
+          "relevanceThreshold": 8
+        }
+      },
+      {
+        "study": {
+          "title": "Edge Computing for the Internet of Things: A Case Study",
+          "abstract": "The amount of data generated by sensors, actuators and other devices in the Internet of Things (IoT) has substantially increased in the last few years. IoT data are currently processed in the cloud, mostly through computing resources located in distant data centers. As a consequence, network bandwidth and communication latency become serious bottlenecks. This article advocates edge computing for emerging IoT applications that leverage sensor streams to augment interactive applications. First, we classify and survey current edge computing architectures and platforms, then describe key IoT application scenarios that benefit from edge computing. Second, we carry out an experimental evaluation of edge computing and its enabling technologies in a selected use case represented by mobile gaming. To this end, we consider a resource-intensive 3D application as a paradigmatic example and evaluate the response delay in different deployment scenarios. Our experimental results show that edge computing is necessary to meet the latency requirements of applications involving virtual and augmented reality. We conclude by discussing what can be achieved with current edge computing platforms and how emerging technologies will impact on the deployment of future IoT applications.",
+          "authors": [
+            "Gopika Premsankar",
+            "Mario Di Francesco",
+            "Tarik Taleb"
+          ],
+          "publicationYear": 2018
+        },
+        "relevanceScore": {
+          "reasoning": "The abstract describes a thorough survey and evaluation of edge computing architectures for IoT applications, focusing on reducing latency and bandwidth issues by shifting processing closer to the data source, rather than relying on remote cloud infrastructure. The study includes an experimental analysis in a demanding context (resource-intensive 3D mobile gaming) and draws broader conclusions about the necessity of edge computing for applications like virtual and augmented reality. \n\nThe most direct thematic match is with the reader interest in how foundational research in wireless technologies, edge AI, and network architectures is shaping the future of 6G and intelligent networks. Edge computing is a foundational technology likely to be central to future telecom infrastructures, particularly as IoT scales up. For R&D engineers and technology strategists, insights from this paper directly support long-term planning for wireless system performance, architectural design, and latency-critical use cases. While the paper does not emphasize AI, energy efficiency, or security, it still strongly addresses aspects of system-level architecture and the human layer (user experience and interactive applications). For product/platform leaders and innovation managers, the experimental evidence about latency thresholds is actionable for roadmap and collaboration decisions. \n\nThe distribution motivation is to keep Nokia aware of significant research at Aalto University; this paper clearly fits that brief, offering concrete and up-to-date insights into how edge computing—relevant to Nokia’s network and platform business—can address challenges in IoT service deployments. The work is less focused on sustainability or collaborative research models, but offers enough interdisciplinary perspective to be valuable across the listed roles.",
+          "affinityScore": 8,
+          "affinityExplanation": "The paper is highly relevant to a substantial part of Nokia’s research-interested audience, particularly those focused on network architecture, edge computing, and next-generation interactive services. It provides foundational technical and empirical insights that align with several stated interests, such as the evolution of wireless and edge technologies and user experience in networked applications. The coverage of direct AI, energy, and security topics is limited, preventing a top score, but the core value to the intended strategy, R&D, and platform leadership readership is strong."
+        },
+        "feedCategory": "Nokia",
+        "feedConfig": {
+          "category": "Nokia",
+          "distributionChannel": "a newsletter which users subscribe to through a website with different categories to choose from",
+          "intendedReaders": [
+            "technology strategists identifying long-term research priorities and disruptive opportunities in the telecom and network domains",
+            "R&D engineers and architects looking for emerging solutions in wireless systems, AI, energy efficiency, and network security",
+            "product and platform leaders seeking foundational insights to inform roadmap decisions and cross-domain collaboration",
+            "innovation program managers and academic partnership leads coordinating joint projects and funding opportunities",
+            "sustainability and circular economy officers aiming to translate research into systemic infrastructure improvements"
+          ],
+          "readerInterests": [
+            "how foundational research in wireless technologies, edge AI, and security architectures is shaping the future of 6G and intelligent networks",
+            "how academic advances in energy-aware computing and sustainable materials impact infrastructure-level decisions",
+            "how interdisciplinary studies on trust, user experience, and digital inclusion inform the human layer of networked services",
+            "how algorithmic and AI research influences the design of scalable, resilient, and adaptive telecom systems",
+            "how collaborative research models between academia and industry accelerate technology transfer and IP generation"
+          ],
+          "motivationForDistribution": "inform the Finnish company Nokia about relevant research done at Aalto University",
+          "relevanceThreshold": 8
+        }
+      },
+      {
+        "study": {
+          "title": "Multi-access edge computing: A survey",
+          "abstract": "Multi-access edge computing (MEC) is an emerging ecosystem, which aims at converging telecommunication and IT services, providing a cloud computing platform at the edge of the radio access network. MEC offers storage and computational resources at the edge, reducing latency for mobile end users and utilizing more efficiently the mobile backhaul and core networks. This paper introduces a survey on MEC and focuses on the fundamental key enabling technologies. It elaborates MEC orchestration considering both individual services and a network of MEC platforms supporting mobility, bringing light into the different orchestration deployment options. In addition, this paper analyzes the MEC reference architecture and main deployment scenarios, which offer multi-tenancy support for application developers, content providers, and third parties. Finally, this paper overviews the current standardization activities and elaborates further on open research challenges.",
+          "authors": [],
+          "publicationYear": 2017
+        },
+        "relevanceScore": {
+          "reasoning": "Step 1: The abstract presents a survey of Multi-access Edge Computing (MEC), discussing its ecosystem, orchestration of services and platforms, key enabling technologies, deployment scenarios, multi-tenancy, architecture, and standardization efforts. The focus is broad, but centers on how MEC brings IT and telecommunications closer at the network edge, relevant architectures, deployment models, and outstanding research challenges. \n\nStep 2: Comparing this to the reader interests: MEC is foundational to next-generation wireless systems and intelligent networks. Technology strategists, R&D engineers, and product/platform leaders at Nokia will find the discussion of orchestration, architecture, and deployment highly relevant for both current 5G and future 6G planning. The focus on orchestration, standardization, and open challenges will interest innovation managers and academic partnership leads, especially for identifying joint projects or funding opportunities. There is indirect but meaningful relevance to edge AI (since MEC is an enabler), and to network security and energy efficiency (since these are typically part of orchestration debates, though not prominently mentioned in the abstract). However, the paper is less directly aligned with topics like sustainable materials, digital inclusion, or trust/user experience, unless these are implied within the broader orchestration and deployment discussion. It does not highlight energy-aware computing or human-centric aspects, so the affinity there is weaker.\n\nStep 3: Regarding the distribution motivation—to inform Nokia about relevant research at Aalto—the paper provides an up-to-date landscape on MEC, which is a core area for a telecom company like Nokia. The comprehensive nature of the survey, emphasis on orchestration (critical for scalable, adaptive systems), and discussion of open research challenges, make it highly useful for decision-makers, strategists, and R&D staff. It provides both foundational context and identifies directions for potential collaboration or research priorities, well-matching the primary intents of the feed.",
+          "affinityScore": 8,
+          "affinityExplanation": "This paper strongly aligns with the interests of telecom strategists, R&D engineers, and innovation leads at Nokia, especially regarding foundational aspects of edge computing for wireless networks and future infrastructure planning. Its detailed coverage of MEC orchestration and deployment, along with identification of research challenges, makes it highly relevant for informing research priorities and potential collaborations between Nokia and Aalto University. However, the connection is less direct for topics like sustainability, digital inclusion, or user experience, keeping the score from being a perfect ten."
+        },
+        "feedCategory": "Nokia",
+        "feedConfig": {
+          "category": "Nokia",
+          "distributionChannel": "a newsletter which users subscribe to through a website with different categories to choose from",
+          "intendedReaders": [
+            "technology strategists identifying long-term research priorities and disruptive opportunities in the telecom and network domains",
+            "R&D engineers and architects looking for emerging solutions in wireless systems, AI, energy efficiency, and network security",
+            "product and platform leaders seeking foundational insights to inform roadmap decisions and cross-domain collaboration",
+            "innovation program managers and academic partnership leads coordinating joint projects and funding opportunities",
+            "sustainability and circular economy officers aiming to translate research into systemic infrastructure improvements"
+          ],
+          "readerInterests": [
+            "how foundational research in wireless technologies, edge AI, and security architectures is shaping the future of 6G and intelligent networks",
+            "how academic advances in energy-aware computing and sustainable materials impact infrastructure-level decisions",
+            "how interdisciplinary studies on trust, user experience, and digital inclusion inform the human layer of networked services",
+            "how algorithmic and AI research influences the design of scalable, resilient, and adaptive telecom systems",
+            "how collaborative research models between academia and industry accelerate technology transfer and IP generation"
+          ],
+          "motivationForDistribution": "inform the Finnish company Nokia about relevant research done at Aalto University",
+          "relevanceThreshold": 8
+        }
+      }
+    ],
+    "processingTimeMs": 51828,
+    "totalFailedStudies": 0
+  }
+]

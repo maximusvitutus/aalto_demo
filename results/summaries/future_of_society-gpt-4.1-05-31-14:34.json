@@ -1,0 +1,32 @@
+[
+  {
+    "topic": "Using Digital Data to Understand Social Networks and Commutes",
+    "methodology": "Researchers analyzed large-scale digital traces of human behavior to model changes and persistence in social and commuting networks, while developing computational models to explain these phenomena and validate sociological theories.",
+    "findings": "Both personal social networks and commuting patterns show dynamic changes but maintain core persistent features, and the study identified universal and individual traits, demonstrated how social tie complexity shapes network functions, and built models predicting human mobility in real time.",
+    "implications": "This work highlights how digital data can reveal and predict large-scale social dynamics, helping bridge classical and computational social sciences and offering practical tools for understanding and managing social and mobility systems."
+  },
+  {
+    "topic": "Building Local Networks to Help Landscapes Adapt to Climate Change",
+    "methodology": "Researchers studied 15 European landscapes to identify factors that shape effective local networks for climate adaptation, focusing on how collaborative processes and social learning can overcome challenges in planning.",
+    "findings": "They developed a framework showing how network composition, collaboration, and social learning drive high-quality, tailored landscape adaptation plans.",
+    "implications": "These findings offer practical guidance for communities looking to adapt their landscapes to climate change, emphasizing the importance of context-specific, collaborative planning."
+  },
+  {
+    "topic": "Making Anonymous Cryptocurrencies and Systems Sustainable",
+    "methodology": "Researchers critically examined the sustainability of ring-based anonymous systems and developed a generalized, provably sustainable construction for decentralized anonymous systems, evaluating its effectiveness with real-world examples like Monero.",
+    "findings": "They demonstrated that current anonymous cryptocurrencies like Monero are not sustainable without changes, but provided a new method enabling both sustainability and availability in such systems.",
+    "implications": "This advances privacy-preserving technologies by addressing sustainability issues, allowing for long-term, scalable anonymous platforms without sacrificing usability."
+  },
+  {
+    "topic": "How Timing and Memory Affect Reciprocity in Human Communication",
+    "methodology": "Researchers developed new measures to analyze the timing of reciprocal communications across different channels, using empirical data and mathematical models to understand drivers of reciprocity.",
+    "findings": "They found that memory—our tendency to interact repeatedly with familiar contacts—is key to maintaining reciprocity over time, and accurately modeled these effects in simulations.",
+    "implications": "Understanding these patterns explains how norms and cooperation arise in social systems, offering insights for designing more stable and cohesive communication platforms."
+  },
+  {
+    "topic": "A New Tool to Study Mastodon and Decentralized Social Networks in Real Time",
+    "methodology": "Researchers created FediLive, a software framework for quickly collecting and processing live data from Mastodon in order to capture comprehensive, real-time social network snapshots.",
+    "findings": "Using FediLive, they successfully collected a detailed 13-day snapshot of Mastodon activity, demonstrating its effectiveness for analyzing decentralized network behaviors.",
+    "implications": "This enables timely, data-driven research on decentralized online communities, improving our ability to understand, analyze, and potentially enhance moderation and engagement strategies."
+  }
+]
