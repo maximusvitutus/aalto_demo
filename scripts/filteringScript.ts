@@ -149,7 +149,21 @@ async function runFilteringScript(): Promise<void> {
     // Save results
     console.log('\n💾 Saving filtering results...');
     const outputPath = path.join(process.cwd(), 'results', `results-${llmProvider.getModelName()}-${timestamp}.json`);
-    saveResults(Array.from(acceptedStudiesPerFeed.values()), outputPath);
+    
+    // Create simplified results structure
+    const simplifiedResults = Array.from(acceptedStudiesPerFeed.values()).map(result => ({
+      feed: result.feed,
+      totalStudiesProcessed: result.totalStudiesProcessed,
+      relevantStudiesFound: result.relevantStudiesFound,
+      relevantStudies: result.relevantStudies.map(studyResult => ({
+        study: {
+          title: studyResult.study.title
+        },
+        relevanceScore: studyResult.relevanceScore
+      }))
+    }));
+    
+    saveResults(simplifiedResults, outputPath);
 
     // Print summary
     console.log('\n📈 SUMMARY:');
