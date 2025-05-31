@@ -34,6 +34,13 @@ interface FilteringResult {
 }
 
 /**
+ * Emits a progress signal that the server can capture
+ */
+function emitProgress(step: string, message: string): void {
+  console.log(`PROGRESS: ${step} | ${message}`);
+}
+
+/**
  * Main filtering script
  */
 async function runFilteringScript(): Promise<void> {
@@ -77,9 +84,15 @@ async function runFilteringScript(): Promise<void> {
       
       feedConfigs = [createCustomFeedConfig(readers, interests)];
       
+      // PROGRESS: User profile created (AFTER creation)
+      emitProgress('profile', `Profile created for ${readers}`);
+      
       // Load studies from all directories for custom mode
       console.log('\n📖 Loading studies from all directories...');
       studies = loadStudiesFromDirectories(); // No targetDir argument = load all
+      
+      // PROGRESS: Loading studies completed (AFTER loading)
+      emitProgress('loading', `Loaded ${studies.length} studies from database`);
     } else {
       // Default mode: use predefined feeds and check for directory argument
       console.log('\n⚙️  Creating PREDEFINED feed configurations...');
@@ -89,6 +102,9 @@ async function runFilteringScript(): Promise<void> {
       console.log('\n📖 Loading studies...');
       const targetDir = process.argv[2]; // Get the directory argument if provided
       studies = loadStudiesFromDirectories(targetDir);
+      
+      // PROGRESS: Loading studies completed (AFTER loading)
+      emitProgress('loading', `Loaded ${studies.length} studies from database`);
     }
     
     if (studies.length === 0) {
@@ -134,6 +150,9 @@ async function runFilteringScript(): Promise<void> {
         console.log(`   📊 Found ${acceptedStudies.length}/${studies.length} relevant studies`);
         console.log(`   ⏱️  Processing time: ${Math.round(processingTime / 1000)}s`);
         
+        // PROGRESS: Filtering completed (AFTER filtering is done)
+        emitProgress('filtering', `Found ${acceptedStudies.length} relevant studies`);
+        
         if (acceptedStudies.length > 0) {
           console.log(`   🏆 Top study: "${acceptedStudies[0].study.title}" (score: ${acceptedStudies[0].relevanceScore.affinityScore})`);
         }
@@ -157,8 +176,13 @@ async function runFilteringScript(): Promise<void> {
           if (summaries.length > 0) {
             saveFeedSummaries(feedName, summaries, timestamp, llmProvider.getModelName());
             console.log(`✅ Generated ${summaries.length} summaries for "${feedName}"`);
+            
+            // PROGRESS: Summaries completed
+            emitProgress('summaries', `Generated ${summaries.length} summaries`);
           } else {
             console.log(`⚠️ No summaries generated for "${feedName}"`);
+            // PROGRESS: Summaries completed even if none generated
+            emitProgress('summaries', 'No summaries generated');
           }
           
         } catch (error) {
@@ -166,6 +190,8 @@ async function runFilteringScript(): Promise<void> {
         }
       } else {
         console.log(`⏭️ Skipping summary generation for "${result.feed}" (no relevant studies)`);
+        // PROGRESS: Summaries completed (no relevant studies)
+        emitProgress('summaries', 'No relevant studies found');
       }
     }
 

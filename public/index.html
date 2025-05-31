@@ -3,119 +3,211 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aalto Research Feed Demo</title>
+    <title>Custom Research Feed Generator</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            max-width: 600px;
-            margin: 50px auto;
+            max-width: 800px;
+            margin: 0 auto;
             padding: 20px;
             background-color: #f5f5f5;
         }
-        .form-container {
+        .container {
             background: white;
             padding: 30px;
-            border-radius: 8px;
+            border-radius: 10px;
             box-shadow: 0 2px 10px rgba(0,0,0,0.1);
         }
-        h1 {
-            color: #333;
-            text-align: center;
+        .form-group {
+            margin-bottom: 20px;
         }
         label {
             display: block;
-            margin-top: 20px;
             margin-bottom: 5px;
             font-weight: bold;
+            color: #333;
         }
         input[type="text"], textarea {
             width: 100%;
             padding: 10px;
-            border: 1px solid #ddd;
-            border-radius: 4px;
+            border: 2px solid #ddd;
+            border-radius: 5px;
             font-size: 16px;
-        }
-        textarea {
-            height: 100px;
-            resize: vertical;
         }
         button {
             background-color: #007bff;
             color: white;
             padding: 12px 30px;
             border: none;
-            border-radius: 4px;
+            border-radius: 5px;
             font-size: 16px;
             cursor: pointer;
-            margin-top: 20px;
-            width: 100%;
         }
         button:hover {
             background-color: #0056b3;
         }
-        .status {
-            margin-top: 20px;
-            padding: 10px;
-            border-radius: 4px;
-            display: none;
+        button:disabled {
+            background-color: #ccc;
+            cursor: not-allowed;
         }
-        .status.success {
-            background-color: #d4edda;
-            color: #155724;
-            border: 1px solid #c3e6cb;
+        .progress-section {
+            display: none;
+            margin-top: 30px;
+        }
+        .progress-step {
+            display: flex;
+            align-items: center;
+            margin: 15px 0;
+            padding: 10px;
+            background: #f8f9fa;
+            border-radius: 5px;
+        }
+        .step-checkbox {
+            margin-right: 15px;
+            font-size: 20px;
+        }
+        .step-text {
+            font-size: 16px;
+        }
+        .step-pending { color: #6c757d; }
+        .step-completed { color: #28a745; }
+        .results-section {
+            display: none;
+            margin-top: 30px;
+            padding: 20px;
+            background: #e8f5e8;
+            border-radius: 5px;
         }
     </style>
 </head>
 <body>
-    <div class="form-container">
-        <h1>Aalto Research Feed Generator</h1>
-        <p>Create a personalized research feed based on your interests</p>
+    <div class="container">
+        <h1>🔬 Research Feed Generator</h1>
+        <p>Generate a personalized research feed based on your interests</p>
         
-        <form id="feedForm">
-            <label for="readers">Who will be reading this report?</label>
-            <input type="text" id="readers" name="readers" required>
+        <!-- Form Section -->
+        <div id="form-section">
+            <form id="research-form">
+                <div class="form-group">
+                    <label for="readers">Who will be reading this report?</label>
+                    <input type="text" id="readers" name="readers" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="interests">What are their research interests?</label>
+                    <textarea id="interests" name="interests" rows="3" required></textarea>
+                </div>
+                
+                <button type="submit" id="submit-btn">Generate Research Feed</button>
+            </form>
+        </div>
+
+        <!-- Progress Section -->
+        <div id="progress-section" class="progress-section">
+            <h2>🚀 Generating Your Research Feed</h2>
             
-            <label for="interests">What are your research interests?</label>
-            <textarea id="interests" name="interests" required></textarea>
+            <div class="progress-step" id="step-loading">
+                <span class="step-checkbox step-pending">☐</span>
+                <span class="step-text">Loading studies from database</span>
+            </div>
             
-            <button type="submit">Generate Research Feed</button>
-        </form>
-        
-        <div id="status" class="status"></div>
+            <div class="progress-step" id="step-profile">
+                <span class="step-checkbox step-pending">☐</span>
+                <span class="step-text">Creating your user profile</span>
+            </div>
+            
+            <div class="progress-step" id="step-filtering">
+                <span class="step-checkbox step-pending">☐</span>
+                <span class="step-text">Finding relevant studies for your profile</span>
+            </div>
+            
+            <div class="progress-step" id="step-summaries">
+                <span class="step-checkbox step-pending">☐</span>
+                <span class="step-text">Creating summaries of relevant studies</span>
+            </div>
+        </div>
+
+        <!-- Results Section -->
+        <div id="results-section" class="results-section">
+            <h2>✅ Your Research Feed is Ready!</h2>
+            <p>Processing completed successfully. Check the results folder for your personalized research summaries.</p>
+        </div>
     </div>
 
     <script>
-        document.getElementById('feedForm').addEventListener('submit', async function(e) {
+        document.getElementById('research-form').addEventListener('submit', async (e) => {
             e.preventDefault();
             
             const readers = document.getElementById('readers').value;
             const interests = document.getElementById('interests').value;
             
-            console.log('Sending to backend:', { readers, interests });
+            console.log('Form submitted with:', { readers, interests });
             
-            try {
-                const response = await fetch('/api/submit', {
-                    method: 'POST',
-                    headers: {
-                        'Content-Type': 'application/json',
-                    },
-                    body: JSON.stringify({ readers, interests })
-                });
+            // Hide form and show progress
+            document.getElementById('form-section').style.display = 'none';
+            document.getElementById('progress-section').style.display = 'block';
+            
+            // Start the process
+            const response = await fetch('/api/submit', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({ readers, interests })
+            });
+            
+            const data = await response.json();
+            console.log('Server response:', data);
+            
+            // Connect to SSE for progress updates
+            const eventSource = new EventSource(`/api/progress/${data.jobId}`);
+            console.log('SSE connection created for job:', data.jobId);
+            
+            eventSource.onopen = function(event) {
+                console.log('SSE connection opened');
+            };
+            
+            eventSource.onmessage = function(event) {
+                console.log('SSE message received:', event.data);
+                const progressData = JSON.parse(event.data);
+                console.log('Parsed progress data:', progressData);
+                updateProgress(progressData.step, progressData.message);
                 
-                const result = await response.json();
-                
-                const statusDiv = document.getElementById('status');
-                statusDiv.textContent = result.message;
-                statusDiv.className = 'status success';
-                statusDiv.style.display = 'block';
-                
-                console.log('Backend response:', result);
-                
-            } catch (error) {
-                console.error('Error:', error);
-                alert('Error submitting form');
-            }
+                if (progressData.step === 'completed') {
+                    eventSource.close();
+                    showResults();
+                }
+            };
+            
+            eventSource.onerror = function(event) {
+                console.error('SSE error:', event);
+            };
         });
+        
+        function updateProgress(step, message) {
+            console.log('Updating progress for step:', step, 'with message:', message);
+            const stepElement = document.getElementById(`step-${step}`);
+            console.log('Found step element:', stepElement);
+            
+            if (stepElement) {
+                const checkbox = stepElement.querySelector('.step-checkbox');
+                console.log('Found checkbox:', checkbox);
+                checkbox.textContent = '✅';
+                checkbox.className = 'step-checkbox step-completed';
+                
+                // Update text if message provided
+                if (message) {
+                    stepElement.querySelector('.step-text').textContent = message;
+                }
+            } else {
+                console.error('Step element not found for:', step);
+            }
+        }
+        
+        function showResults() {
+            console.log('Showing results');
+            document.getElementById('results-section').style.display = 'block';
+        }
     </script>
 </body>
 </html>
