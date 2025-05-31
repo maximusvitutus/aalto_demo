@@ -2,7 +2,7 @@ import * as path from 'path';
 import { FeedFilteringService } from '../src/core/filtering/feedFilteringService';
 import { OpenAIProvider } from '../src/core/llm/openAIProvider';
 import { StudyFilterResult } from '../src/types/filtering/filteredStudy';
-import { loadStudiesFromDirectory, saveResults, saveFeedSummaries, generateSummariesForFeed } from './helpers/methods';
+import { loadStudiesFromDirectories, saveResults, saveFeedSummaries, generateSummariesForFeed, loadStudiesFromDirectory } from './helpers/methods';
 import { createFeedConfigs } from './helpers/consts';
 
 // Load environment variables
@@ -60,10 +60,10 @@ async function runFilteringScript(): Promise<void> {
     const minutes = String(now.getMinutes()).padStart(2, '0');
     const timestamp = `${month}-${date}-${hour}:${minutes}`;
 
-    // Load studies
+    // Load studies based on command line arguments
     console.log('\n📖 Loading studies...');
-    const studiesPath = path.join(process.cwd(), 'data', 'studies', 'socialNetworks');
-    const studies = loadStudiesFromDirectory(studiesPath);
+    const targetDir = process.argv[2]; // Get the directory argument if provided
+    const studies = loadStudiesFromDirectories(targetDir);
     
     if (studies.length === 0) {
       throw new Error('No studies found to process');
@@ -185,4 +185,4 @@ if (require.main === module) {
     });
 }
 
-export { runFilteringScript, loadStudiesFromDirectory, createFeedConfigs };
+export { runFilteringScript, loadStudiesFromDirectories, createFeedConfigs };

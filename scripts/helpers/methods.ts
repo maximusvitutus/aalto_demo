@@ -208,3 +208,47 @@ export function saveFeedSummaries(
   fs.writeFileSync(outputPath, JSON.stringify(summaries, null, 2));
   console.log(`💾 Summaries saved to: ${outputPath}`);
 }
+
+/**
+ * Loads studies from either a specific subdirectory or all subdirectories
+ */
+export function loadStudiesFromDirectories(targetSubDir?: string): ResearchStudyMetadata[] {
+  const studiesBasePath = path.join(process.cwd(), 'data', 'studies');
+  
+  if (!fs.existsSync(studiesBasePath)) {
+    throw new Error(`Studies directory not found: ${studiesBasePath}`);
+  }
+
+  if (targetSubDir) {
+    // Load from specific subdirectory
+    const targetPath = path.join(studiesBasePath, targetSubDir);
+    console.log(`📂 Loading studies from specific directory: ${targetSubDir}`);
+    return loadStudiesFromDirectory(targetPath);
+  } else {
+    // Load from all subdirectories
+    console.log(`📂 Loading studies from all subdirectories in: ${studiesBasePath}`);
+    const allStudies: ResearchStudyMetadata[] = [];
+    
+    const subDirs = fs.readdirSync(studiesBasePath, { withFileTypes: true })
+      .filter(dirent => dirent.isDirectory())
+      .map(dirent => dirent.name);
+    
+    console.log(`📁 Found ${subDirs.length} subdirectories: ${subDirs.join(', ')}`);
+    
+    for (const subDir of subDirs) {
+      const subDirPath = path.join(studiesBasePath, subDir);
+      console.log(`\n📖 Processing directory: ${subDir}`);
+      
+      try {
+        const studies = loadStudiesFromDirectory(subDirPath);
+        allStudies.push(...studies);
+        console.log(`✅ Loaded ${studies.length} studies from ${subDir}`);
+      } catch (error) {
+        console.warn(`⚠️ Failed to load studies from ${subDir}:`, error instanceof Error ? error.message : 'Unknown error');
+      }
+    }
+    
+    console.log(`\n📚 Total studies loaded: ${allStudies.length}`);
+    return allStudies;
+  }
+}
