@@ -129,7 +129,7 @@ async function runFilteringScript(): Promise<void> {
         // Create progress callback for filtering updates
         const progressCallback = (processed: number, total: number) => {
           const percentage = Math.round((processed / total) * 100);
-          emitProgress('filtering', `Analyzing studies: ${processed}/${total} (${percentage}%)`);
+          emitProgress('filtering', `Finding relevant studies for you... (progress: ${percentage} %)`);
         };
         
         // Use parallel filtering with controlled concurrency and progress updates
@@ -158,7 +158,7 @@ async function runFilteringScript(): Promise<void> {
         console.log(`   ⏱️  Processing time: ${Math.round(processingTime / 1000)}s`);
         
         // PROGRESS: Filtering completed (AFTER filtering is done)
-        emitProgress('filtering', `Found ${acceptedStudies.length} relevant studies (100%)`);
+        emitProgress('filtering', `Found ${acceptedStudies.length}/${studies.length} relevant studies that match your interests`);
         
         if (acceptedStudies.length > 0) {
           console.log(`   🏆 Top study: "${acceptedStudies[0].study.title}" (score: ${acceptedStudies[0].relevanceScore.affinityScore})`);
@@ -172,7 +172,7 @@ async function runFilteringScript(): Promise<void> {
     // Generate summaries for feeds with relevant studies
     for (const [feedName, result] of acceptedStudiesPerFeed) {
       if (result.relevantStudiesFound > 0) {
-        console.log(`\n📄 Generating summaries for "${feedName}" (${result.relevantStudiesFound} studies)`);
+        console.log(`\n📄 Generating summaries...`);
         
         try {
           const summaries = await generateSummariesForFeed(
@@ -185,20 +185,20 @@ async function runFilteringScript(): Promise<void> {
             console.log(`✅ Generated ${summaries.length} summaries for "${feedName}"`);
             
             // PROGRESS: Summaries completed
-            emitProgress('summaries', `Generated ${summaries.length} summaries`);
+            emitProgress('summaries', `Generated ${summaries.length} summaries for your feed`);
           } else {
-            console.log(`⚠️ No summaries generated for "${feedName}"`);
+            console.log(`⚠️ No summaries generated for your feed`);
             // PROGRESS: Summaries completed even if none generated
             emitProgress('summaries', 'No summaries generated');
           }
           
         } catch (error) {
-          console.error(`❌ Error generating summaries for "${result.feed}":`, error);
+          console.error(`❌ Error generating summaries:`, error);
         }
       } else {
-        console.log(`⏭️ Skipping summary generation for "${result.feed}" (no relevant studies)`);
+        console.log(`⏭️ Skipping summary generation (no relevant studies)`);
         // PROGRESS: Summaries completed (no relevant studies)
-        emitProgress('summaries', 'No relevant studies found');
+        emitProgress('summaries', 'No relevant studies found :(');
       }
     }
 
