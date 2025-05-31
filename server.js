@@ -22,32 +22,19 @@ app.get('/', (req, res) => {
 app.post('/api/submit', (req, res) => {
   const { readers, interests } = req.body;
   
-  // Generate unique job ID
-  const jobId = Date.now().toString();
+  // This will show in your terminal/console
+  console.log('='.repeat(50));
+  console.log('📝 FORM DATA RECEIVED:');
+  console.log('='.repeat(50));
+  console.log('👥 Readers:', readers);
+  console.log('🔬 Interests:', interests);
+  console.log('⏰ Received at:', new Date().toLocaleString());
+  console.log('='.repeat(50));
   
-  // Store job info
-  jobs.set(jobId, {
-    status: 'processing',
-    readers,
-    interests,
-    startTime: new Date(),
-    results: null
-  });
-  
-  // TODO: Start your filtering script with custom data
-  console.log(`Job ${jobId} started for readers: ${readers}`);
-  console.log(`Interests: ${interests}`);
-  
-  // Simulate processing (replace with actual script execution)
-  setTimeout(() => {
-    jobs.get(jobId).status = 'completed';
-    jobs.get(jobId).results = { message: 'Demo results would go here' };
-  }, 5000); // 5 second demo delay
-  
+  // Send response back to browser
   res.json({ 
-    jobId, 
-    message: 'Processing started! Check back in a few minutes.',
-    statusUrl: `/api/status/${jobId}`
+    message: 'Data received successfully! Check your terminal to see the logged data.',
+    receivedData: { readers, interests }
   });
 });
 
@@ -67,6 +54,7 @@ app.get('/api/status/:jobId', (req, res) => {
 
 // Start server
 app.listen(PORT, () => {
-  console.log(`Server running at http://localhost:${PORT}`);
-  console.log('Open your browser and go to that URL to test the form!');
+  console.log(`🚀 Server running at http://localhost:${PORT}`);
+  console.log('📝 Open your browser and go to that URL to test the form!');
+  console.log('💡 Form submissions will be logged here in the terminal.');
 });
