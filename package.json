@@ -13,6 +13,7 @@
     "filter": "tsx scripts/filteringScript.ts"
   },
   "dependencies": {
+    "express": "^5.1.0",
     "js-yaml": "^4.1.0",
     "jsonrepair": "^3.12.0",
     "zod": "^3.25.28"
