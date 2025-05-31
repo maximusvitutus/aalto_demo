@@ -1,0 +1,50 @@
+[
+  {
+    "topic": "How Digital Traces Help Us Understand Social Networks and Human Movement",
+    "methodology": "Researchers analyzed large-scale, longitudinal digital trace data from communications and mobility channels to model the structure and persistence of social and commuting networks and validate sociological theories using new computational methods.",
+    "findings": "The study found that social and commuting networks display both stability and change over time, that ties with higher multiplexity are more crucial for network connectivity, and that digital traces can accurately predict mobility patterns even during disruptions.",
+    "implications": "The findings demonstrate how analyzing digital trace data can uncover universal and individual patterns in human behavior, inform predictions, and bridge traditional and computational social sciences."
+  },
+  {
+    "topic": "Building Strong Community Networks for Climate-Resilient Landscapes",
+    "methodology": "The study examined 15 European landscapes to identify key factors and processes, like social learning and co-creation, that enable local networks to effectively adapt their environments to climate change.",
+    "findings": "Researchers established a practical framework showing that representative community networks, enabled by collaboration and knowledge-sharing, are crucial for overcoming adaptation barriers and producing high-quality local climate plans.",
+    "implications": "This approach can empower local communities in diverse regions to devise better, more inclusive solutions for adapting landscapes to climate challenges."
+  },
+  {
+    "topic": "Uncovering the Patterns of Reciprocity in Human Communication",
+    "methodology": "Researchers introduced new ways to measure reciprocity based on the timing of interactions and applied them across multiple digital communication channels to distinguish between reciprocated and broadcasted information flows.",
+    "findings": "They found that memory—our tendency to interact repeatedly with past contacts—drives temporal reciprocity, which can be reproduced in network models and shapes norms and cooperation in social groups.",
+    "implications": "Understanding how reciprocal communication unfolds over time clarifies the mechanisms behind social cohesion and can inform the design of better digital communication platforms."
+  },
+  {
+    "topic": "FediLive: Capturing Real-Time Snapshots of Decentralized Social Networks",
+    "methodology": "Researchers developed and deployed FediLive, a system for efficiently collecting and processing real-time user activity, posts, and interactions from Mastodon, a decentralized online social network.",
+    "findings": "A 13-day collection demonstrated FediLive's ability to gather comprehensive and up-to-date data on all public Mastodon activity and user demographics.",
+    "implications": "This tool makes it much easier for researchers and developers to analyze how decentralized social networks function, opening the door to better moderation, user experience, and community design."
+  },
+  {
+    "topic": "Making Anonymous Cryptocurrencies and Social Networks Sustainable",
+    "methodology": "The research studied the limitations of current anonymous systems, proposed a new model and construction for building sustainable ring-based anonymous actions, and empirically evaluated the popular cryptocurrency Monero.",
+    "findings": "They introduced the first generic way to ensure sustainability in anonymous systems without reducing their availability and revealed that Monero's current design could become unsustainable without changes.",
+    "implications": "These advancements could make anonymous digital currencies and platforms more practical to use long-term, providing strong privacy without technical pitfalls."
+  },
+  {
+    "topic": "Improving Pandemic Response by Modeling Disease Spread in Social Networks",
+    "methodology": "Researchers used mathematical and computational models, inspired by real-world data, to understand how disease spreads in human social networks and to test the effectiveness of various intervention strategies.",
+    "findings": "The study revealed that individual connectivity, network structure, and targeted interventions significantly influence epidemic outcomes and can optimize disease control measures.",
+    "implications": "These insights can help public health officials design smarter, more effective responses to future pandemics based on how people actually interact."
+  },
+  {
+    "topic": "How Network Structure Influences the Spread and Control of Disease",
+    "methodology": "Using Monte Carlo simulations, the study analyzed how clustering and different centrality metrics of individuals in scale-free networks affect the progression and mitigation of epidemics.",
+    "findings": "Highly clustered networks were easier to contain, and targeting individuals based on network distance (rather than just connections) was more effective for isolation or vaccination.",
+    "implications": "These findings can guide more efficient strategies for flattening infection curves and reducing pressure on healthcare systems during outbreaks."
+  },
+  {
+    "topic": "Contact Tracing Works Better in Groups: Insights from Network Models",
+    "methodology": "The study used stylized network models to test how contact tracing performs in settings with tightly knit social groups (cliques) versus more loosely connected populations.",
+    "findings": "Contact tracing was especially effective at containing disease when social groups were larger, as isolating key group members cut multiple infection paths at once.",
+    "implications": "Real-world contact tracing can be more effective than some models predict, especially in environments (like households or workplaces) with distinct social clusters."
+  }
+]

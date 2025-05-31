@@ -1,0 +1,363 @@
+[
+  {
+    "feed": "social media & human behaviour",
+    "totalStudiesProcessed": 8,
+    "relevantStudiesFound": 1,
+    "relevantStudies": [
+      {
+        "study": {
+          "title": "Temporal patterns of reciprocity in communication networks",
+          "abstract": "Human communication, the essence of collective social phenomena ranging from small-scale organizations to worldwide online platforms, features intense reciprocal interactions between members in order to achieve stability, cohesion, and cooperation in social networks. While high levels of reciprocity are well known in aggregated communication data, temporal patterns of reciprocal information exchange have received far less attention. Here we propose measures of reciprocity based on the time ordering of interactions and explore them in data from multiple communication channels, including calls, messaging and social media. By separating each channel into reciprocal and non-reciprocal temporal networks, we find persistent trends that point to the distinct roles of one-to-one exchange versus information broadcast. We implement several null models of communication activity, which identify memory, a higher tendency to repeat interactions with past contacts, as a key source of temporal reciprocity. When adding memory to a model of activity-driven, time-varying networks, we reproduce the levels of temporal reciprocity seen in empirical data. Our work adds to the theoretical understanding of the emergence of reciprocity in human communication systems, hinting at the mechanisms behind the formation of norms in social exchange and large-scale cooperation.",
+          "authors": [
+            "Sandeep Chowdhary",
+            "Elsa Andres",
+            "Adriana Manna",
+            "Luka Blagojević",
+            "Leonardo Di Gaetano",
+            "Gerardo Iñiguez"
+          ],
+          "publicationYear": 2023
+        },
+        "relevanceScore": {
+          "reasoning": "First, the abstract details a study on reciprocity in human communication, focusing on how people interact over time across various communication channels, including social media. The researchers introduce new ways to measure reciprocity by examining the temporal sequence of interactions, distinguishing between reciprocal (two-way) and non-reciprocal (broadcast-like) exchanges. They employ models that suggest 'memory'—the habit of repeating interactions with the same contacts—drives reciprocity patterns and contribute to theories about social norms and cooperation. \n\nComparing to reader interests: University students interested in social media and human behavior would likely find value in research that illuminates the mechanisms behind social interactions on these platforms. The focus on how reciprocity emerges and its relation to memory touches on how social media shapes relationship building and group cohesion, aligning directly with readers looking to understand how these platforms affect human interactions—from high-level relationships to micro-level encounters (e.g., the tendency to return messages). While the study is more about communication patterns than explicit psychological outcomes, these patterns underpin phenomena like belief formation, group norms, and possibly the emergence of cognitive biases—the very topics the audience is curious about. \n\nMental health professionals might be less directly served, as the abstract does not address psychological well-being or emotional/mental health outcomes associated with reciprocity. However, understanding foundational communication mechanisms could support insights into the social drivers of online behavior, which are relevant to their interests in behavioral and emotional outcomes. \n\nFactoring in the motivation: The newsletter aims to make Aalto University's research accessible to a curious (but not expert) audience eager to explore how social media impacts human behavior. The abstracted study offers relevant, theoretical insights on a core feature of online interaction (reciprocity), presented in a context that invites readers to consider the roots of social phenomena on digital platforms. The value is moderate to high: while not focused specifically on psychological or algorithmic effects, it provides foundational understanding complementary to the readers' interests.",
+          "affinityScore": 7,
+          "affinityExplanation": "The paper offers strong conceptual relevance to students seeking a deeper understanding of how social media affects human interaction, aligning well with the feed's focus on social media and human behavior. It does not directly address mental health or platform algorithm effects, making the connection somewhat indirect for some readers, but the mechanisms explored are foundational to the phenomena of group norms, social relationships, and possibly cognitive biases—thus warranting a solid, above-average score."
+        },
+        "feedCategory": "social media & human behaviour",
+        "feedConfig": {
+          "category": "social media & human behaviour",
+          "distributionChannel": "a newsletter which users subscribe to through a website with different categories to choose from",
+          "intendedReaders": [
+            "non-expert university students interested in comprehensively understanding the influence social media has on human behaviour and thought",
+            "mental health professionals aiming to track the psychological effects of prolonged or intense social media usage on different age groups"
+          ],
+          "readerInterests": [
+            "readers are interested in learning more about how different parameters like user characteristics or the social platform and algorithms used influence different outcomes in human behavior and emotional state",
+            "readers want insights on how social media can affect interactions between humans from relationships to more granular interactions like simply observing another human being",
+            "readers want to understand the interplay of social media usage and the beliefs and thoughts of individuals and specific groups",
+            "Readers are interested in understanding the effects of social media on mental and physical performance",
+            "Readers want to understand how and why cognitive biases and other psychological phenomena emerge through social media usage"
+          ],
+          "motivationForDistribution": "disseminate research done at aalto university to a wider audience in a succinct and understandable manner",
+          "relevanceThreshold": 7
+        }
+      }
+    ],
+    "processingTimeMs": 63666,
+    "totalFailedStudies": 0
+  },
+  {
+    "feed": "future of society",
+    "totalStudiesProcessed": 8,
+    "relevantStudiesFound": 8,
+    "relevantStudies": [
+      {
+        "study": {
+          "title": "Dynamic yet Persistent: Investigating Digital Traces of Human Behaviour",
+          "abstract": "We are citizens of the digital age, an age in which our smallest everyday actions leave digital traces behind. These traces can be used to reconstruct and analyse the patterns of human behaviour at both individual and societal levels. The growing abundance of quantitative data on almost every aspect of human behaviour is driving a paradigm shift from traditional social sciences to computational social sciences. This thesis utilises a wide range of digital traces of human behaviour to study and model the structure of social networks, as well as population-level patterns of commuting and travelling. A longitudinal study of these patterns reveals that while both personal social networks and population commuting networks are dynamic and undergo gradual changes and abrupt external disturbances, they also exhibit persistence in certain aspects and retain some of their distinctive features. Our work advances the knowledge of personal networks by identifying their universal and individual features through the study of a large population and multiple communication media. To clarify the generative mechanisms behind the observed universal patterns and individual variations within them, we present an ego-network model that connects the structure of ego-networks to the communication strategies of egos. Furthermore, we utilise rich and high-resolution digital communication logs and computational methods to validate the predictions of sociological theories that predate the emergence of computational social science as a field. Particularly, we show that the temporal manifestation of social ties can indicate the extent of their multiplexity (i.e., whether multiple social contexts underlie the tie) and that the multiplexity of ties impacts their functional features, such as their role in network connectivity. In addition to social networks, this thesis enriches our understanding of human mobility patterns by building predictive models that employ digital traces data. These models are capable of real-time estimation of country-wide mobility flows, even amidst rapid and significant distortions in mobility patterns. Taken together, my results highlight the potential of digital trace data and computational methods for advancing our understanding of various aspects of human behaviour. It applies these insights to predict human behaviour, identify universal and individual human traits, and contribute to bridging the new field of computational social science with the rich tradition of classical social science.",
+          "authors": [
+            "Sara Heydari"
+          ],
+          "publicationYear": 2024
+        },
+        "relevanceScore": {
+          "reasoning": "1. The abstract presents a thesis situated at the intersection of computational social science and traditional social science, using digital traces to model and analyze human social networks and mobility patterns at both individual and societal levels. The core methods involve computational analysis of high-resolution digital communication data and predictive modeling of social and mobility networks, with implications for understanding persistent and dynamic patterns in human behavior. \n2. Reader interests emphasize detecting emerging systemic shifts in social organization, governance, and meaning-making systems, especially as influenced by new technologies and societal trends. Readers are also focused on changes in agency, legitimacy, norms, collective decision-making, and the adaptation of societal infrastructure.\n3. There is a strong conceptual alignment between the research and the feed’s thematic scope. The abstract’s focus on using digital trace data for large-scale behavioral modeling directly relates to readers’ interests in understanding how technology-mediated behavioral data can reveal new social dynamics. The insights into the persistence and change of social networks and the capacity to monitor real-time mobility flows respond to the audience’s aims to detect and interpret signals of systemic change. The examination of how communication strategies and network multiplexity influence societal connectivity also supports readers’ interest in the changing nature of collective coordination and agency in the digital age.\n4. The study provides robust theoretical and methodological advances that help anticipate, monitor, and interpret transformations in societal organization—a core motivation for this newsfeed. It delivers actionable frameworks (e.g., ego-network modeling) and empirical evidence relevant for readers looking at the impact of technologies and crises on human organization, mobility, and values at scale. Disseminating this work via a newsletter aimed at forward-looking, interdisciplinary thinkers is highly appropriate, as it translates complex academic research into potentially actionable intelligence about societal futures.",
+          "affinityScore": 9,
+          "affinityExplanation": "This research closely aligns with the core interests and motives of the intended readership. It offers new insights into how digital technologies and data are reshaping understandings of social structure, mobility, and agency—key domains for those interested in transformative societal shifts. The only reason it is not a perfect 10 is that while the application to explicit governance structures or institutional legitimacy is more implied than directly addressed, the overall conceptual and methodological fit for the 'future of society' category is exceptionally high."
+        },
+        "feedCategory": "future of society",
+        "feedConfig": {
+          "category": "future of society",
+          "distributionChannel": "a newsletter which users subscribe to through a website with different categories to choose from",
+          "intendedReaders": [
+            "interdisciplinary thinkers and systems analysts interested in signals that suggest transformative shifts in human organization, governance, or belief systems",
+            "emerging technology observers, including researchers and entrepreneurs, looking to anticipate second- and third-order societal effects of disruptive innovations",
+            "civic-minded professionals and strategists who want to identify weak, intermediate and strong signals and large-scale patterns influencing the future evolution human life through public institutions, norms, habits, technologies, beliefs, historical context, trends, and collective decision-making"
+          ],
+          "readerInterests": [
+            "readers are interested in identifying emerging trends and events that signal systemic shifts in how societies organize power, coordinate action, and resolve conflict",
+            "readers want to understand how technologies, crises, or cultural shifts may alter human agency, governance structures, or institutional legitimacy over time",
+            "readers seek to track how collective meaning-making systems—such as education, religion, media, and science—are adapting or fragmenting in the face of complexity and change",
+            "readers are attentive to transitions in economic systems, social contracts, and infrastructure that could redefine work, mobility, identity, or cooperation at scale",
+            "readers aim to detect how human values, cognitive patterns, societal norms, politics, and imagined futures shape, and are shaped by, changing planetary constraints, technologies, media, and trends attracting human attention, thought and effort"
+          ],
+          "motivationForDistribution": "disseminate research done at aalto university to a wider audience in a succinct and understandable manner",
+          "relevanceThreshold": 6
+        }
+      },
+      {
+        "study": {
+          "title": "Landscape adaptation to climate change: Local networks, social learning and co-creation processes for adaptive planning",
+          "abstract": "The development of legitimate, operative, and feasible landscape adaptation planning for climate change is dependent on the specific characteristics of the landscape and its inhabitants. Spatial patterns, culture, governance systems, socio-economic structures, planning methods, history, and collectively envisioned futures need to be accommodated. The literature suggests that landscape is a complex and dynamic socio-ecological system, the management and adaptation of which requires systemic and integrative approaches to respond to a wide variety of drivers of change, challenges, and interests. Based on activities developed in 15 European pilot landscapes, we identify some of the key factors and conditions affecting the generation of representative local networks for landscape adaptation to climate change. We illustrate how social learning and co-creation processes can be implemented in them and how their co-produced outcomes can help local communities overcome barriers and address critical issues in adaptive planning. Our results provide a framework for the creation of similar networks in other landscapes, exploring at the same time the interactions between the composition of networks, social learning, and the quality of the co-produced outputs as a fundamental step for the development of Landscape Adaptation Plans to Climate Change.",
+          "authors": [
+            "Juanjo Galan",
+            "Francisco Galiana",
+            "D. Johan Kotze",
+            "Kevin Lynch",
+            "Daniele Torreggiani",
+            "Bas Pedroli"
+          ],
+          "publicationYear": 2023
+        },
+        "relevanceScore": {
+          "reasoning": "First, the abstract centers on landscape adaptation planning for climate change, emphasizing the complexity and multi-dimensionality of landscapes as socio-ecological systems. Key topics include integrating spatial, cultural, governance, and socio-economic aspects; local network creation; social learning; co-creation processes; and the resulting impacts on adaptive planning. The study is based on pilot landscapes in Europe and aims to offer a transferable framework for forming networks to facilitate climate adaptation. \n\nComparing this with reader interests: The core audience is deeply interested in systemic shifts in societal organization, governance, legitimacy, and the evolution of collective meaning-making. They focus on signals and trends that reflect changes in how societies coordinate, exercise agency, and transform institutions or norms under emerging pressures (like climate change, new tech, or cultural shifts). The research addresses social learning, network-building, co-creation, and adaptive planning—mechanisms directly relevant to understanding how communities and institutions may evolve in response to planetary-scale challenges. Furthermore, topics like the legitimacy of adaptation planning, integrating diverse perspectives, and overcoming institutional barriers strongly intersect with interests in governance and evolving social contracts.\n\nWhile the research does not focus on technology per se, its emphasis on co-produced knowledge, community learning, and participatory networks as adaptive responses to complexity is highly relevant to readers attuned to signals of societal transformation. The study can serve as a concrete example of emerging modes of coordination, power-sharing, and collective problem-solving—precisely the kinds of weak and intermediate signals the audience wishes to detect and analyze.\n\nThe motivation for distribution (succinct dissemination of university research to a broad audience) is well served: the topic is multidimensional, methodologically novel (social learning and co-creation), and directly pertinent to deliberations over the future of social organization amid global challenges.",
+          "affinityScore": 9,
+          "affinityExplanation": "This abstract aligns very strongly with the feed's purpose and the audience's interests. It addresses systemic shifts in governance and collective decision-making under climate stress, explores new models of legitimacy and co-creation, and provides actionable insights into how societies can self-organize to address planetary crises. The abstract delivers conceptual and practical signals relevant to understanding transformative change—precisely what the audience seeks—though it would score a perfect 10 if it included a greater technological or digital systems aspect."
+        },
+        "feedCategory": "future of society",
+        "feedConfig": {
+          "category": "future of society",
+          "distributionChannel": "a newsletter which users subscribe to through a website with different categories to choose from",
+          "intendedReaders": [
+            "interdisciplinary thinkers and systems analysts interested in signals that suggest transformative shifts in human organization, governance, or belief systems",
+            "emerging technology observers, including researchers and entrepreneurs, looking to anticipate second- and third-order societal effects of disruptive innovations",
+            "civic-minded professionals and strategists who want to identify weak, intermediate and strong signals and large-scale patterns influencing the future evolution human life through public institutions, norms, habits, technologies, beliefs, historical context, trends, and collective decision-making"
+          ],
+          "readerInterests": [
+            "readers are interested in identifying emerging trends and events that signal systemic shifts in how societies organize power, coordinate action, and resolve conflict",
+            "readers want to understand how technologies, crises, or cultural shifts may alter human agency, governance structures, or institutional legitimacy over time",
+            "readers seek to track how collective meaning-making systems—such as education, religion, media, and science—are adapting or fragmenting in the face of complexity and change",
+            "readers are attentive to transitions in economic systems, social contracts, and infrastructure that could redefine work, mobility, identity, or cooperation at scale",
+            "readers aim to detect how human values, cognitive patterns, societal norms, politics, and imagined futures shape, and are shaped by, changing planetary constraints, technologies, media, and trends attracting human attention, thought and effort"
+          ],
+          "motivationForDistribution": "disseminate research done at aalto university to a wider audience in a succinct and understandable manner",
+          "relevanceThreshold": 6
+        }
+      },
+      {
+        "study": {
+          "title": "Temporal patterns of reciprocity in communication networks",
+          "abstract": "Human communication, the essence of collective social phenomena ranging from small-scale organizations to worldwide online platforms, features intense reciprocal interactions between members in order to achieve stability, cohesion, and cooperation in social networks. While high levels of reciprocity are well known in aggregated communication data, temporal patterns of reciprocal information exchange have received far less attention. Here we propose measures of reciprocity based on the time ordering of interactions and explore them in data from multiple communication channels, including calls, messaging and social media. By separating each channel into reciprocal and non-reciprocal temporal networks, we find persistent trends that point to the distinct roles of one-to-one exchange versus information broadcast. We implement several null models of communication activity, which identify memory, a higher tendency to repeat interactions with past contacts, as a key source of temporal reciprocity. When adding memory to a model of activity-driven, time-varying networks, we reproduce the levels of temporal reciprocity seen in empirical data. Our work adds to the theoretical understanding of the emergence of reciprocity in human communication systems, hinting at the mechanisms behind the formation of norms in social exchange and large-scale cooperation.",
+          "authors": [
+            "Sandeep Chowdhary",
+            "Elsa Andres",
+            "Adriana Manna",
+            "Luka Blagojević",
+            "Leonardo Di Gaetano",
+            "Gerardo Iñiguez"
+          ],
+          "publicationYear": 2023
+        },
+        "relevanceScore": {
+          "reasoning": "The abstract investigates the temporal patterns of reciprocity in human communication across multiple channels (calls, messaging, social media), introducing new methods to measure these patterns and identifying memory (the tendency to repeat interactions) as central in driving temporal reciprocity. The findings point toward the mechanisms behind norm formation in social exchange and the potential for large-scale cooperation. \n\nComparing this content to the reader interests: readers are actively looking for signals of systemic shifts in how societies coordinate, organize, and form institutions, with a keen interest in mechanisms influencing norms, coordination, and collective action at scale. The study’s focus on the emergence of social norms and cooperation mechanisms in digital interaction channels is highly relevant—these are primary places where contemporary collective meaning-making, norm negotiation, and social coordination are occurring. Furthermore, the use of empirical data from diverse communication platforms and the attention to the micro-dynamics of memory and reciprocity directly support the readers’ interest in detecting underlying patterns that could herald broader organizational or governance shifts. \n\nThe motivation is to succinctly present relevant Aalto University research to a wide, discerning audience. This study not only broadens the theoretical understanding of communication and cooperation but connects to large-scale transformations in social organization—especially as society moves further into digitally-mediated forms of exchange. \n\nOverall, the abstract addresses the formation of norms (reader interest in norms and meaning-making), mechanisms behind large-scale cooperation (interest in societal coordination), and relational patterns that could act as precursors to systemic change—matching both direct and higher-order reader interests and the purpose of anticipating signals of future societal shifts.",
+          "affinityScore": 9,
+          "affinityExplanation": "This paper is a strong fit for the interests and motivations of the audience in this subscription category. It focuses on the foundational processes in mediated social interaction that underpin changes in collective behavior, norm formation, and cooperation—none of which are peripheral to the stated reader interests. Its empirical and theoretical contributions could inform readers’ detection of weak or intermediate signals of emerging societal change. The topic is highly relevant, though its theoretical emphasis (rather than, for instance, specific predictions or case studies) slightly limits its immediate practical application, hence it's not a perfect 10. Still, it aligns extremely well with the purpose and the sophisticated nature of the audience."
+        },
+        "feedCategory": "future of society",
+        "feedConfig": {
+          "category": "future of society",
+          "distributionChannel": "a newsletter which users subscribe to through a website with different categories to choose from",
+          "intendedReaders": [
+            "interdisciplinary thinkers and systems analysts interested in signals that suggest transformative shifts in human organization, governance, or belief systems",
+            "emerging technology observers, including researchers and entrepreneurs, looking to anticipate second- and third-order societal effects of disruptive innovations",
+            "civic-minded professionals and strategists who want to identify weak, intermediate and strong signals and large-scale patterns influencing the future evolution human life through public institutions, norms, habits, technologies, beliefs, historical context, trends, and collective decision-making"
+          ],
+          "readerInterests": [
+            "readers are interested in identifying emerging trends and events that signal systemic shifts in how societies organize power, coordinate action, and resolve conflict",
+            "readers want to understand how technologies, crises, or cultural shifts may alter human agency, governance structures, or institutional legitimacy over time",
+            "readers seek to track how collective meaning-making systems—such as education, religion, media, and science—are adapting or fragmenting in the face of complexity and change",
+            "readers are attentive to transitions in economic systems, social contracts, and infrastructure that could redefine work, mobility, identity, or cooperation at scale",
+            "readers aim to detect how human values, cognitive patterns, societal norms, politics, and imagined futures shape, and are shaped by, changing planetary constraints, technologies, media, and trends attracting human attention, thought and effort"
+          ],
+          "motivationForDistribution": "disseminate research done at aalto university to a wider audience in a succinct and understandable manner",
+          "relevanceThreshold": 6
+        }
+      },
+      {
+        "study": {
+          "title": "FediLive: A Framework for Collecting and Preprocessing Snapshots of Decentralized Online Social Networks",
+          "abstract": "Decentralized online social networks such as Mastodon have emerged quickly during the past years, and offer unique opportunities to investigate user behavior, moderation strategies, and community evolution. However, their decentralized nature imposes challenges for data collection and preprocessing, particularly for obtaining a real-time snapshot in a timely manner. This paper introduces FediLive, a framework designed to rapidly collect and preprocess the live feeds from Mastodon, generate a comprehensive snapshot in real-time, including user-generated contents, interaction networks, and users’ demographic attributes. Such a snapshot could further be leveraged for data analysis from different angles, leading to a deeper understanding of user activities on Mastodon. Using FediLive, we collected a 13-day snapshot of Mastodon, covering the publicly visible activities of all Mastodon users. Our study demonstrates the usefulness of FediLive, and reveals its potential in facilitating data-driven analysis for decentralized online social networks.",
+          "authors": [
+            "Shaojie Min",
+            "Shaobin Wang",
+            "Yaxiao Luo",
+            "Min Gao",
+            "Qingyuan Gong",
+            "Yu Xiao",
+            "Yang Chen"
+          ],
+          "publicationYear": 2025
+        },
+        "relevanceScore": {
+          "reasoning": "The abstract describes a technical contribution: FediLive, a framework for real-time collection and analysis of Mastodon data. The paper's central focus is on providing high-quality, real-time snapshots of decentralized social networks, enabling analysis of user content, interactions, and demographics. While the work is primarily methodological, its application area—decentralized online social networks like Mastodon—directly intersects with questions about how society organizes communication, power, and collective meaning-making in the face of technological change. For this newsletter, which targets readers looking for signals of systemic shifts and transformations in governance, norms, and coordination, the emergence and study of decentralized networks is highly relevant. Mastodon represents an alternative to centralized platforms, potentially signaling shifts in where people invest trust, how communities self-govern, and how new forms of interaction and authority develop. The research could help readers anticipate broader effects of such platforms on agency, institutional legitimacy, and the fragmentation or recomposition of public discourse—a clear match with their interests. The framework itself, while technical, is a means to systematically study the evolution of these shifts in real time, proving valuable to readers aiming to track and interpret weak or intermediate signals in the digital public sphere. The abstract does not report specific findings about societal change, but the capability it delivers is closely aligned with the future-of-society theme and the readers' intent to detect and interpret new societal patterns.",
+          "affinityScore": 8,
+          "affinityExplanation": "This research is highly relevant for readers interested in systemic societal shifts due to the role decentralized social networks may play in transforming public discourse, governance, and social organization. The primary limitation is that the abstract focuses on the framework and methodological innovation rather than reporting substantive findings about these shifts. However, the tool itself empowers the very types of analysis and trend detection these readers seek, making it a strong conceptual fit for the feed."
+        },
+        "feedCategory": "future of society",
+        "feedConfig": {
+          "category": "future of society",
+          "distributionChannel": "a newsletter which users subscribe to through a website with different categories to choose from",
+          "intendedReaders": [
+            "interdisciplinary thinkers and systems analysts interested in signals that suggest transformative shifts in human organization, governance, or belief systems",
+            "emerging technology observers, including researchers and entrepreneurs, looking to anticipate second- and third-order societal effects of disruptive innovations",
+            "civic-minded professionals and strategists who want to identify weak, intermediate and strong signals and large-scale patterns influencing the future evolution human life through public institutions, norms, habits, technologies, beliefs, historical context, trends, and collective decision-making"
+          ],
+          "readerInterests": [
+            "readers are interested in identifying emerging trends and events that signal systemic shifts in how societies organize power, coordinate action, and resolve conflict",
+            "readers want to understand how technologies, crises, or cultural shifts may alter human agency, governance structures, or institutional legitimacy over time",
+            "readers seek to track how collective meaning-making systems—such as education, religion, media, and science—are adapting or fragmenting in the face of complexity and change",
+            "readers are attentive to transitions in economic systems, social contracts, and infrastructure that could redefine work, mobility, identity, or cooperation at scale",
+            "readers aim to detect how human values, cognitive patterns, societal norms, politics, and imagined futures shape, and are shaped by, changing planetary constraints, technologies, media, and trends attracting human attention, thought and effort"
+          ],
+          "motivationForDistribution": "disseminate research done at aalto university to a wider audience in a succinct and understandable manner",
+          "relevanceThreshold": 6
+        }
+      },
+      {
+        "study": {
+          "title": "On Sustainable Ring-Based Anonymous Systems",
+          "abstract": "Anonymous systems (e.g. anonymous cryptocurrencies and updatable anonymous credentials) often follow a construction template where an account can only perform a single anonymous action, which in turn potentially spawns new (and still single-use) accounts (e.g. UTXO with a balance to spend or session with a score to claim). Due to the anonymous nature of the action, no party can be sure which account has taken part in an action and, therefore, must maintain an ever-growing list of potentially unused accounts to ensure that the system keeps running correctly. Consequently, anonymous systems constructed based on this common template are seemingly not sustainable. In this work, we study the sustainability of ring-based anonymous systems, where a user performing an anonymous action is hidden within a set of decoy users, traditionally called a 'ring'. On the positive side, we propose a general technique for ring-based anonymous systems to achieve sustainability. Along the way, we define a general model of decentralised anonymous systems (DAS) for arbitrary anonymous actions, and provide a generic construction which provably achieves sustainability. As a special case, we obtain the first construction of anonymous cryptocurrencies achieving sustainability without compromising availability. We also demonstrate the generality of our model by constructing sustainable decentralised anonymous social networks. On the negative side, we show empirically that Monero, one of the most popular anonymous cryptocurrencies, is unlikely to be sustainable without altering its current ring sampling strategy. The main subroutine is a sub-quadratic-time algorithm for detecting used accounts in a ring-based anonymous system.",
+          "authors": [
+            "Sherman S.M. Chow",
+            "Christoph Egger",
+            "Russell W.F. Lai",
+            "Viktoria Ronge",
+            "Ivy K.Y. Woo"
+          ],
+          "publicationYear": 2023
+        },
+        "relevanceScore": {
+          "reasoning": "1. The abstract describes a technical study of the sustainability of ring-based anonymous systems, with applications to anonymous cryptocurrencies and decentralized anonymous social networks. It addresses both the practical limitations and a new model and construction for making such systems sustainable, also critiquing an existing real-world application (Monero). 2. Reader interests are centered on identifying signals of systemic shifts in societal organization, power, governance, and collective meaning-making, with an emphasis on how emerging technologies may change agency, legitimacy, norms, and large-scale coordination. While the paper is quite technical, its themes—anonymous cryptocurrencies, decentralized social networks, sustainability of anonymous systems—do touch directly and indirectly on infrastructure changes that can influence societal norms (privacy, trust), economic exchange (cryptocurrencies), and governance (decentralized systems). The sustainability issue brings in questions about long-term viability and potential societal impact, aligning with readers' interests in how technology could alter institutions and collective action. The study's focus on empirical shortcomings of existing systems (e.g., Monero) provides a signal relevant for those anticipating disruptions or transitions in how systems may succeed or fail. 3. The motivation for distribution is about making research accessible and showcasing university work; in this case, the topic, if explained in a non-technical summary, could strongly interest the audience given their focus on deep changes in societal infrastructure and systems. The direct technical depth may be a barrier, but conceptually the work is highly relevant as it reveals both possible futures (sustainable decentralized anonymity) and challenges (viability of current systems) that may shape large-scale societal arrangements.",
+          "affinityScore": 8,
+          "affinityExplanation": "The research aligns well with the newsletter's focus on the future of society and the interests of readers tracking transformative technological shifts, especially regarding anonymity, privacy, and the sustainability of digital institutions. While highly technical, the paper's core subject—the sustainability of anonymous, decentralized systems—touches directly on emerging forms of coordination, identity, and trust that are central to societal shifts. Making this research accessible could provide strong signals about the trajectory and constraints of decentralized governance and infrastructures, justifying a high affinity score."
+        },
+        "feedCategory": "future of society",
+        "feedConfig": {
+          "category": "future of society",
+          "distributionChannel": "a newsletter which users subscribe to through a website with different categories to choose from",
+          "intendedReaders": [
+            "interdisciplinary thinkers and systems analysts interested in signals that suggest transformative shifts in human organization, governance, or belief systems",
+            "emerging technology observers, including researchers and entrepreneurs, looking to anticipate second- and third-order societal effects of disruptive innovations",
+            "civic-minded professionals and strategists who want to identify weak, intermediate and strong signals and large-scale patterns influencing the future evolution human life through public institutions, norms, habits, technologies, beliefs, historical context, trends, and collective decision-making"
+          ],
+          "readerInterests": [
+            "readers are interested in identifying emerging trends and events that signal systemic shifts in how societies organize power, coordinate action, and resolve conflict",
+            "readers want to understand how technologies, crises, or cultural shifts may alter human agency, governance structures, or institutional legitimacy over time",
+            "readers seek to track how collective meaning-making systems—such as education, religion, media, and science—are adapting or fragmenting in the face of complexity and change",
+            "readers are attentive to transitions in economic systems, social contracts, and infrastructure that could redefine work, mobility, identity, or cooperation at scale",
+            "readers aim to detect how human values, cognitive patterns, societal norms, politics, and imagined futures shape, and are shaped by, changing planetary constraints, technologies, media, and trends attracting human attention, thought and effort"
+          ],
+          "motivationForDistribution": "disseminate research done at aalto university to a wider audience in a succinct and understandable manner",
+          "relevanceThreshold": 6
+        }
+      },
+      {
+        "study": {
+          "title": "Spreading and Epidemic Interventions - Effects of Network Structure and Dynamics",
+          "abstract": "The COVID-19 pandemic has highlighted the critical importance of understanding epidemic dynamics, particularly the significant gaps in our knowledge that need addressing to better prepare for future pandemics. This thesis delves into the intricacies of disease spread within complex human interaction networks, underlining the pivotal role of individual connectedness in influencing epidemic outcomes. By developing theoretical models inspired by real-world epidemiological data, this work provides a nuanced exploration of disease transmission dynamics across networked populations, emphasizing the heterogeneous, spatial, homophilic, and temporal characteristics inherent in human social structures. A primary focus of this research is the investigation of intervention strategies, encompassing pharmaceutical measures, such as vaccination campaigns, and non-pharmaceutical interventions, including contact tracing techniques. These interventions are evaluated within more realistic network topologies, characterized by degree heterogeneity and group structures, to assess their effectiveness in mitigating epidemic spread. The thesis leverages mathematical and computational epidemiology to offer profound insights into optimizing intervention strategies within the complex web of human interactions, thereby contributing to the academic discourse and providing actionable intelligence for public health policy formulation and epidemic preparedness. The avenues of research opened by this work offer deeper insights into the mechanisms of epidemic spread in social networks. By using stylized modeling, the study was able to delve into the nontrivial ways epidemics spread through social networks. This modeling approach simplified the realworld dynamics into more analytically tractable forms, allowing the researchers to capture the essence of contact network structures and their crucial role in transmitting infectious diseases. The primary objective of this study was to identify new pathways for academic exploration and offer valuable perspectives that can enhance public health policies and epidemic response strategies. Ultimately, this work seeks to contribute to a better understanding of epidemic dynamics by bridging knowledge gaps and fostering a more resilient response to public health challenges in the face of complex human interactions.",
+          "authors": [
+            "Abbas K. Rizi"
+          ],
+          "publicationYear": 2024
+        },
+        "relevanceScore": {
+          "reasoning": "First, the abstract investigates the spread of epidemics like COVID-19 within complex human interaction networks, focusing on both pharmaceutical and non-pharmaceutical intervention strategies. The approach is network-based, analyzing heterogeneity in contacts and group structures, and the ultimate aim is to inform public health policies and epidemic response strategies by clarifying the dynamics of disease spread in social contexts. \n\nComparing this to the reader interests: There is not a direct thematic match between epidemiology and the explicit interests in systemic shifts in power, governance, conflict resolution, or meaning-making systems. However, there are substantial indirect connections. The network analysis of epidemic spread is fundamentally about how social organization and collective behavior enable or constrain phenomena with system-wide impact. Insights into intervention effectiveness, particularly as they relate to social structures, have implications for governance and the adaptation of institutions to crisis—core themes for these readers. The pandemic itself has acted as a transformative crisis, reshaping norms, governance, trust, and social contracts, and the study’s findings on the role of networked human behaviors and interventions in epidemic outcomes could be extrapolated to anticipate broader societal shifts. \n\nRegarding distribution motivation, the intention is to broadly share cutting-edge research from Aalto University with an audience wanting synthesized analysis. While this work is technical in focus, it provides foundational context for systemic risks, collective action challenges, and institutional adaptation—key areas of curiosity for these readers. \n\nIn sum, although the paper doesn’t explicitly address topics like governance, agency, or collective meaning-making, its insights into resilient social responses and how networked human structures mediate crisis render it quite pertinent to the audience’s desire to detect signals and shifts in societal organization and response capacity.",
+          "affinityScore": 7,
+          "affinityExplanation": "This research aligns well with the audience’s interests by offering a systems-level analysis of networks and crisis response—an area at the intersection of public health, institutional adaptation, and systemic change. Its immediate subject matter (epidemic modeling) is a step removed from core themes like governance evolution or institutional legitimacy, but the indirect connections, especially in understanding how societies can become more resilient or responsive under stress, justify a strong but not maximal affinity. Presentation in a synthesized, contextualized form would be particularly valuable for this audience."
+        },
+        "feedCategory": "future of society",
+        "feedConfig": {
+          "category": "future of society",
+          "distributionChannel": "a newsletter which users subscribe to through a website with different categories to choose from",
+          "intendedReaders": [
+            "interdisciplinary thinkers and systems analysts interested in signals that suggest transformative shifts in human organization, governance, or belief systems",
+            "emerging technology observers, including researchers and entrepreneurs, looking to anticipate second- and third-order societal effects of disruptive innovations",
+            "civic-minded professionals and strategists who want to identify weak, intermediate and strong signals and large-scale patterns influencing the future evolution human life through public institutions, norms, habits, technologies, beliefs, historical context, trends, and collective decision-making"
+          ],
+          "readerInterests": [
+            "readers are interested in identifying emerging trends and events that signal systemic shifts in how societies organize power, coordinate action, and resolve conflict",
+            "readers want to understand how technologies, crises, or cultural shifts may alter human agency, governance structures, or institutional legitimacy over time",
+            "readers seek to track how collective meaning-making systems—such as education, religion, media, and science—are adapting or fragmenting in the face of complexity and change",
+            "readers are attentive to transitions in economic systems, social contracts, and infrastructure that could redefine work, mobility, identity, or cooperation at scale",
+            "readers aim to detect how human values, cognitive patterns, societal norms, politics, and imagined futures shape, and are shaped by, changing planetary constraints, technologies, media, and trends attracting human attention, thought and effort"
+          ],
+          "motivationForDistribution": "disseminate research done at aalto university to a wider audience in a succinct and understandable manner",
+          "relevanceThreshold": 6
+        }
+      },
+      {
+        "study": {
+          "title": "Network-based control of epidemic via flattening the infection curve: high-clustered vs. low-clustered social networks",
+          "abstract": "Recent studies in network science and control have shown a meaningful relationship between the epidemic processes (e.g., COVID-19 spread) and some network properties. This paper studies how such network properties, namely clustering coefficient and centrality measures (or node influence metrics), affect the spread of viruses and the growth of epidemics over scale-free networks. The results can be used to target individuals (the nodes in the network) to flatten the infection curve. This so-called flattening of the infection curve is to reduce the health service costs and burden to the authorities/governments. Our Monte-Carlo simulation results show that clustered networks are, in general, easier to flatten the infection curve, i.e., with the same connectivity and the same number of isolated individuals they result in more flattened curves. Moreover, distance-based centrality measures, which target the nodes based on their average network distance to other nodes (and not the node degrees), are better choices for targeting individuals for isolation/vaccination.",
+          "authors": [
+            "Mohammadreza Doostmohammadian",
+            "Hamid R. Rabiee"
+          ],
+          "publicationYear": 2023
+        },
+        "relevanceScore": {
+          "reasoning": "The abstract concerns how network properties such as clustering and centrality affect the spread of epidemics, specifically focusing on optimizing strategies for flattening infection curves in scale-free networks. This involves understanding which individuals (nodes) to target for intervention (isolation/vaccination) to manage public health crises more effectively. The intended readers are systems-oriented and interested in patterns that could indicate transformative shifts in societal organization, particularly regarding power structures, coordination, governance, and institutional adaptation. While the study itself is technical and focused within network science and epidemiology, its findings have considerable indirect relevance: pandemics like COVID-19 are pivotal events that trigger large-scale systemic shifts in governance, collective behavior, institutional trust, and the structures of social coordination. Further, the approach to targeting interventions based on network structure rather than just raw connectivity could inform thinking about resilience, crisis response, and how institutions adapt to rapidly evolving constraints. For readers tracking signals that reshape collective action and institutional legitimacy, insights from this paper offer perspective on how scientific understanding and technology inform societal responses to crises, which in turn feed into broader transitions in governance, norms, and public attitudes. The connection, however, is primarily indirect—requiring translation of the technical findings into implications for societal and institutional change. The study does not directly analyze societal shifts, but its relevance as an upstream driver of institutional adaptation and system change is substantial. Given the motivation to disseminate university research to this broad and future-facing audience, the paper offers material that, with contextualization, could be valuable for detecting or understanding systemic shifts.",
+          "affinityScore": 7,
+          "affinityExplanation": "While the paper is technically grounded in network science and epidemic control, its findings relate to systemic phenomena of high interest to the target audience—namely, the mechanisms that govern collective action, crisis response, and societal adaptation to disruptive events. The match is not direct (the paper is not about society or governance per se), but the indirect relevance is strong because pandemics and the management of them are core signals for systemic change in human organization and institutions. With proper framing, this research helps readers anticipate how underlying scientific knowledge can impact societal structures, which fits well with the newsletter's purpose."
+        },
+        "feedCategory": "future of society",
+        "feedConfig": {
+          "category": "future of society",
+          "distributionChannel": "a newsletter which users subscribe to through a website with different categories to choose from",
+          "intendedReaders": [
+            "interdisciplinary thinkers and systems analysts interested in signals that suggest transformative shifts in human organization, governance, or belief systems",
+            "emerging technology observers, including researchers and entrepreneurs, looking to anticipate second- and third-order societal effects of disruptive innovations",
+            "civic-minded professionals and strategists who want to identify weak, intermediate and strong signals and large-scale patterns influencing the future evolution human life through public institutions, norms, habits, technologies, beliefs, historical context, trends, and collective decision-making"
+          ],
+          "readerInterests": [
+            "readers are interested in identifying emerging trends and events that signal systemic shifts in how societies organize power, coordinate action, and resolve conflict",
+            "readers want to understand how technologies, crises, or cultural shifts may alter human agency, governance structures, or institutional legitimacy over time",
+            "readers seek to track how collective meaning-making systems—such as education, religion, media, and science—are adapting or fragmenting in the face of complexity and change",
+            "readers are attentive to transitions in economic systems, social contracts, and infrastructure that could redefine work, mobility, identity, or cooperation at scale",
+            "readers aim to detect how human values, cognitive patterns, societal norms, politics, and imagined futures shape, and are shaped by, changing planetary constraints, technologies, media, and trends attracting human attention, thought and effort"
+          ],
+          "motivationForDistribution": "disseminate research done at aalto university to a wider audience in a succinct and understandable manner",
+          "relevanceThreshold": 6
+        }
+      },
+      {
+        "study": {
+          "title": "Effectiveness of contact tracing on networks with cliques",
+          "abstract": "Contact tracing, the practice of isolating individuals who have been in contact with infected individuals, is an effective and practical way of containing disease spread. Here we show that this strategy is particularly effective in the presence of social groups: Once the disease enters a group, contact tracing not only cuts direct infection paths but can also pre-emptively quarantine group members such that it will cut indirect spreading routes. We show these results by using a deliberately stylized model that allows us to isolate the effect of contact tracing within the clique structure of the network where the contagion is spreading. This will enable us to derive mean-field approximations and epidemic thresholds to demonstrate the efficiency of contact tracing in social networks with small groups. This analysis shows that contact tracing in networks with groups is more efficient the larger the groups are. We show how these results can be understood by approximating the combination of disease spreading and contact tracing with a complex contagion process where every failed infection attempt will lead to a lower infection probability in the following attempts. Our results illustrate how contact tracing in real-world settings can be more efficient than predicted by models that treat the system as fully mixed or the network structure as locally treelike.",
+          "authors": [
+            "Abbas K. Rizi",
+            "Leah Keating",
+            "James P. Gleeson",
+            "David O'Sullivan",
+            "Mikko Kivelä"
+          ],
+          "publicationYear": 2024
+        },
+        "relevanceScore": {
+          "reasoning": "The abstract presents research on the effectiveness of contact tracing—particularly in structured social groups—for containing disease spread, using a stylized network model to analyze contagion dynamics and epidemic thresholds. The study’s core focus is epidemiological modeling with implications for public health intervention strategies, especially with respect to social network structures. Comparing this to the reader interests, there are some indirect but significant links: readers are interested in transformative shifts in societal coordination, institutional legitimacy, and systemic responses to crises. The modeling of how contact tracing interacts with social groups not only informs on disease control but also provides insights into how network structures and collective behaviors influence societal resilience and the ability to coordinate action—relevant themes for readers tracking systemic shifts and the evolution of governance or collective agency. The work could serve as a weak-to-moderate signal for how societies might adapt collective protocols (like contact tracing) at scale, especially in the context of future pandemics or networked crises. However, the treatment in the abstract is quite technical and focused on epidemiological mechanisms rather than broader social, technological, or institutional consequences, which may limit its perceived direct relevance unless the reader makes conceptual leaps. The motivation for distribution is to showcase research succinctly; while the topic is not directly about societal transformation, the interplay between network structures and collective health interventions could interest those attentive to future systems of coordination. The value to the reader depends on their willingness to extrapolate from epidemiological networks to broader societal patterns.",
+          "affinityScore": 6,
+          "affinityExplanation": "While the paper is not directly about large-scale social or institutional shifts, it offers relevant insights into how networked social structures shape the efficacy of collective interventions like contact tracing. This bears on the systemic capacity for coordination and adaptation—topics of peripheral but nontrivial interest for an audience attentive to signals of social transformation. The technical focus may limit immediate accessibility or relevance, but the underlying themes of organized response in complex systems create a modest to moderate affinity."
+        },
+        "feedCategory": "future of society",
+        "feedConfig": {
+          "category": "future of society",
+          "distributionChannel": "a newsletter which users subscribe to through a website with different categories to choose from",
+          "intendedReaders": [
+            "interdisciplinary thinkers and systems analysts interested in signals that suggest transformative shifts in human organization, governance, or belief systems",
+            "emerging technology observers, including researchers and entrepreneurs, looking to anticipate second- and third-order societal effects of disruptive innovations",
+            "civic-minded professionals and strategists who want to identify weak, intermediate and strong signals and large-scale patterns influencing the future evolution human life through public institutions, norms, habits, technologies, beliefs, historical context, trends, and collective decision-making"
+          ],
+          "readerInterests": [
+            "readers are interested in identifying emerging trends and events that signal systemic shifts in how societies organize power, coordinate action, and resolve conflict",
+            "readers want to understand how technologies, crises, or cultural shifts may alter human agency, governance structures, or institutional legitimacy over time",
+            "readers seek to track how collective meaning-making systems—such as education, religion, media, and science—are adapting or fragmenting in the face of complexity and change",
+            "readers are attentive to transitions in economic systems, social contracts, and infrastructure that could redefine work, mobility, identity, or cooperation at scale",
+            "readers aim to detect how human values, cognitive patterns, societal norms, politics, and imagined futures shape, and are shaped by, changing planetary constraints, technologies, media, and trends attracting human attention, thought and effort"
+          ],
+          "motivationForDistribution": "disseminate research done at aalto university to a wider audience in a succinct and understandable manner",
+          "relevanceThreshold": 6
+        }
+      }
+    ],
+    "processingTimeMs": 58546,
+    "totalFailedStudies": 0
+  },
+  {
+    "feed": "space exploration",
+    "totalStudiesProcessed": 8,
+    "relevantStudiesFound": 0,
+    "relevantStudies": [],
+    "processingTimeMs": 33365,
+    "totalFailedStudies": 0
+  }
+]
