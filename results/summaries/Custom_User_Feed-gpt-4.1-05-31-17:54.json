@@ -1,0 +1,32 @@
+[
+  {
+    "topic": "Using Digital Traces to Map Social Networks and Human Mobility",
+    "methodology": "Researchers analyzed large-scale digital records of communication and mobility to understand how personal and societal networks change over time, develop predictive models, and connect computational findings to classical theories.",
+    "findings": "Both social and commuting networks display persistent structures despite gradual changes and sudden disruptions, and advanced models can reliably predict network dynamics and population movement.",
+    "implications": "Harnessing digital trace data can significantly improve our understanding and forecasting of social and mobility patterns, benefiting fields from sociology to urban planning and public policy."
+  },
+  {
+    "topic": "Building Local Networks for Climate Change Adaptation in Landscapes",
+    "methodology": "Researchers examined activities in 15 European landscapes to identify factors that help create effective local networks for climate adaptation, focusing on the roles of social learning and co-creation among communities.",
+    "findings": "Social learning and collaborative processes improve the adaptability and problem-solving capacity of local networks for climate change planning.",
+    "implications": "This framework empowers communities to better adapt to climate change through inclusive, locally-grounded strategies that can be applied to other regions seeking effective landscape adaptation."
+  },
+  {
+    "topic": "How Memory Drives Reciprocity in Human Communication",
+    "methodology": "The study introduced time-based measures of reciprocal communication and analyzed multiple digital channels to determine the impact of repeated interactions (memory) on reciprocity patterns.",
+    "findings": "Memory—tendency to interact more often with existing contacts—significantly explains observed patterns of reciprocal communication, distinguishing personal exchanges from mass broadcasts.",
+    "implications": "Understanding how memory shapes communication can inform strategies for fostering cooperation and stable social ties in both online and offline communities."
+  },
+  {
+    "topic": "Why Contact Tracing Works Better in Tight-Knit Social Groups",
+    "methodology": "A stylized network model was used to isolate and analyze the effectiveness of contact tracing in social groups (cliques) during outbreaks.",
+    "findings": "Contact tracing is especially efficient in larger social groups because isolating contacts can preemptively stop indirect as well as direct disease transmission.",
+    "implications": "Optimizing contact tracing around clustered groups could make public health interventions far more effective in reducing disease spread during epidemics."
+  },
+  {
+    "topic": "Modeling Epidemics to Shape Better Public Health Responses",
+    "methodology": "Researchers developed and analyzed mathematical models inspired by real-world networks to understand how diseases spread and test the effectiveness of interventions like vaccination and contact tracing.",
+    "findings": "Disease spread is strongly influenced by how people are connected in networks, with targeted interventions working best when accounting for heterogeneity and group structures.",
+    "implications": "These insights can help public health officials develop smarter, more adaptive strategies for epidemic preparedness and response, improving outcomes in future pandemics."
+  }
+]

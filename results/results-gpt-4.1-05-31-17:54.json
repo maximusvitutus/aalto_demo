@@ -1,0 +1,59 @@
+[
+  {
+    "feed": "Custom User Feed",
+    "totalStudiesProcessed": 12,
+    "relevantStudiesFound": 5,
+    "relevantStudies": [
+      {
+        "study": {
+          "title": "Dynamic yet Persistent: Investigating Digital Traces of Human Behaviour"
+        },
+        "relevanceScore": {
+          "reasoning": "First, the abstract discusses using digital trace data (such as digital communication logs) to model and analyze human behavior at both individual and population scales, particularly focusing on social networks and human mobility. It explores how these networks change and persist, proposes models relating communication strategies to network structure, validates classic sociological theories with computational methods, and develops predictive models of mobility. Second, the reader's stated interest is 'social science,' while the audience is a donor closely linked to the sponsoring social science department. The study is firmly rooted in social science, specifically computational social science—an emergent field intersecting sociology, data science, and network theory. The study's efforts to bridge computational advances with classical social theories are of high conceptual relevance to social science as a discipline. The work’s attention to both universal patterns and individual variation aligns with many core social science debates. Third, the motivation is a personalized feed for the donor, aligning research summaries with their interests. Given the broad social science focus, this study not only matches the disciplinary interest but demonstrates the department's innovative and impactful research, likely strengthening the donor's engagement. In sum, the paper is both thematically appropriate and strategically valuable for the intended audience and distribution purpose.",
+          "affinityScore": 10,
+          "affinityExplanation": "This paper is an ideal match for a social science–interested donor receiving customized summaries. It exemplifies cutting-edge research in the field, directly engages with classic and emerging themes in social science, and underlines the department’s strengths, making it highly valuable for both intellectual interest and donor relationship goals."
+        }
+      },
+      {
+        "study": {
+          "title": "Landscape adaptation to climate change: Local networks, social learning and co-creation processes for adaptive planning"
+        },
+        "relevanceScore": {
+          "reasoning": "The abstract describes a study on landscape adaptation planning for climate change, focusing on the integration of social learning, co-creation, and the formation of local networks within varied European contexts. The study is interdisciplinary, as it discusses socio-ecological systems, governance, and planning methods, all of which are situated firmly within the realm of social science. There is a thematic match since the study investigates how social structures, governance, culture, and community processes contribute to effective climate adaptation—topics central to social scientific inquiry. Furthermore, the intended reader is a donor with an interest in the social sciences, and the motivation is to provide relevant research from the department they support. Given the study's direct connection to social science methods (social learning, co-creation, governance analysis) and its practical implications for society (adaptive planning), it aligns well with the interests and motivations stated. The feed’s personalized purpose means that direct departmental research related to social science should have high affinity.",
+          "affinityScore": 9,
+          "affinityExplanation": "This research paper closely aligns with the intended reader’s interest in social science by addressing socially complex processes (like governance, social learning, and community engagement) in the context of climate adaptation planning. The study is directly relevant to the department the donor supports, and it is likely to engage them by showcasing impactful, socially-focused research. There could be a slight reduction from a perfect score if the donor's interests within social science are more narrow, but overall, this matches the feed's motivation and audience very well."
+        }
+      },
+      {
+        "study": {
+          "title": "Temporal patterns of reciprocity in communication networks"
+        },
+        "relevanceScore": {
+          "reasoning": "The abstract investigates the temporal patterns of reciprocity in human communication, analyzing data from calls, messaging, and social media. It develops novel measures of reciprocity and explores how memory (the tendency to repeat interactions) influences the formation of stable, cooperative social networks. This is solidly within the domain of social science, touching on collective behavior, network theory, and the emergence of social norms—all core social science themes. The intended reader is a donor interested in social science, and the motivation is to provide a personalized research experience that aligns with their interests. Given that this paper delves into fundamental social dynamics with broad implications for understanding social behavior and cooperation, it both conceptually and substantively matches the target interests. The donor, as someone invested in the university’s social science research, would likely find value in being informed about innovative, high-level work in the discipline, especially when it reflects the department’s active scholarship. This paper does not appear to focus on a niche subfield that could be outside the donor’s interest; rather, it exemplifies the type of research that would engage a generalist social science supporter.",
+          "affinityScore": 9,
+          "affinityExplanation": "This research is highly aligned with the intended purpose and audience of the feed. It represents advanced social science research investigating core aspects of human interaction and network theory. The paper is conceptually aligned with the reader interest in social science and would serve the motivation of personalized, relevant research updates for a donor. While it is not specialized for a subfield or policymaker, its foundational nature makes it an excellent fit for a broad social science enthusiast. Hence, a score of 9 is justified."
+        }
+      },
+      {
+        "study": {
+          "title": "Effectiveness of contact tracing on networks with cliques"
+        },
+        "relevanceScore": {
+          "reasoning": "The abstract describes a study focused on analyzing the effectiveness of contact tracing in controlling disease spread within social groups, utilizing network theory and epidemic modeling. The research uses mathematical models to compare outcomes in group-structured (clique) social networks versus more generic network structures. The intended reader is a donor interested in social sciences, and the distribution is a personalized research feed aimed at matching their interests. The study has a direct connection to social science through its exploration of disease control strategies within the context of social network structures, a common topic in sociology and public health intersecting with social science. However, the abstract leans heavily on network modeling and mathematical approaches, which may be somewhat technical for a general social science audience. Nevertheless, the core theme—how social group structures impact public health interventions—remains a substantive topic within contemporary social science, particularly in the context of real-world policy and societal outcomes. The motivation for distribution is personalized research relevance; this work fits that criterion as it offers insight into human behavior, group dynamics, and social interventions, all of which are of genuine interest in social science.",
+          "affinityScore": 8,
+          "affinityExplanation": "The study is highly relevant because it explores the interplay of social structures and public health strategies, a central concern of social science, especially in the wake of global epidemics. While the abstract's technical modeling focus could limit accessibility for some, the conceptual subject matter strongly aligns with the probable interests of a social science-oriented reader who supports the university, justifying a high affinity score."
+        }
+      },
+      {
+        "study": {
+          "title": "Spreading and Epidemic Interventions - Effects of Network Structure and Dynamics"
+        },
+        "relevanceScore": {
+          "reasoning": "First, the abstract is a mathematical and computational epidemiology study focusing on disease transmission, especially COVID-19, within complex human social networks. It examines individual-level connectedness, group structures, and interventions from both pharmaceutical and non-pharmaceutical perspectives, intending to inform public health policy and preparedness. In terms of reader interests, the sole descriptor is 'social science,' and the intended reader is a donor to the department. Social science as a field often includes studies on human behavior, networks, policy, and societal impacts. This research, while grounded in mathematical modeling, directly investigates how diseases spread in social contexts and how interventions interact with real-world social structures—explicitly relevant to social science, especially subfields like sociology of health, policy analysis, and network science. \nHowever, it's not a traditional qualitative or empirical social science study (e.g., ethnographic, economic, psychological), but it bridges disciplinary boundaries by using mathematical tools to tackle social phenomena. The link is meaningful but not perfectly direct; its primary value is in the insight into social processes surrounding health and policy interventions, which is highly relevant both to donors interested in impactful research and to social science as it pertains to public health and networks. The motivation—delivering personalized research that's relevant to the recipient's stated interests—is well served here, as the work spotlights department output aligning with 'social science' interpreted in a broad, modern sense (especially if the department encourages interdisciplinary work).",
+          "affinityScore": 8,
+          "affinityExplanation": "This abstract offers a solid match to the reader's interest in social science by demonstrating how mathematical modeling can provide actionable insights into social network dynamics and public health policies. The work is highly relevant for someone invested in the output and impact of a social science department, particularly given the department's likely interdisciplinary focus. The connection is strong, but not absolute—if the reader interprets 'social science' strictly as qualitative or non-technical work, affinity drops. For a donor interested in broader impacts and innovation within social sciences, this is excellent content."
+        }
+      }
+    ]
+  }
+]

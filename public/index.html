@@ -78,6 +78,58 @@
             background: #e8f5e8;
             border-radius: 5px;
         }
+        .studies-list {
+            margin-top: 20px;
+        }
+        
+        .study-item {
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        
+        .study-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 15px;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 10px;
+        }
+        
+        .study-header h3 {
+            margin: 0;
+            color: #333;
+            flex: 1;
+            margin-right: 15px;
+        }
+        
+        .relevance-score {
+            background: #007bff;
+            color: white;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 14px;
+            font-weight: bold;
+            white-space: nowrap;
+        }
+        
+        .study-summary h4 {
+            color: #555;
+            margin: 15px 0 10px 0;
+        }
+        
+        .study-summary p {
+            margin: 8px 0;
+            line-height: 1.5;
+        }
+        
+        .study-summary strong {
+            color: #333;
+        }
     </style>
 </head>
 <body>
@@ -171,11 +223,17 @@
                 console.log('SSE message received:', event.data);
                 const progressData = JSON.parse(event.data);
                 console.log('Parsed progress data:', progressData);
-                updateProgress(progressData.step, progressData.message);
+                
+                if (progressData.step === 'results') {
+                    // Handle results display
+                    const results = JSON.parse(progressData.message);
+                    displayResults(results);
+                } else {
+                    updateProgress(progressData.step, progressData.message);
+                }
                 
                 if (progressData.step === 'completed') {
                     eventSource.close();
-                    showResults();
                 }
             };
             
@@ -204,9 +262,48 @@
             }
         }
         
-        function showResults() {
-            console.log('Showing results');
-            document.getElementById('results-section').style.display = 'block';
+        function displayResults(results) {
+            console.log('Displaying results:', results);
+            
+            const resultsSection = document.getElementById('results-section');
+            
+            if (results.length === 0) {
+                resultsSection.innerHTML = `
+                    <h2>📋 Your Research Feed</h2>
+                    <p>No relevant studies found for your interests. Try broadening your search criteria.</p>
+                `;
+            } else {
+                let resultsHtml = `
+                    <h2>📋 Your Research Feed</h2>
+                    <p>Found ${results.length} relevant studies, sorted by relevance:</p>
+                    <div class="studies-list">
+                `;
+                
+                results.forEach((study, index) => {
+                    resultsHtml += `
+                        <div class="study-item">
+                            <div class="study-header">
+                                <h3>${study.title} (${study.year})</h3>
+                                <span class="relevance-score">Relevance: ${study.affinityScore}/10</span>
+                            </div>
+                            ${study.summary ? `
+                                <div class="study-summary">
+                                    <h4>📄 Summary</h4>
+                                    <p><strong>Topic:</strong> ${study.summary.topic}</p>
+                                    <p><strong>Methodology:</strong> ${study.summary.methodology}</p>
+                                    <p><strong>Findings:</strong> ${study.summary.findings}</p>
+                                    <p><strong>Implications:</strong> ${study.summary.implications}</p>
+                                </div>
+                            ` : '<p><em>Summary not available</em></p>'}
+                        </div>
+                    `;
+                });
+                
+                resultsHtml += '</div>';
+                resultsSection.innerHTML = resultsHtml;
+            }
+            
+            resultsSection.style.display = 'block';
         }
     </script>
 </body>

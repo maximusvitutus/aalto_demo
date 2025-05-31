@@ -1,0 +1,19 @@
+[
+  {
+    "feed": "Custom User Feed",
+    "totalStudiesProcessed": 12,
+    "relevantStudiesFound": 1,
+    "relevantStudies": [
+      {
+        "study": {
+          "title": "Dynamic yet Persistent: Investigating Digital Traces of Human Behaviour"
+        },
+        "relevanceScore": {
+          "reasoning": "First, the abstract describes a thesis that leverages digital trace data to study human behaviour, focusing on the structure and dynamics of social networks and mobility patterns, using computational social science methods. A key component is the detailed exploration of personal social networks (also known as ego-networks), including mechanisms behind their structure, their persistence and change, and how communication strategies shape them. The study investigates multiplexity in social ties—how connections span multiple contexts—and the consequences this has for network connectivity. There’s also a section about real-time estimation of mobility flows, which, while interesting, is conceptually distinct from interpersonal relationships.\n\nNext, considering the reader interests—studies about interpersonal relationships—the research’s deep dive into personal social networks (ego-networks), the multiplex nature of social ties, and how these relate to communication strategies is a clear thematic match. The study does not only touch on interpersonal dynamics but also attempts to identify universal and individual traits, which would be appealing to someone interested in understanding the nature of relationships.\n\nRegarding motivation and context, the feed is personalized for a donor with a stated interest in interpersonal relationships, delivered via weekly email and social media. The donor’s interest is quite broad but focused, and the work’s cutting-edge approach to understanding relationships through digital data provides both novelty and depth, likely to enrich the donor’s appreciation for impactful, modern research in the department. While the mobility modeling is tangential, the majority and conceptual heart of the work aligns well with the specified reader interests.\n\nThus, the study provides both direct (social network structure, interpersonal tie multiplexity, ego-network analysis) and indirect (application of new methods to longstanding social science topics) value for the intended recipient.",
+          "affinityScore": 9,
+          "affinityExplanation": "This research is highly relevant to a reader interested in interpersonal relationships. It directly investigates personal social networks, the mechanisms behind relationship structures, and how communication strategies shape ties. The methods and insights offer both conceptual depth and contemporary appeal for a donor interested in the department’s output. The only minor detraction is the inclusion of mobility modeling, which is less related to interpersonal relationships, but this does not significantly undermine the focus or value of the work for the intended audience."
+        }
+      }
+    ]
+  }
+]

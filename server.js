@@ -64,6 +64,25 @@ app.post('/api/submit', (req, res) => {
         sendProgressUpdate(jobId, step, message);
       }
     }
+    
+    // Parse UI results
+    if (output.includes('UI_RESULTS:')) {
+      console.log('🎨 Found UI_RESULTS signal in output');
+      const resultsLine = output.split('\n').find(line => line.includes('UI_RESULTS:'));
+      
+      if (resultsLine) {
+        try {
+          const resultsJson = resultsLine.split('UI_RESULTS:')[1].trim();
+          const results = JSON.parse(resultsJson);
+          console.log('📋 Parsed UI results:', results);
+          
+          // Send results to UI
+          sendProgressUpdate(jobId, 'results', JSON.stringify(results));
+        } catch (error) {
+          console.error('❌ Error parsing UI results:', error);
+        }
+      }
+    }
   });
   
   scriptProcess.stderr.on('data', (data) => {

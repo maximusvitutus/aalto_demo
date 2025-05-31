@@ -1,0 +1,29 @@
+[
+  {
+    "feed": "Custom User Feed",
+    "totalStudiesProcessed": 12,
+    "relevantStudiesFound": 2,
+    "relevantStudies": [
+      {
+        "study": {
+          "title": "Temporal patterns of reciprocity in communication networks"
+        },
+        "relevanceScore": {
+          "reasoning": "First, the abstract investigates temporal patterns of reciprocity in human communication across multiple channels, including calls, messaging, and social media. The study introduces new measures to analyze the time ordering of reciprocal interactions and builds models to explain observed communication patterns, highlighting memory (repetition of interactions) as a key factor. The work aims to deepen understanding of how reciprocity emerges and contributes to the development of social norms and cooperation. Turning to the reader interests—the donor is specifically interested in 'relationships between humans over the internet.' There is a direct thematic connection here: the research explicitly examines online communication platforms, including social media, and analyzes how people interact reciprocally in these digital environments. The methodology and findings speak directly to the structure and quality of online relationships. In the context of the distribution motivation (personalized research feed for a donor with these specific interests), this paper is highly suitable. It addresses core questions about online human interaction, reciprocity, and the factors that shape digital relationships—precisely the types of insights a reader with this interest would value. Distribution via email and social media also fits, as the study covers those very channels. Therefore, the alignment is strong both conceptually and in terms of expected value to the reader.",
+          "affinityScore": 10,
+          "affinityExplanation": "This study is a direct, highly relevant match for the reader’s interest in human relationships over the internet. It investigates the dynamics of communication and reciprocity on digital platforms using theoretical and empirical methods, and its findings offer meaningful insights that strongly align with the feed’s motivation and the donor’s stated preferences."
+        }
+      },
+      {
+        "study": {
+          "title": "Dynamic yet Persistent: Investigating Digital Traces of Human Behaviour"
+        },
+        "relevanceScore": {
+          "reasoning": "First, summarizing the abstract: The study explores how digital traces—data left by everyday digital interactions—can be used to analyze and model both personal social networks (how people are connected) and large-scale human mobility patterns. The work includes constructing models of ego-networks (an individual's social circle), analyzing communication strategies, exploring the concept of multiplexity (multiple types of relationships within a tie), and using computational methods to predict human behavior and mobility. The study validates classical sociological theories using modern digital communication data. \n\nNext, comparing to the reader's interests: The reader is a donor interested specifically in 'relationships between humans over the internet.' A significant portion of the abstract directly addresses the analysis of personal social networks using digital communications, including how individuals manage multiple types of relationships ('multiplexity') and how communication strategies affect network structure. The thesis leverages digital trace data (almost always internet-related) and specifically examines forms of human relationships as they manifest through digital (i.e., internet-based) platforms. Although the study also extends to commuting and mobility patterns, the integration of computational social science with classical theories, particularly as it applies to digital communication and tie multiplexity, is highly relevant. \n\nAs for the motivation, this is a personalized feed for a single user based on their stated interests. The content aligns well, as it offers deeper, data-rich insights into internet-mediated human relationships—likely of both intellectual and philanthropic interest to a department donor. The findings about ego-networks, dynamics of online communications, and how digital patterns reflect real social behaviors would be valuable material for this subscriber, and would help reinforce the relevance and innovation of the department they support.",
+          "affinityScore": 9,
+          "affinityExplanation": "There is a strong thematic and conceptual match between the research and the reader's interest in internet-based human relationships. The abstract delves deeply into exactly this: how digital communications reflect, shape, and reveal the structure and qualities of human ties. While part of the thesis reaches out to broader mobility modeling, the core findings about personal social networks, communication strategies, and the use of digital traces resonate directly with the reader's stated interests. Thus, this article is highly relevant for inclusion in the personalized research feed."
+        }
+      }
+    ]
+  }
+]

@@ -1,0 +1,14 @@
+[
+  {
+    "topic": "How Reciprocity in Communication Shapes Social Networks",
+    "methodology": "Researchers developed new ways to measure how people reciprocate communication over time, analyzing call, message, and social media data to distinguish between one-on-one interactions and broadcasts, and tested models including memory of past interactions.",
+    "findings": "They discovered that people consistently show patterns of reciprocating communication based on remembering previous contacts, which helps explain real-world patterns in reciprocal exchanges.",
+    "implications": "Understanding these temporal reciprocity mechanisms can inform how norms and cooperation develop in both small and large social groups, potentially influencing the design of future online platforms and communication tools."
+  },
+  {
+    "topic": "What Digital Traces Reveal About Social Networks and Human Mobility",
+    "methodology": "This study used large-scale digital records of communication and movement to model how personal social networks and population mobility evolve over time, analyzing network structures and building predictive models for human travel.",
+    "findings": "Results show both stability and change in social and commuting networks, with new models explaining how people maintain unique and universal social patterns and successfully predicting country-wide mobility, even during disruptions.",
+    "implications": "These insights underscore the power of digital data for understanding personal and societal behavior, making it possible to predict social dynamics and travel patterns in real time and bridging classical and computational social science."
+  }
+]

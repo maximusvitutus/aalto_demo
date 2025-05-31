@@ -236,6 +236,47 @@ async function runFilteringScript(): Promise<void> {
     console.log(`🎯 Overall: ${totalRelevant}/${totalProcessed} total relevant matches found`);
     console.log(`📁 Results saved to: ${outputPath}`);
 
+    // Emit the complete results for the UI (only for custom feeds)
+    if (customIndex !== -1) {
+      const uiResults = Array.from(acceptedStudiesPerFeed.values()).flatMap(result => 
+        result.relevantStudies.map(studyResult => ({
+          title: studyResult.study.title,
+          year: studyResult.study.publicationYear,          
+          affinityScore: studyResult.relevanceScore.affinityScore,
+          summary: null // Will be populated if summaries exist
+        }))
+      );
+
+      // Add summaries if they were generated
+      for (const [feedName, result] of acceptedStudiesPerFeed) {
+        if (result.relevantStudiesFound > 0) {
+          try {
+            // Try to read the summary file that was just created
+            const summaryPath = path.join(process.cwd(), 'results', 'summaries', `${feedName.replace(/[^a-zA-Z0-9]/g, '_')}-${llmProvider.getModelName()}-${timestamp}.json`);
+            if (require('fs').existsSync(summaryPath)) {
+              const summaries = JSON.parse(require('fs').readFileSync(summaryPath, 'utf8'));
+              
+              // Match summaries to studies (assuming same order as relevantStudies)
+              result.relevantStudies.forEach((studyResult, index) => {
+                const uiResult = uiResults.find(r => r.title === studyResult.study.title);
+                if (uiResult && summaries[index]) {
+                  uiResult.summary = summaries[index];
+                }
+              });
+            }
+          } catch (error) {
+            console.error('Error reading summaries for UI:', error);
+          }
+        }
+      }
+
+      // Sort by affinity score (highest first)
+      uiResults.sort((a, b) => b.affinityScore - a.affinityScore);
+
+      // Emit results for the UI
+      console.log(`UI_RESULTS: ${JSON.stringify(uiResults)}`);
+    }
+
   } catch (error) {
     console.error('💥 Script failed:', error instanceof Error ? error.message : 'Unknown error');
     process.exit(1);
