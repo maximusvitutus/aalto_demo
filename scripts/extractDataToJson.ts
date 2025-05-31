@@ -21,9 +21,9 @@ async function main(): Promise<void> {
     const dataSetter = new AdHocDataSetter(apiKey);
 
     // Get folder name from command line arguments or use default
-    const folderName = process.argv[2] || 'socialNetworks';
+    const folderName = process.argv[2];
     
-    console.log(`📁 Processing folder: data/${folderName}/`);
+    console.log(`📁 Processing folder: data/studies/${folderName}/`);
     console.log('🤖 Using OpenAI GPT-4o-mini for extraction...\n');
 
     // Process the files

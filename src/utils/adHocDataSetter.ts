@@ -10,7 +10,7 @@ import { jsonrepair } from 'jsonrepair';
 const DataInterfaceSchema = z.object({
   title: z.string().min(1, "Title cannot be empty"),
   abstract: z.string().min(10, "Abstract must be at least 10 characters"),
-  authors: z.array(z.string().min(1, "Author name cannot be empty")).min(1, "Must have at least one author"),
+  authors: z.array(z.string()),
   publicationYear: z.number().int().min(1900).max(new Date().getFullYear() + 5, "Publication year must be reasonable")
 });
 
@@ -55,7 +55,7 @@ export class AdHocDataSetter {
    * @param folderName - The folder name within the data directory to process
    */
   public async structureInputFiles(folderName: string): Promise<void> {
-    const dataDir = path.join(process.cwd(), 'data', folderName);
+    const dataDir = path.join(process.cwd(), 'data', 'studies', folderName);
     
     // Check if directory exists
     if (!fs.existsSync(dataDir)) {
@@ -123,7 +123,7 @@ export class AdHocDataSetter {
    * @returns The formatted prompt string
    */
   private loadPromptTemplate(): string {
-    const templatePath = path.join(process.cwd(), 'src', 'core', 'prompts', 'misc', 'extractStudyMetadata.yaml');
+    const templatePath = path.join(process.cwd(), 'src', 'core', 'prompting', 'prompts', 'misc', 'extractStudyMetadata.yaml');
     
     if (!fs.existsSync(templatePath)) {
       throw new Error(`Prompt template not found: ${templatePath}`);

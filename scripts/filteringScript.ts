@@ -2,7 +2,8 @@ import * as path from 'path';
 import { FeedFilteringService } from '../src/core/filtering/feedFilteringService';
 import { OpenAIProvider } from '../src/core/llm/openAIProvider';
 import { StudyFilterResult } from '../src/types/filtering/filteredStudy';
-import { loadStudiesFromDirectory, createFeedConfigs, saveResults, saveFeedSummaries, generateSummariesForFeed } from './helpers/methods';
+import { loadStudiesFromDirectory, saveResults, saveFeedSummaries, generateSummariesForFeed } from './helpers/methods';
+import { createFeedConfigs } from './helpers/consts';
 
 // Load environment variables
 import { config } from 'dotenv';
