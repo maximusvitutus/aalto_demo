@@ -1,6 +1,4 @@
-# Customized Research Feed Demo
-
-An intelligent research filtering and summarization system that automatically processes academic studies and generates personalized summaries based on user interests and roles.
+# Customized Research Feed
 
 ## What?
 - 📚 Loads research studies from a database (currently local, manually set files)
