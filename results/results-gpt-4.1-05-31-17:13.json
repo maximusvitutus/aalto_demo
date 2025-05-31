@@ -1,0 +1,29 @@
+[
+  {
+    "feed": "Custom User Feed",
+    "totalStudiesProcessed": 12,
+    "relevantStudiesFound": 2,
+    "relevantStudies": [
+      {
+        "study": {
+          "title": "Dynamic yet Persistent: Investigating Digital Traces of Human Behaviour"
+        },
+        "relevanceScore": {
+          "reasoning": "The abstract describes a thesis that explores patterns in social networks and human mobility using computational methods and digital trace data. There are two main foci: (1) the structure and evolution of social networks at the personal and population level, including ego-networks, communication strategies, and the concept of multiplexity in social ties; (2) modeling and prediction of human commuting and mobility patterns at a macro (country-wide) scale. The reader's stated interest is 'studies that deal with interpersonal relationships.' Examining the first part of the abstract, there is a strong conceptual alignment: the thesis investigates personal social networks, universal and individual features of ego-networks, communication strategies, and how different social contexts (multiplexity) affect the function of social ties. These are all highly relevant to understanding the formation, maintenance, and characteristics of interpersonal relationships, making this thesis very pertinent to the donor's interests. The second part about mobility patterns, while interesting, is less directly related to interpersonal relationships but does not detract from the more relevant first half. The motivation for distribution is to provide a personalized feed to a donor based on their interests. Sharing this abstract would directly inform the donor about novel advances in the study of interpersonal relationships within a leading-edge methodological framework by their supported department, thus supporting both intellectual curiosity and institutional pride.",
+          "affinityScore": 9,
+          "affinityExplanation": "The study has extensive conceptual overlap with the reader's interest in interpersonal relationships, particularly in its analysis of personal social networks, ego-networks, and the dynamics of social ties. Although some sections (e.g., predictive modeling of commuting) are less directly relevant, the thesis overall speaks directly to mechanisms and structures that underlie interpersonal relationships. Therefore, it is highly suitable for this user's personalized feed."
+        }
+      },
+      {
+        "study": {
+          "title": "Temporal patterns of reciprocity in communication networks"
+        },
+        "relevanceScore": {
+          "reasoning": "First, the abstract investigates reciprocity in human communication, breaking down temporal patterns of exchanges across diverse communication channels (calls, messaging, social media). The paper distinguishes between reciprocal exchanges (one-to-one) versus broadcast interactions and examines the underlying dynamics that drive persistent reciprocal patterns, such as memory or repetition in communication networks. The study is situated at the intersection of network theory, communication science, and social behavior.\n\nComparing this to the stated reader interest—'studies that deal with interpersonal relationships'—there is significant thematic overlap. The paper is fundamentally about how people interact, with a strong focus on the mechanics and structures of reciprocal (i.e., two-way, interpersonal) communication. While the study approaches the topic via network theory and system-level metrics, reciprocity is a core feature of interpersonal relationships. The emphasis on repeated interactions and the theoretical grounding of norm formation in social exchange, both key aspects of relationship science, further connect this research to the reader’s interests.\n\nThe motivation is a personalized research feed meant to engage a donor with work that matches their interests. This abstract fits that purpose well: it offers a cutting-edge, empirical exploration into a foundational aspect of how relationships and social cooperation form and persist, which would likely be intriguing to someone invested in the social sciences. The concrete examples (calls, messaging, social media) also make the research accessible and relevant.\n\nThe only minor caveat is that, while the study is not focused on interpersonal intimacy or qualitative aspects of relationships, it nonetheless supplies valuable insights into patterns foundational to all interpersonal connections. Therefore, this research would almost certainly be of interest to the reader and support the motivation for its distribution.",
+          "affinityScore": 9,
+          "affinityExplanation": "This paper is highly relevant to a reader interested in interpersonal relationships, addressing the mechanics of reciprocal communication and social norms at both micro (one-to-one) and macro (broadcast) levels. The empirical and theoretical exploration is well-aligned with the personalized feed's purpose, though the focus is more on structural patterns than emotional or qualitative dimensions, slightly tempering a perfect score."
+        }
+      }
+    ]
+  }
+]

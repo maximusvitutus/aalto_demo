@@ -3,10 +3,11 @@ import { FeedFilteringService } from '../src/core/filtering/feedFilteringService
 import { OpenAIProvider } from '../src/core/llm/openAIProvider';
 import { StudyFilterResult } from '../src/types/filtering/filteredStudy';
 import { loadStudiesFromDirectories, saveResults, saveFeedSummaries, generateSummariesForFeed, loadStudiesFromDirectory } from './helpers/methods';
-import { createFeedConfigs } from './helpers/consts';
+import { createExampleFeedConfigs, createCustomFeedConfig } from './helpers/consts';
 
 // Load environment variables
 import { config } from 'dotenv';
+import { FeedConfig } from '../src/types/feeds/feedConfig';
 config(); // load environment variables from .env file
 
 // Configuration
@@ -60,18 +61,40 @@ async function runFilteringScript(): Promise<void> {
     const minutes = String(now.getMinutes()).padStart(2, '0');
     const timestamp = `${month}-${date}-${hour}:${minutes}`;
 
-    // Load studies based on command line arguments
-    console.log('\n📖 Loading studies...');
-    const targetDir = process.argv[2]; // Get the directory argument if provided
-    const studies = loadStudiesFromDirectories(targetDir);
+    // Check for custom input arguments FIRST
+    const customIndex = process.argv.indexOf('--custom');
+    let feedConfigs: FeedConfig[] = [];
+    let studies: any[] = [];
+
+    if (customIndex !== -1 && process.argv[customIndex + 1] && process.argv[customIndex + 2]) {
+      // Custom mode: use only the custom feed and load all studies
+      const readers = process.argv[customIndex + 1];
+      const interests = process.argv[customIndex + 2];
+      
+      console.log('\n⚙️  Creating CUSTOM feed configuration...');
+      console.log(`👥 Readers: ${readers}`);
+      console.log(`🔬 Interests: ${interests}`);
+      
+      feedConfigs = [createCustomFeedConfig(readers, interests)];
+      
+      // Load studies from all directories for custom mode
+      console.log('\n📖 Loading studies from all directories...');
+      studies = loadStudiesFromDirectories(); // No targetDir argument = load all
+    } else {
+      // Default mode: use predefined feeds and check for directory argument
+      console.log('\n⚙️  Creating PREDEFINED feed configurations...');
+      feedConfigs = createExampleFeedConfigs();
+      
+      // Load studies based on command line arguments
+      console.log('\n📖 Loading studies...');
+      const targetDir = process.argv[2]; // Get the directory argument if provided
+      studies = loadStudiesFromDirectories(targetDir);
+    }
     
     if (studies.length === 0) {
       throw new Error('No studies found to process');
     }
 
-    // Create feed configurations
-    console.log('\n⚙️  Creating feed configurations...');
-    const feedConfigs = createFeedConfigs();
     console.log(`Created ${feedConfigs.length} feed configurations`);
 
     // Initialize a map to store the accepted studies for each feed
@@ -199,4 +222,4 @@ if (require.main === module) {
     });
 }
 
-export { runFilteringScript, loadStudiesFromDirectories, createFeedConfigs };
+export { runFilteringScript, loadStudiesFromDirectories, createExampleFeedConfigs as createFeedConfigs };

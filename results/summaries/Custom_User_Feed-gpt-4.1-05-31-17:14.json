@@ -1,0 +1,14 @@
+[
+  {
+    "topic": "How Digital Traces Unveil the Patterns Behind Our Social Networks and Movement",
+    "methodology": "This study analyzed a wide array of digital traces from communication and travel data to model the dynamics of personal social networks and population-level mobility over time, developing new models to link communication behaviors to social network structure and validate classic sociological theories using big data.",
+    "findings": "Human social and commuting networks change over time but also show persistence in key traits, and the way people communicate predicts the structure and function of their social ties, while digital data enables accurate, real-time mobility predictions even amid major disruptions.",
+    "implications": "These findings highlight the value of digital data for understanding and predicting human behavior at both individual and societal levels, bridging computational social science with traditional theories and offering practical tools for real-world trend analysis."
+  },
+  {
+    "topic": "Understanding How Reciprocity Forms in Our Social Interactions Online and Offline",
+    "methodology": "Researchers developed new ways to measure the timing and sequence of reciprocal communications across calls, messages, and social media, then used modeling to identify factors driving how people exchange information over time.",
+    "findings": "Temporal patterns showed that memory—the tendency to interact repeatedly with known contacts—drives high reciprocity in communication networks, distinguishing between one-to-one interactions and broader information broadcasts.",
+    "implications": "This deeper grasp of communication reciprocity helps explain how social norms and cooperation emerge, offering insight into the functioning of both small groups and global digital communities."
+  }
+]

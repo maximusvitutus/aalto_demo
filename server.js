@@ -22,7 +22,6 @@ app.get('/', (req, res) => {
 app.post('/api/submit', (req, res) => {
   const { readers, interests } = req.body;
   
-  // This will show in your terminal/console
   console.log('='.repeat(50));
   console.log('📝 FORM DATA RECEIVED:');
   console.log('='.repeat(50));
@@ -31,10 +30,35 @@ app.post('/api/submit', (req, res) => {
   console.log('⏰ Received at:', new Date().toLocaleString());
   console.log('='.repeat(50));
   
-  // Send response back to browser
+  // Generate unique job ID
+  const jobId = Date.now().toString();
+  
+  // Run the filtering script with custom data using tsx instead of ts-node
+  const scriptProcess = spawn('npx', ['tsx', 'scripts/filteringScript.ts', '--custom', readers, interests], {
+    stdio: 'pipe'
+  });
+  
+  // Capture stdout and stderr for debugging
+  scriptProcess.stdout.on('data', (data) => {
+    console.log('📤 Script output:', data.toString());
+  });
+  
+  scriptProcess.stderr.on('data', (data) => {
+    console.error('❌ Script error:', data.toString());
+  });
+  
+  // Handle script completion
+  scriptProcess.on('close', (code) => {
+    console.log(`🏁 Filtering script completed with code ${code}`);
+    if (code !== 0) {
+      console.error('💥 Script failed - check the error messages above');
+    }
+  });
+  
   res.json({ 
-    message: 'Data received successfully! Check your terminal to see the logged data.',
-    receivedData: { readers, interests }
+    jobId,
+    message: 'Processing started with your custom interests!',
+    statusUrl: `/api/status/${jobId}`
   });
 });
 

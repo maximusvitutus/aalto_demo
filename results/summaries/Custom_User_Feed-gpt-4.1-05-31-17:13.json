@@ -1,0 +1,14 @@
+[
+  {
+    "topic": "How Our Digital Footprints Reveal Human Social Patterns",
+    "methodology": "Researchers analyzed large-scale digital traces from communication and mobility data to model the structure of personal social networks and commuting behaviors over time, using computational and predictive modeling methods.",
+    "findings": "They discovered that while social and mobility networks change dynamically, they maintain persistent, distinctive features; identified how multiplex social ties function within networks; and showed that digital data can accurately predict real-time population movement.",
+    "implications": "These insights demonstrate the power of digital data for understanding and predicting human behavior, bridging classical and modern social science, and informing responses to societal change."
+  },
+  {
+    "topic": "Why Reciprocating Messages Matters in Social Networks",
+    "methodology": "This study proposed new ways to measure reciprocity based on the timing of communication and used data from calls, messaging, and social media to separate reciprocal from non-reciprocal interactions.",
+    "findings": "The research found that memory—our tendency to repeatedly interact with familiar contacts—plays a critical role in creating temporal reciprocity, which its models could successfully reproduce.",
+    "implications": "Understanding these patterns can explain how social norms and cooperation emerge in groups, with potential applications for improving online platforms and organizational communication."
+  }
+]

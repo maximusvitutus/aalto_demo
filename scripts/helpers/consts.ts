@@ -21,9 +21,26 @@ import {
 } from '../../src/core/feeds/demoInputs';
 
 /**
+ * Creates a custom feed configuration
+ * @param readers - The readers for the custom feed
+ * @param interests - The interests for the custom feed
+ * @returns A custom feed configuration
+ */
+export function createCustomFeedConfig(readers: string, interests: string): FeedConfig {
+  return {
+    category: "Custom User Feed",
+    distributionChannel: "Weekly email and social media posts",
+    intendedReaders: [readers],
+    readerInterests: interests.split(',').map(i => i.trim()),
+    motivationForDistribution: "Personalized research feed based on user interests",
+    relevanceThreshold: 8
+  };
+}
+
+/**
  * Creates feed configurations from the demo inputs
  */
-export function createFeedConfigs(): FeedConfig[] {
+export function createExampleFeedConfigs(): FeedConfig[] {
   return [
     {
       category: "social media & human behaviour",
