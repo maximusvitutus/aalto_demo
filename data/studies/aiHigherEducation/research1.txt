@@ -1,0 +1,10 @@
+Generative AI in Higher Education: A Global Perspective of Institutional Adoption Policies and Guidelines
+Yueqiao JinLixiang YanVanessa EcheverríaD. GaševićRoberto Martínez Maldonado
+Education, Computer Science
+Computers and Education: Artificial Intelligence
+20 May 2024
+
+TLDR
+The study highlights the importance of clear roles and responsibilities among faculty, students, and administrators for successful GAI integration, supporting a collaborative model for navigating the complexities of GAI in education and contributes insights for policymakers in crafting detailed strategies for its integration.
+Abstract
+Integrating generative AI (GAI) into higher education is crucial for preparing a future generation of GAI-literate students. Yet a thorough understanding of the global institutional adoption policy remains absent, with most of the prior studies focused on the Global North and the promises and challenges of GAI, lacking a theoretical lens. This study utilizes the Diffusion of Innovations Theory to examine GAI adoption strategies in higher education across 40 universities from six global regions. It explores the characteristics of GAI innovation, including compatibility, trialability, and observability, and analyses the communication channels and roles and responsibilities outlined in university policies and guidelines. The findings reveal a proactive approach by universities towards GAI integration, emphasizing academic integrity, teaching and learning enhancement, and equity. Despite a cautious yet optimistic stance, a comprehensive policy framework is needed to evaluate the impacts of GAI integration and establish effective communication strategies that foster broader stakeholder engagement. The study highlights the importance of clear roles and responsibilities among faculty, students, and administrators for successful GAI integration, supporting a collaborative model for navigating the complexities of GAI in education. This study contributes insights for policymakers in crafting detailed strategies for its integration.

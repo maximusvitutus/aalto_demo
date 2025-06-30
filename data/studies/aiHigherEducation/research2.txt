@@ -1,0 +1,10 @@
+Could the Use of AI in Higher Education Hinder Students With Disabilities? A Scoping Review
+Oriane PierrèsMarkus ChristenFelix M. Schmitt-KoopmannAlireza Darvishy
+Education, Computer Science
+IEEE Access
+2024
+
+TLDR
+This scoping review highlights the lack of ethical reflection on AI technologies and an absence of discussion and inclusion of people with disabilities, and identifies eight risks associated with the use of AI EdTech for students with disabilities.
+Abstract
+Literature reviews on artificial intelligence (AI) have focused on the different applications of AI in higher education, the AI techniques used, and the benefits/risks of the use of AI. One of the greatest potentials of AI is to personalize higher education to the needs of students and offer timely feedback. This could benefit students with disabilities tremendously if their needs are also considered in the development of new AI educational technologies (EdTech). However, current reviews have failed to address the perspective of students with disabilities, which prompts ethical concerns. For instance, AI could treat people with disabilities as outliers in the data and end up discriminating against them. For that reason, this systematic literature review raises the following two questions: To what extent are ethical concerns considered in articles presenting AI applications assessing students (with disabilities) in higher education? What are the potential risks of using AI that assess students with disabilities in higher education? This scoping review highlights the lack of ethical reflection on AI technologies and an absence of discussion and inclusion of people with disabilities. Moreover, it identifies eight risks associated with the use of AI EdTech for students with disabilities. The review concludes with suggestions on how to mitigate these potential risks. Specifically, it advocates for increased attention to ethics within the field, the involvement of people with disabilities in research and development, as well as careful adoption of AI EdTech in higher education.
