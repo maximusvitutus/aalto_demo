@@ -123,7 +123,7 @@ async function runFilteringScript(): Promise<void> {
     // Process each feed
     for (const feedConfig of feedConfigs) {
       console.log(`\n🔍 Processing feed: ${feedConfig.category}`);
-      console.log(`   Threshold: ${feedConfig.relevanceThreshold}`);
+      console.log(`   Target: Top 3 studies (no threshold filtering)`);
       console.log(`   Studies to evaluate: ${studies.length}`);
       
       const startTime = Date.now();
@@ -135,7 +135,7 @@ async function runFilteringScript(): Promise<void> {
         };
         
         // Use parallel filtering with controlled concurrency and progress updates
-        const acceptedStudies = await filteringService.filterStudiesForFeedParallelWithProgress(
+        const acceptedStudies = await filteringService.filterTop3StudiesForFeedParallelWithProgress(
           studies, 
           feedConfig, 
           100,
@@ -160,7 +160,7 @@ async function runFilteringScript(): Promise<void> {
         console.log(`   ⏱️  Processing time: ${Math.round(processingTime / 1000)}s`);
         
         // PROGRESS: Filtering completed (AFTER filtering is done)
-        emitProgress('filtering', `Found ${acceptedStudies.length}/${studies.length} studies matching your interests!`);
+        emitProgress('filtering', `Selected top ${acceptedStudies.length} studies for your feed!`);
         
         if (acceptedStudies.length > 0) {
           console.log(`   🏆 Top study: "${acceptedStudies[0].study.title}" (score: ${acceptedStudies[0].relevanceScore.affinityScore})`);

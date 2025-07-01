@@ -251,4 +251,193 @@ export class FeedFilteringService {
     console.log(`✅ Found ${filteredStudies.length} relevant studies (threshold: ${threshold})`);
     return filteredStudies;
   }
+
+  /**
+   * Filters studies to get the top 3 most relevant studies for a feed (no threshold filtering)
+   */
+  async filterTop3StudiesForFeed(
+    studies: ResearchStudyMetadata[], 
+    feedConfig: FeedConfig
+  ): Promise<StudyFilterResult[]> {
+    const scoredStudies: StudyFilterResult[] = [];
+
+    console.log(`🔍 Scoring ${studies.length} studies for feed: ${feedConfig.category} (top 3 only)`);
+
+    for (const study of studies) {
+      try {
+        const relevanceScore = await this.scoreStudyRelevance(study, feedConfig);
+        
+        scoredStudies.push({
+          study,
+          relevanceScore,
+          feedCategory: feedConfig.category,
+          feedConfig
+        });
+
+        // Add small delay to avoid rate limiting
+        await this.delay(100);
+      } catch (error) {
+        console.error(`❌ Error scoring study "${study.title}":`, error);
+      }
+    }
+
+    // Sort by relevance score (highest first) and take top 3
+    scoredStudies.sort((a, b) => b.relevanceScore.affinityScore - a.relevanceScore.affinityScore);
+    const top3Studies = scoredStudies.slice(0, 3);
+
+    console.log(`✅ Selected top ${top3Studies.length} studies for "${feedConfig.category}"`);
+    if (top3Studies.length > 0) {
+      console.log(`   🥇 Top study: "${top3Studies[0].study.title}" (score: ${top3Studies[0].relevanceScore.affinityScore})`);
+      if (top3Studies.length > 1) {
+        console.log(`   🥈 Second: "${top3Studies[1].study.title}" (score: ${top3Studies[1].relevanceScore.affinityScore})`);
+      }
+      if (top3Studies.length > 2) {
+        console.log(`   🥉 Third: "${top3Studies[2].study.title}" (score: ${top3Studies[2].relevanceScore.affinityScore})`);
+      }
+    }
+    
+    return top3Studies;
+  }
+
+  /**
+   * Filters studies to get the top 3 most relevant studies for a feed (parallelized version)
+   */
+  async filterTop3StudiesForFeedParallel(
+    studies: ResearchStudyMetadata[], 
+    feedConfig: FeedConfig,
+    concurrency: number = 3
+  ): Promise<StudyFilterResult[]> {
+    const scoredStudies: StudyFilterResult[] = [];
+
+    console.log(`🔍 Scoring ${studies.length} studies for feed: ${feedConfig.category} (${concurrency} concurrent, top 3 only)`);
+
+    // Process studies in batches to control concurrency
+    for (let i = 0; i < studies.length; i += concurrency) {
+      const batch = studies.slice(i, i + concurrency);
+      
+      console.log(`📦 Processing batch ${Math.floor(i/concurrency) + 1}/${Math.ceil(studies.length/concurrency)} (${batch.length} studies)`);
+      
+      // Process batch in parallel
+      const batchPromises = batch.map(async (study) => {
+        try {
+          const relevanceScore = await this.scoreStudyRelevance(study, feedConfig);
+          
+          return {
+            study,
+            relevanceScore,
+            feedCategory: feedConfig.category,
+            feedConfig
+          } as StudyFilterResult;
+        } catch (error) {
+          console.error(`❌ Error scoring study "${study.title}":`, error);
+          return null;
+        }
+      });
+
+      // Wait for batch to complete
+      const batchResults = await Promise.all(batchPromises);
+      
+      // Add successful results to scored studies
+      batchResults.forEach(result => {
+        if (result) {
+          scoredStudies.push(result);
+        }
+      });
+
+      // Add delay between batches to be respectful to API
+      if (i + concurrency < studies.length) {
+        await this.delay(1000);
+      }
+    }
+
+    // Sort by relevance score (highest first) and take top 3
+    scoredStudies.sort((a, b) => b.relevanceScore.affinityScore - a.relevanceScore.affinityScore);
+    const top3Studies = scoredStudies.slice(0, 3);
+
+    console.log(`✅ Selected top ${top3Studies.length} studies for "${feedConfig.category}"`);
+    if (top3Studies.length > 0) {
+      console.log(`   🥇 Top study: "${top3Studies[0].study.title}" (score: ${top3Studies[0].relevanceScore.affinityScore})`);
+      if (top3Studies.length > 1) {
+        console.log(`   🥈 Second: "${top3Studies[1].study.title}" (score: ${top3Studies[1].relevanceScore.affinityScore})`);
+      }
+      if (top3Studies.length > 2) {
+        console.log(`   🥉 Third: "${top3Studies[2].study.title}" (score: ${top3Studies[2].relevanceScore.affinityScore})`);
+      }
+    }
+    
+    return top3Studies;
+  }
+
+  /**
+   * Filters studies to get the top 3 most relevant studies for a feed (parallelized version with progress)
+   */
+  async filterTop3StudiesForFeedParallelWithProgress(
+    studies: ResearchStudyMetadata[], 
+    feedConfig: FeedConfig,
+    concurrency: number = 3,
+    progressCallback?: (processed: number, total: number) => void
+  ): Promise<StudyFilterResult[]> {
+    const scoredStudies: StudyFilterResult[] = [];
+    let processedCount = 0;
+
+    const concurrentStudies = Math.min(concurrency, studies.length);
+    console.log(`🔍 Scoring ${studies.length} studies for feed: ${feedConfig.category} (${concurrentStudies} concurrent, top 3 only)`);
+
+    // Process studies in batches to control concurrency
+    for (let i = 0; i < studies.length; i += concurrency) { 
+      const batch = studies.slice(i, i + concurrency);
+      
+      console.log(`📦 Processing batch ${Math.floor(i/concurrency) + 1}/${Math.ceil(studies.length/concurrency)} (${batch.length} studies)`);
+      
+      // Process batch in parallel
+      const batchPromises = batch.map(async (study) => {
+        try {
+          const relevanceScore = await this.scoreStudyRelevance(study, feedConfig);
+          
+          return {
+            study,
+            relevanceScore,
+            feedCategory: feedConfig.category,
+            feedConfig
+          } as StudyFilterResult;
+        } catch (error) {
+          console.error(`❌ Error scoring study "${study.title}":`, error);
+          return null;
+        }
+      });
+
+      // Wait for batch to complete
+      const batchResults = await Promise.all(batchPromises);
+      
+      // Add successful results to scored studies
+      batchResults.forEach(result => {
+        if (result) {
+          scoredStudies.push(result);
+        }
+      });
+
+      // Update progress count and call callback
+      processedCount += batch.length;
+      if (progressCallback) {
+        progressCallback(processedCount, studies.length);
+      }
+    }
+
+    // Sort by relevance score (highest first) and take top 3
+    scoredStudies.sort((a, b) => b.relevanceScore.affinityScore - a.relevanceScore.affinityScore);
+    const top3Studies = scoredStudies.slice(0, 3);
+
+    console.log(`✅ Selected top ${top3Studies.length} studies for "${feedConfig.category}"`);
+    if (top3Studies.length > 0) {
+      console.log(`   🥇 Top study: "${top3Studies[0].study.title}" (score: ${top3Studies[0].relevanceScore.affinityScore})`);
+      if (top3Studies.length > 1) {
+        console.log(`   🥈 Second: "${top3Studies[1].study.title}" (score: ${top3Studies[1].relevanceScore.affinityScore})`);
+      }
+      if (top3Studies.length > 2) {
+        console.log(`   🥉 Third: "${top3Studies[2].study.title}" (score: ${top3Studies[2].relevanceScore.affinityScore})`);
+      }
+    }
+    
+    return top3Studies;
+  }
 }
