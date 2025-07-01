@@ -11,7 +11,8 @@ import { FeedConfig } from '../src/types/feeds/feedConfig';
 config(); // load environment variables from .env file
 
 // Configuration
-const MODEL_TO_USE = 'gpt-4.1'; // Change this to use a different model
+const WRITING_MODEL = 'gpt-4.1';
+const FILTERING_MODEL = 'gpt-4o';
 
 /**
  * Result of the filtering process for a feed.
@@ -53,12 +54,14 @@ async function runFilteringScript(): Promise<void> {
       throw new Error('OPENAI_API_KEY environment variable is required');
     }
 
-    // Initialize services
+    // Initialize services with separate models
     console.log('🔧 Initializing services...');
-    const llmProvider = new OpenAIProvider(apiKey, MODEL_TO_USE);
-    const filteringService = new FeedFilteringService(llmProvider);
+    const filteringLLMProvider = new OpenAIProvider(apiKey, FILTERING_MODEL);
+    const writingLLMProvider = new OpenAIProvider(apiKey, WRITING_MODEL);
+    const filteringService = new FeedFilteringService(filteringLLMProvider);
 
-    console.log(`📋 Using model: ${llmProvider.getModelName()}`);
+    console.log(`📋 Using filtering model: ${filteringLLMProvider.getModelName()}`);
+    console.log(`✍️  Using writing model: ${writingLLMProvider.getModelName()}`);
 
     // Create timestamp format
     const now = new Date();
@@ -85,7 +88,7 @@ async function runFilteringScript(): Promise<void> {
       feedConfigs = [createCustomFeedConfig(readers, interests)];
       
       // PROGRESS: User profile created (AFTER creation)
-      emitProgress('profile', `Profile created for ${readers}`);
+      emitProgress('profile', `Profile created successfully!`);
       
       // Load studies from all directories for custom mode
       console.log('\n📖 Loading studies from all directories...');
@@ -104,7 +107,7 @@ async function runFilteringScript(): Promise<void> {
       studies = loadStudiesFromDirectories(targetDir);
       
       // PROGRESS: Loading studies completed (AFTER loading)
-      emitProgress('loading', `Loaded ${studies.length} studies from database`);
+      emitProgress('loading', `Succesfully loaded ${studies.length} studies from database`);
     }
     
     if (studies.length === 0) {
@@ -128,15 +131,14 @@ async function runFilteringScript(): Promise<void> {
       try {
         // Create progress callback for filtering updates
         const progressCallback = (processed: number, total: number) => {
-          const percentage = Math.round((processed / total) * 100);
-          emitProgress('filtering', `Finding relevant studies for you... (progress: ${percentage} %)`);
+          emitProgress('filtering', `Finding relevant studies for you...`);
         };
         
         // Use parallel filtering with controlled concurrency and progress updates
         const acceptedStudies = await filteringService.filterStudiesForFeedParallelWithProgress(
           studies, 
           feedConfig, 
-          3, // Process 3 studies concurrently
+          100,
           progressCallback
         );
         
@@ -158,7 +160,7 @@ async function runFilteringScript(): Promise<void> {
         console.log(`   ⏱️  Processing time: ${Math.round(processingTime / 1000)}s`);
         
         // PROGRESS: Filtering completed (AFTER filtering is done)
-        emitProgress('filtering', `Found ${acceptedStudies.length}/${studies.length} relevant studies that match your interests`);
+        emitProgress('filtering', `Found ${acceptedStudies.length}/${studies.length} studies matching your interests!`);
         
         if (acceptedStudies.length > 0) {
           console.log(`   🏆 Top study: "${acceptedStudies[0].study.title}" (score: ${acceptedStudies[0].relevanceScore.affinityScore})`);
@@ -177,11 +179,11 @@ async function runFilteringScript(): Promise<void> {
         try {
           const summaries = await generateSummariesForFeed(
             result.relevantStudies,
-            llmProvider
+            writingLLMProvider // Use the writing model for summaries
           );
           
           if (summaries.length > 0) {
-            saveFeedSummaries(feedName, summaries, timestamp, llmProvider.getModelName());
+            saveFeedSummaries(feedName, summaries, timestamp, writingLLMProvider.getModelName());
             console.log(`✅ Generated ${summaries.length} summaries for "${feedName}"`);
             
             // PROGRESS: Summaries completed
@@ -204,7 +206,7 @@ async function runFilteringScript(): Promise<void> {
 
     // Save results
     console.log('\n💾 Saving filtering results...');
-    const outputPath = path.join(process.cwd(), 'results', `results-${llmProvider.getModelName()}-${timestamp}.json`);
+    const outputPath = path.join(process.cwd(), 'results', `results-${filteringLLMProvider.getModelName()}-${timestamp}.json`);
     
     // Create simplified results structure
     const simplifiedResults = Array.from(acceptedStudiesPerFeed.values()).map(result => ({
@@ -252,7 +254,7 @@ async function runFilteringScript(): Promise<void> {
         if (result.relevantStudiesFound > 0) {
           try {
             // Try to read the summary file that was just created
-            const summaryPath = path.join(process.cwd(), 'results', 'summaries', `${feedName.replace(/[^a-zA-Z0-9]/g, '_')}-${llmProvider.getModelName()}-${timestamp}.json`);
+            const summaryPath = path.join(process.cwd(), 'results', 'summaries', `${feedName.replace(/[^a-zA-Z0-9]/g, '_')}-${writingLLMProvider.getModelName()}-${timestamp}.json`);
             if (require('fs').existsSync(summaryPath)) {
               const summaries = JSON.parse(require('fs').readFileSync(summaryPath, 'utf8'));
               

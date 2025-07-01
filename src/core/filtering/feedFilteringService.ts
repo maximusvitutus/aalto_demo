@@ -194,10 +194,11 @@ export class FeedFilteringService {
     const filteredStudies: StudyFilterResult[] = [];
     let processedCount = 0;
 
-    console.log(`🔍 Filtering ${studies.length} studies for feed: ${feedConfig.category} (${concurrency} concurrent)`);
+    const concurrentStudies = Math.min(concurrency, studies.length);
+    console.log(`🔍 Filtering ${studies.length} studies for feed: ${feedConfig.category} (${concurrentStudies} concurrent)`);
 
     // Process studies in batches to control concurrency
-    for (let i = 0; i < studies.length; i += concurrency) {
+    for (let i = 0; i < studies.length; i += concurrency) { 
       const batch = studies.slice(i, i + concurrency);
       
       console.log(`📦 Processing batch ${Math.floor(i/concurrency) + 1}/${Math.ceil(studies.length/concurrency)} (${batch.length} studies)`);
