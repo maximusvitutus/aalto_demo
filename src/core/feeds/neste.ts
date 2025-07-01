@@ -15,7 +15,7 @@ export const NESTE_PRESET = {
     },    
     {
       title: "Renewable Fuel Development and Market Integration",
-      year: 2023,
+      year: 2024,
       affinityScore: 9,
       summary: {
         topic: "Market mechanisms and technological pathways for renewable fuel commercialization",
@@ -26,7 +26,7 @@ export const NESTE_PRESET = {
     },
     {
       title: "ESG Metrics and Environmental Communication Strategies",
-      year: 2023,
+      year: 2025,
       affinityScore: 9,
       summary: {
         topic: "Effective communication of environmental performance to stakeholders across complex industrial sectors",

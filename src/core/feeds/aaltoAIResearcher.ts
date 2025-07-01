@@ -26,7 +26,7 @@ export const AALTO_AI_RESEARCHER_PRESET = {
     },
     {
       title: "Language Models and Cognitive Offloading in Professional Writing",
-      year: 2023,
+      year: 2024,
       affinityScore: 9,
       summary: {
         topic: "Effects of AI writing assistants on cognitive processes, creativity, and skill development in professional contexts",

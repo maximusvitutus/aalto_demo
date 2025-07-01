@@ -15,7 +15,7 @@ export const HELSINGIN_SANOMAT_PRESET = {
     },
     {
       title: "Quantum Computing in Healthcare: Real-World Applications and Limitations",
-      year: 2023,
+      year: 2025,
       affinityScore: 9,
       summary: {
         topic: "Current and near-term applications of quantum computing in medical research, drug discovery, and diagnostic systems",
