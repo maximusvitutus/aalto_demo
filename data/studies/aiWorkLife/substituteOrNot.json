@@ -1,0 +1,9 @@
+{
+  "title": "Complement or substitute? How AI increases the demand for human skills",
+  "abstract": "This paper examines whether artificial intelligence (AI) acts as a substitute or complement to human labour, drawing on 12 million online job vacancies from the United States spanning 2018-2023. We adopt a two-pronged approach: first, analysing 'internal effects' within roles explicitly requiring AI, and second, investigating 'external effects' that arise when industries, occupations, and regions experience increases in AI demand. Our focus centres on whether complementary skills-such as digital literacy, teamwork, resilience, agility, or analytical thinking-become more prevalent and valuable as AI adoption grows. Results show that AI-focused roles are nearly twice as likely to require skills like resilience, agility, or analytical thinking compared to non-AI roles. Furthermore, these skills command a significant wage premium; data scientists, for instance, are offered 5-10% higher salaries if they also possess resilience or ethics capabilities. We observe positive spillover effects: a doubling of AI-specific demand across industries correlates with a 5% increase in demand for complementary skills, even outside AI-related roles. Conversely, tasks vulnerable to AI substitution, such as basic data skills or translation, exhibit modest declines in demand. However, the external effect is clearly net positive: Complementary effects are up to 1.7x larger than substitution effects. These results are consistent across economies, including the United Kingdom and Australia. Our findings highlight the necessity of reskilling workers in areas where human expertise remains increasingly valuable and ensuring workers can effectively complement and leverage emerging AI technologies.",
+  "authors": [
+    "Elina Mäkelä",
+    "Fabian Stephany"
+  ],
+  "publicationYear": 2023
+}

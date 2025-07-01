@@ -1,0 +1,13 @@
+you are an assistant tasked with creating json files that contain descriptive abstract for studies. you will soon be provided with studies. you will include the methodology, findings and implications of the study in the abstract field. you will also find the title, authors and publication year of the studies. ## Study 1: ## Study 2: ## Example of one study: {
+  "title": "Measurement Practices in User Experience (UX) Research: A Systematic Quantitative Literature Review",
+  "abstract": "This study presents a systematic quantitative literature review of measurement practices in user experience (UX) research, conducted by the Human-Computer Interaction Research Group at the University of Basel. The authors screened 153 papers from the ACM CHI proceedings (2019–2022), identifying 60 eligible empirical studies using survey scales to assess UX-related constructs. Across these studies, 85 unique scales and 172 constructs were identified—yet the majority of scales (70.59%) and constructs (66.28%) were used only once, indicating a lack of reuse and standardization. Popular scales included the System Usability Scale (SUS), User Experience Questionnaire (UEQ), and NASA-TLX. Alarmingly, only 20% of papers provided rationales for scale selection, 30% listed complete scale items, and just 36.67% reported any assessment of scale quality. The study found a widespread reliance on adapted or self-developed scales without sufficient psychometric validation, raising serious concerns about questionable measurement practices (QMPs). To address these issues, the authors propose six actionable recommendations aimed at improving transparency, justification, and psychometric rigor in UX scale-based research. These findings have far-reaching implications for UX researchers, HCI educators, and methodologists, emphasizing the need for better training, consistent reporting standards, and the adoption of validated instruments to ensure reliability and comparability of UX data.",
+  "authors": [
+    "Sebastian A. C. Perrig",
+    "Lena Fanya Aeschbach",
+    "Nicolas Scharowski",
+    "Nick von Felten",
+    "Klaus Opwis",
+    "Florian Brühlmann"
+  ],
+  "publicationYear": 2024
+}

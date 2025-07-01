@@ -1,0 +1,8 @@
+{
+  "title": "Evaluation of the accessibility and usability of university websites: a comparative study of the Gulf region",
+  "abstract": "This large-scale, multi-method research study evaluates the accessibility, usability, and performance of 198 university websites across six Gulf Cooperation Council (GCC) countries: UAE, Bahrain, Kuwait, Oman, Qatar, and Saudi Arabia. Using a three-phase methodology—including sampling based on Webometrics rankings and automated evaluations via WAVE, TAW, and GTMetrix—the study assessed compliance with WCAG 2.0/2.1 guidelines, user interface operability, and web performance metrics such as LCP, CLS, and FCP. Results revealed that accessibility violations were widespread but varied by country, with Bahrain and Qatar showing fewer issues, while UAE and Saudi Arabia exhibited higher counts of contrast errors, missing alt text, and structural complexity. Operability emerged as the most frequently violated WCAG principle, particularly affecting users with motor or cognitive disabilities. GTMetrix analysis further exposed performance gaps, with Bahrain outperforming other countries, while UAE and KSA struggled with slow load times and poor rendering speed. The study concludes with tailored, actionable recommendations for institutions, emphasizing regular accessibility audits, adoption of WCAG-compliant design, cross-stakeholder training, and performance optimization strategies. These findings underscore the urgent need for Gulf universities to prioritize inclusive design, not only as a compliance imperative but as a strategic enabler of equitable digital access in education.",
+  "authors": [
+    "Mohammed Fakrudeen"
+  ],
+  "publicationYear": 2024
+}

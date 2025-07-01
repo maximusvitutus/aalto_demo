@@ -1,0 +1,12 @@
+{
+  "title": "A Systematic Review on Usability Evaluation for University Websites",
+  "abstract": "This study presents a systematic literature review of university website usability evaluations conducted between 2016 and 2021. Using the PRISMA methodology, 32 relevant articles were identified and analyzed. The review aimed to uncover trends, objectives, metrics, methods, and usability issues reported across studies. Key findings include the widespread use of accessibility and usability as primary metrics, with evaluation methods falling into three categories: tool-based (47%), empirical (31%), and inspection-based (9%). Most studies employed questionnaires for data collection and descriptive analysis for interpreting results. Common usability issues found were related to interface design, navigation, content quality, performance, and accessibility. Notably, only one study addressed adjustments due to the COVID-19 pandemic, using remote tools such as Zoom. The implications of this review suggest that university websites often do not meet usability standards and that evaluation should begin earlier in the design process. The study provides actionable insights for web developers, usability researchers, and academic institutions aiming to improve their online platforms.",
+  "authors": [
+    "Folasade Adedeji",
+    "Adekunle Y.A",
+    "Adebayo A.O",
+    "Alao O.D",
+    "Akande O."
+  ],
+  "publicationYear": 2022
+}

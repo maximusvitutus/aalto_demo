@@ -1,0 +1,10 @@
+{
+  "title": "Amplifying Academic Research through YouTube: Engagement Metrics as Predictors of Citation Impact",
+  "abstract": "Against a backdrop of declining trust in legacy media and growing dependence on social platforms for information, this study investigated whether YouTube engagement can forecast the scholarly impact of cited research. Using the *Scientific Papers in YouTube Videos* corpus and YouTube Data API, the authors compiled 12,486 videos that explicitly referenced DOIs in their descriptions and matched them to 21,772 academic publications. Multivariate regression and random-forest models linked video-level features (views, likes, comments, channel subscribers, presence of additional DOI links) with subsequent citation counts of the referenced papers, controlling for publication age, field and journal impact factor. Videos in the top quintile for likes and comments predicted a 22 % higher two-year citation growth (β = 0.24, *P* < .001), while inclusion of multiple paper references amplified predictive power. Preliminary findings position highly engaged videos as a potential \"filtering mechanism\" that signals quality or relevance to the wider scholarly community. Implications include leveraging science-YouTube creators and altmetric data streams for early-stage research evaluation, though causality and disciplinary generalizability require further longitudinal and experimental confirmation.",
+  "authors": [
+    "Olga Zagovora",
+    "Talisa Schwal",
+    "Katrin Weller"
+  ],
+  "publicationYear": 2024
+}

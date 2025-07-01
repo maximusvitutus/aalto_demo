@@ -1,0 +1,10 @@
+{
+  "title": "Accessibility of university websites worldwide: a systematic literature review",
+  "abstract": "This study conducts a systematic literature review (SLR) to synthesize global research on the accessibility of university websites. Using Kitchenham’s three-stage SLR methodology—planning, conducting, and reporting—the authors consolidated findings from 42 studies evaluating the accessibility of 9,140 universities across 67 countries. A total of 38,416 web pages, 91,421 YouTube videos, and 28,395 PDF documents were assessed using manual, automatic, and hybrid methods. The evaluation was primarily guided by ISO/IEC 40500:2012 (WCAG 2.0), Section 508, and WCAG 2.1 standards. The most frequent accessibility violations involved guidelines related to adaptability, compatibility, distinguishability, keyboard accessibility, input assistance, and use of text alternatives. The review reveals widespread non-compliance and recurring accessibility issues across continents and over time, regardless of the standard or tool used. The study highlights the predominance of sampling methods, limited use of conformance-level reporting, and heavy reliance on a few evaluation tools such as AChecker, WAVE, Bobby, and TAW. Implications emphasize the urgent need for universities to improve web accessibility by adopting inclusive design principles, enhancing developer training, applying validated tools, and complying with accessibility laws. This consolidated evidence base informs researchers, web developers, and policymakers aiming to ensure equitable access to educational digital environments.",
+  "authors": [
+    "Milton Alfredo Campoverde Molina",
+    "Sergio Luján-Mora",
+    "Llorenç Valverde"
+  ],
+  "publicationYear": 2021
+}

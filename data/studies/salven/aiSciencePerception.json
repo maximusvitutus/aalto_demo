@@ -1,0 +1,8 @@
+{
+  "title": "From Complexity to Clarity: How AI Enhances Perceptions of Scientists and the Public's Understanding of Science",
+  "abstract": "Across three complementary studies, this work tested whether generative AI can simplify scientific writing and improve public engagement with science. Study 1a linguistically compared 3,600 PNAS article abstracts (technical summaries) with their author-written significance statements (lay summaries), finding only modest reductions in lexical difficulty. Study 1b used GPT-4 to rewrite the same abstracts into lay summaries; automated text analysis showed that GPT-generated versions more than doubled the effect-size difference in simplicity versus the originals without any model fine-tuning. Two preregistered online experiments then examined audience effects. In Study 2 (N = 1,109), participants rated scientists whose work was described by GPT summaries as more credible and trustworthy—but slightly less intelligent—than those described by complex human summaries. Study 3 (N = 1,042) demonstrated higher reader comprehension, more accurate recall, and richer free-text summaries after exposure to GPT-generated lay abstracts. Together, the findings suggest that large-language-model rewrites provide a low-cost heuristic for bridging expert–public communication gaps, potentially enhancing scientific transparency and democratic access to knowledge. However, the observed \"competence penalty\" cautions that oversimplification may also lower perceived scientific sophistication, underscoring the need for balance when integrating AI into science outreach.",
+  "authors": [
+    "David M. Markowitz"
+  ],
+  "publicationYear": 2024
+}

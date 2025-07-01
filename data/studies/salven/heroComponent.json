@@ -1,0 +1,8 @@
+{
+  "title": "User-Centered Evaluation of the Hero Component in the Harvard Digital Design System",
+  "abstract": "This UX research study, conducted in June 2024 by Harvard Web Publishing's UXD team, employed a survey-based methodology to evaluate user perceptions of the 'hero component' within the Harvard Digital Design System. Engaging 41 faculty and staff members with varying web publishing experience, the study tested two visual prototypes—a stacked text block layout and a floating overlay—via interactive images and solicited both quantitative and qualitative feedback. Key findings revealed a strong preference for the floating hero's compact size, citing reduced scroll burden, especially on mobile, while also surfacing concerns about image obstruction and text responsiveness. Responses were evenly split on preferred text block placement, indicating the need for flexible configuration options. The study also surfaced minor interest in video integration, pointing to evolving expectations for visual storytelling at the top of university web pages. These insights directly informed design updates, including improved responsiveness, more compact layouts, and customizable text placements. This research underscores the value of iterative, participatory design in shaping system components that balance usability, aesthetics, and accessibility in higher education web environments.",
+  "authors": [
+    "Laurier Cress"
+  ],
+  "publicationYear": 2024
+}
