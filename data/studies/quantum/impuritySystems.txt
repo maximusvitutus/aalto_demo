@@ -1,0 +1,14 @@
+[Submitted on 29 Apr 2024 (v1), last revised 2 Apr 2025 (this version, v3)]
+Quantum entanglement in a pure state of strongly correlated quantum impurity systems
+Yunori Nishikawa, Tomoki Yoshioka
+We consider quantum entanglement in strongly correlated quantum impurity systems for states manifesting interesting properties such as multi-level Kondo effect and dual nature between itineracy and localization etc.. For this purpose, we set up a system consisting of one or two quantum impurities arbitrarily selected from the system as a subsystem, and investigate quantum entanglement with its environmental system. We reduce the pure state of interest as described above to the subsystem, and formulate quantum informative quantities such as entanglement entropy, mutual information and relative entropy. We apply them to quantum impurity systems consisting of several sites and the single impurity Anderson model to study the relationship between their states and the behaviors of quantum informative quantities. The obtained results suggest that the method proposed here is promising for elucidating the quantum entanglement of pure states in various quantum impurity systems.
+Subjects:	Strongly Correlated Electrons (cond-mat.str-el); Mesoscale and Nanoscale Physics (cond-mat.mes-hall); Quantum Physics (quant-ph)
+Cite as:	arXiv:2404.18387 [cond-mat.str-el]
+ 	(or arXiv:2404.18387v3 [cond-mat.str-el] for this version)
+ 
+https://doi.org/10.48550/arXiv.2404.18387
+Focus to learn more
+Journal reference:	Physical Review B 111 ( 3 ) 035112 2025
+Related DOI:
+https://doi.org/10.1103/PhysRevB.111.035112
+Focus to learn more

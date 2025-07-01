@@ -1,0 +1,30 @@
+NbN-Gated GaN Transistor Technology for Applications in Quantum Computing Systems
+Qingyun Xie*, Nadim Chowdhury, Ahmad Zubair, Miguel Sánchez Lozano, Jori Lemettinen, Marco Colangelo, Owen Medeiros, Ilya Charaev, Karl K. Berggren, Pat Gumann, Dirk Pfeiffer, Tomás Palacios
+
+*Corresponding author for this work
+Department of Electronics and Nanoengineering
+Massachusetts Institute of TechnologyIBM
+Research output: Chapter in Book/Report/Conference proceeding › Conference article in proceedings › Scientific › peer-review
+
+15
+Citations
+(Scopus)
+ Overview
+ Fingerprint
+Abstract
+A NbN-gated AlGaN/GaN high electron mobility transistor (HEMT) technology for applications in quantum computing systems is demonstrated for the first time. Transistors with gate lengths scaled to 250 nm were characterized at 4.2 K, with excellent gate modulation (ID,ON/ID,OFF ~ 108) and current saturation. The potential of these devices for low noise amplifiers was evaluated, revealing a low DC power dissipation of 25 μW/μm when biased for expected minimum noise. The RF performance was also characterized at 4.2 K. This work highlights the potential of NbN-gated GaN transistor technology for applications in low-noise cryogenic amplifiers in future quantum computing systems.
+
+Original languageEnglish
+Title of host publication2021 Symposium on VLSI Technology, VLSI Technology 2021
+PublisherIEEE
+ISBN (Electronic)978-4-86348-780-2, 978-4-86348-779-6, 978-1-6654-1945-1
+Publication statusPublished - 2021
+MoE publication typeA4 Conference publication
+EventSymposium on VLSI Technology - Virtual, Online, Japan
+Duration: 13 Jun 2021 → 19 Jun 2021
+Conference number: 41
+Publication series
+NameDigest of Technical Papers - Symposium on VLSI Technology
+Volume2021-June
+ISSN (Print)0743-1562
+ISSN (Electronic)2158-9682

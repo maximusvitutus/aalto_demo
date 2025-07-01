@@ -1,0 +1,25 @@
+Enhanced elementary operations for quantum computing
+Joni Ikonen
+
+Department of Applied PhysicsCentre of Excellence in Quantum Technology, QTFQuantum Computing and Devices
+Research output: Thesis › Doctoral Thesis › Collection of Articles
+
+ Overview
+ Fingerprint
+ Infrastructure (2)
+Abstract
+Superconducting circuits are one of the most promising and rapidly developing platforms for implementing quantum bits and their control operations for the purpose of large-scale quantum computing. A quantum algorithm is run by executing a series of precise operations on the quantum bits, or qubits. The most important of these operations are the quantum gates along with the measurement and initialization of the states of the qubits and auxiliary components. In this dissertation, we develop techniques to enhance each of these three operations. The work employs systems of coupled qubits and resonators in the framework of circuit quantum electrodynamics. Firstly, we derive a theoretical lower bound for the error of a single-qubit gate implemented with a linear oscillator mode and show how to reach this bound. Secondly, we experimentally demonstrate a technique for measuring the state of a qubit by simultaneously driving the qubit and the accompanying readout resonator. Compared to our method, the standard technique involving only the resonator drive yields up to 100% larger error. Moreover, we experimentally and theoretically develop quantum devices and protocols that may be used to initialize or reset auxiliary quantum circuits such as resonators. By coupling a quantum circuit to a strongly dissipative environment through a coupler, the decay rate of the circuit may be tuned on demand by several orders of magnitude. Finally, we propose a general method to analytically solve the dynamics of a complex, open bosonic system that may be used to describe, for example, the experimental systems of this dissertation. The experimental techniques developed in this dissertation may potentially be utilized in future implementations of a quantum computer, and the proposed theoretical protocols pave the way for future experiments aiming to improve qubit control and heat management in large-scale quantum processors.
+Translated title of the contributionTehokkaampia alkeisoperaatioita kvanttilaskentaan
+Original languageEnglish
+QualificationDoctor's degree
+Awarding Institution
+Aalto University
+Supervisors/Advisors
+Möttönen, Mikko, Supervising Professor
+Goetz, Jan, Thesis Advisor
+Publisher
+Aalto University
+Print ISBNs978-952-64-0123-2
+Electronic ISBNs978-952-64-0124-9
+Publication statusPublished - 2020
+MoE publication typeG5 Doctoral dissertation (article)

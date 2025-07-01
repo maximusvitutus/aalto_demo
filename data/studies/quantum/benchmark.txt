@@ -1,0 +1,12 @@
+Benchmarking the performance of quantum computing software for quantum circuit creation, manipulation and compilation
+P. NationAbdullah Ash Saki+4 authors Ali Javadi-Abhari
+Physics, Computer Science
+Nature Computational Science
+13 September 2024
+
+TLDR
+The flexibility of the Benchpress framework enables benchmarking that not only keeps pace with quantum hardware improvements but also can preemptively gauge the quantum circuit processing costs of future device architectures.
+Abstract
+We present Benchpress, a benchmarking suite for evaluating the performance and range of functionality of multiple quantum computing software development kits. This suite consists of a collection of over 1,000 tests measuring key performance metrics for a wide variety of operations on quantum circuits composed of up to 930 qubits and \documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$${\mathcal{O}}(1{0}^{6})$$\end{document}O(106) two-qubit gates, as well as an execution framework for running the tests over multiple quantum software packages in a unified manner. Here we give a detailed overview of the benchmark suite and its methodology and generate representative results over seven different quantum software packages. The flexibility of the Benchpress framework enables benchmarking that not only keeps pace with quantum hardware improvements but also can preemptively gauge the quantum circuit processing costs of future device architectures.
+
+Collapse
