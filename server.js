@@ -2,6 +2,7 @@ const express = require('express');
 const path = require('path');
 const { spawn } = require('child_process');
 const fs = require('fs');
+const { promisify } = require('util');
 
 const app = express();
 const PORT = 3000;
@@ -147,6 +148,46 @@ function sendProgressUpdate(jobId, step, message) {
     console.log('Available connections:', Array.from(sseConnections.keys()));
   }
 }
+
+// Add preset API endpoint
+app.get('/api/presets', async (req, res) => {
+    try {
+        // Execute the getPresets script
+        const child = spawn('npx', ['tsx', 'scripts/getPresets.ts'], { stdio: 'pipe' });
+        
+        let output = '';
+        let errorOutput = '';
+        
+        child.stdout.on('data', (data) => {
+            output += data.toString();
+        });
+        
+        child.stderr.on('data', (data) => {
+            errorOutput += data.toString();
+        });
+        
+        child.on('close', (code) => {
+            if (code === 0) {
+                try {
+                    const presets = JSON.parse(output.trim());
+                    res.json(presets);
+                } catch (parseError) {
+                    console.error('Error parsing presets output:', parseError);
+                    console.error('Output was:', output);
+                    res.status(500).json({ error: 'Failed to parse presets' });
+                }
+            } else {
+                console.error('Error executing presets script, code:', code);
+                console.error('Error output:', errorOutput);
+                res.status(500).json({ error: 'Failed to load presets' });
+            }
+        });
+        
+    } catch (error) {
+        console.error('Error loading presets:', error);
+        res.status(500).json({ error: 'Failed to load presets' });
+    }
+});
 
 // Start server
 app.listen(PORT, () => {

@@ -50,6 +50,63 @@
             background-color: #ccc;
             cursor: not-allowed;
         }
+
+        /* Quick Select Buttons Styles */
+        .quick-select-section {
+            margin-bottom: 30px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #e9ecef;
+        }
+        .quick-select-label {
+            font-weight: bold;
+            margin-bottom: 15px;
+            color: #495057;
+        }
+        .quick-select-buttons {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+        .quick-select-btn {
+            background-color: #6c757d;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 14px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        .quick-select-btn:hover {
+            background-color: #5a6268;
+        }
+        .quick-select-btn.active {
+            background-color: #28a745;
+            box-shadow: 0 0 0 3px rgba(40, 167, 69, 0.25);
+        }
+        .quick-select-btn.active:hover {
+            background-color: #218838;
+        }
+
+        /* New Feed Button */
+        .new-feed-btn {
+            background-color: #dc3545;
+            margin-left: 10px;
+        }
+        .new-feed-btn:hover {
+            background-color: #c82333;
+        }
+
+        /* Button Container */
+        .button-container {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
         .progress-section {
             display: none;
             margin-top: 30px;
@@ -139,6 +196,16 @@
         
         <!-- Form Section -->
         <div id="form-section">
+            <!-- Quick Select Buttons -->
+            <div class="quick-select-section">
+                <p class="quick-select-label">Try the generator with an example user:</p>
+                <div class="quick-select-buttons">
+                    <button type="button" class="quick-select-btn" data-preset="company">Company</button>
+                    <button type="button" class="quick-select-btn" data-preset="researcher">Researcher</button>
+                    <button type="button" class="quick-select-btn" data-preset="journalist">Journalist</button>
+                </div>
+            </div>
+
             <form id="research-form">
                 <div class="form-group">
                     <label for="readers">Who will be reading this report?</label>
@@ -150,7 +217,10 @@
                     <textarea id="interests" name="interests" rows="3" required></textarea>
                 </div>
                 
-                <button type="submit" id="submit-btn">Generate Research Feed</button>
+                <div class="button-container">
+                    <button type="submit" id="submit-btn">Generate Research Feed</button>
+                    <button type="button" id="new-feed-btn" class="new-feed-btn">Create New Feed</button>
+                </div>
             </form>
         </div>
 
@@ -187,19 +257,184 @@
     </div>
 
     <script>
-        document.getElementById('research-form').addEventListener('submit', async (e) => {
-            e.preventDefault();
+        // Global state management
+        let currentActivePreset = null;
+        let isResultsDisplayed = false;
+        let PRESETS = {}; // Will be loaded from API
+
+        // Load presets from server
+        async function loadPresets() {
+            try {
+                const response = await fetch('/api/presets');
+                PRESETS = await response.json();
+                console.log('Presets loaded:', PRESETS);
+            } catch (error) {
+                console.error('Failed to load presets:', error);
+                // Fallback - disable quick select functionality
+                document.querySelector('.quick-select-section').style.display = 'none';
+            }
+        }
+
+        // Initialize everything when page loads
+        document.addEventListener('DOMContentLoaded', async function() {
+            await loadPresets();
+            initializeQuickSelectButtons();
+            initializeNewFeedButton();
+            initializeFormSubmission();
+        });
+
+        function initializeQuickSelectButtons() {
+            const quickSelectButtons = document.querySelectorAll('.quick-select-btn');
             
-            const readers = document.getElementById('readers').value;
-            const interests = document.getElementById('interests').value;
+            quickSelectButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    const presetType = this.dataset.preset;
+                    handleQuickSelectClick(presetType, this);
+                });
+            });
+        }
+
+        function handleQuickSelectClick(presetType, buttonElement) {
+            // Clear any existing results/progress when switching presets
+            document.getElementById('progress-section').style.display = 'none';
+            document.getElementById('results-section').style.display = 'none';
+            resetProgressSteps();
+            isResultsDisplayed = false;
+
+            // Check if this button is already active
+            if (currentActivePreset === presetType) {
+                // Deactivate current preset
+                deactivateAllPresets();
+                clearFields();
+                currentActivePreset = null;
+            } else {
+                // Deactivate all buttons first
+                deactivateAllPresets();
+                
+                // Activate this button and fill fields
+                buttonElement.classList.add('active');
+                currentActivePreset = presetType;
+                fillFieldsWithPreset(presetType);
+            }
+        }
+
+        function deactivateAllPresets() {
+            const buttons = document.querySelectorAll('.quick-select-btn');
+            buttons.forEach(btn => btn.classList.remove('active'));
+        }
+
+        function fillFieldsWithPreset(presetType) {
+            const preset = PRESETS[presetType];
+            if (preset) {
+                document.getElementById('readers').value = preset.readers;
+                document.getElementById('interests').value = preset.interests;
+            }
+        }
+
+        function clearFields() {
+            document.getElementById('readers').value = '';
+            document.getElementById('interests').value = '';
+        }
+
+        function initializeNewFeedButton() {
+            document.getElementById('new-feed-btn').addEventListener('click', function() {
+                resetToFormState();
+                deactivateAllPresets();
+                clearFields();
+                currentActivePreset = null;
+            });
+        }
+
+        function resetToFormState() {
+            // Hide progress and results sections only
+            document.getElementById('progress-section').style.display = 'none';
+            document.getElementById('results-section').style.display = 'none';
             
-            console.log('Form submitted with:', { readers, interests });
+            // Form section stays visible always
+            // document.getElementById('form-section').style.display = 'block'; // Not needed since it stays visible
             
-            // Hide form and show progress
-            document.getElementById('form-section').style.display = 'none';
+            // Reset progress checkboxes
+            resetProgressSteps();
+            
+            // Update state
+            isResultsDisplayed = false;
+        }
+
+        function resetProgressSteps() {
+            const steps = ['loading', 'profile', 'filtering', 'summaries'];
+            steps.forEach(step => {
+                const stepElement = document.getElementById(`step-${step}`);
+                if (stepElement) {
+                    const checkbox = stepElement.querySelector('.step-checkbox');
+                    checkbox.textContent = '☐';
+                    checkbox.className = 'step-checkbox step-pending';
+                }
+            });
+        }
+
+        function checkIfInputMatchesPreset(readers, interests) {
+            // Simple matching logic - in production you might want more sophisticated matching
+            for (const [presetType, preset] of Object.entries(PRESETS)) {
+                if (readers.trim() === preset.readers && interests.trim() === preset.interests) {
+                    return presetType;
+                }
+            }
+            return null;
+        }
+
+        function initializeFormSubmission() {
+            document.getElementById('research-form').addEventListener('submit', async (e) => {
+                e.preventDefault();
+                
+                const readers = document.getElementById('readers').value;
+                const interests = document.getElementById('interests').value;
+                
+                console.log('Form submitted with:', { readers, interests });
+                
+                // Check if we should use canned results
+                const matchedPreset = currentActivePreset || checkIfInputMatchesPreset(readers, interests);
+                
+                if (matchedPreset) {
+                    // Use canned results
+                    console.log('Using canned results for preset:', matchedPreset);
+                    displayCannedResults(matchedPreset);
+                } else {
+                    // Use real LLM processing
+                    console.log('Using LLM processing for custom input');
+                    startLLMProcessing(readers, interests);
+                }
+            });
+        }
+
+        function displayCannedResults(presetType) {
+            // Keep form visible, just show progress below it
             document.getElementById('progress-section').style.display = 'block';
             
-            // Start the process
+            // Reset progress steps first
+            resetProgressSteps();
+            
+            // Simulate progress steps quickly
+            setTimeout(() => updateProgress('loading', 'Loaded studies from database'), 200);
+            setTimeout(() => updateProgress('profile', 'Created user profile'), 600);
+            setTimeout(() => updateProgress('filtering', 'Found relevant studies'), 1000);
+            setTimeout(() => updateProgress('summaries', 'Generated summaries'), 1400);
+            
+            // Display canned results after simulated processing
+            setTimeout(() => {
+                const results = PRESETS[presetType].cannedResults;
+                displayResults(results);
+                isResultsDisplayed = true;
+            }, 1800);
+        }
+
+        async function startLLMProcessing(readers, interests) {
+            // Keep form visible, just show progress below it
+            document.getElementById('progress-section').style.display = 'block';
+            
+            // Reset progress steps first
+            resetProgressSteps();
+            
+            // Start the real process
             const response = await fetch('/api/submit', {
                 method: 'POST',
                 headers: {
@@ -228,6 +463,7 @@
                     // Handle results display
                     const results = JSON.parse(progressData.message);
                     displayResults(results);
+                    isResultsDisplayed = true;
                 } else {
                     updateProgress(progressData.step, progressData.message);
                 }
@@ -240,7 +476,7 @@
             eventSource.onerror = function(event) {
                 console.error('SSE error:', event);
             };
-        });
+        }
         
         function updateProgress(step, message) {
             console.log('Updating progress for step:', step, 'with message:', message);
