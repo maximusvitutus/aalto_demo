@@ -1,0 +1,8 @@
+{
+  "title": "Improving Operational Effectiveness in Facilities Management at Colleges and Universities with use of Big Data and Data Analytics",
+  "abstract": "This systematic literature review collates empirical evidence on how data-analytic technologies boost the efficiency of campus facilities management. Following Kitchenham’s three-phase protocol, databases (Scopus, IEEE Xplore, ASCE Library, and Emerald) were queried for 2010–2021 publications coupling “big data” or “predictive analytics” with “university facilities.” After de-duplication and quality appraisal using the Mixed Methods Appraisal Tool, 52 primary studies were retained. Meta-analysis of energy-monitoring interventions (15 studies, N = 48 buildings) indicated mean electricity-consumption reductions of 13.8 % (95 % CI: 11.2–16.5) when real-time dashboards and ML-based demand forecasts were utilised. Predictive maintenance applications employing anomaly-detection algorithms on HVAC sensor streams cut unplanned downtime by an average of 27 % and yielded 2.8:1 average ROI over three years. Space-utilisation analytics, often driven by Wi-Fi log triangulation, revealed 30–45 % underuse of teaching rooms, informing scheduling reforms that freed up 12 % of floor area. Nonetheless, the review highlights organisational barriers—data silos, legacy systems, and skill gaps—noted in 61 % of papers. The author recommends phased adoption beginning with energy dashboards, investment in interdisciplinary analytics teams, and integration of facilities data into institution-wide digital-twin initiatives to realise sustainability and cost-savings targets.",
+  "authors": [
+  "Nicholas Gingue"
+  ],
+  "publicationYear": 2022
+}

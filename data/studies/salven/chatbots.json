@@ -1,0 +1,10 @@
+{
+  "title": "A Review of University Chatbots for Student Support: FAQs and Beyond",
+  "abstract": "This systematic review analyzes recent implementations of university chatbots designed to support students outside classroom learning, particularly in domains such as admissions, student recruitment, and administration. The authors applied a structured search methodology focusing on closed-domain chatbot deployments in university contexts, reviewing studies and implementations from 2015 onwards. Eight chatbots were selected for in-depth analysis across rule-based, retrieval-based, and generative AI models (including AIML, Seq2Seq, BERT, and GPT architectures). The review reveals that most university chatbots rely on small, fragmented datasets and that generative models remain underutilized compared to their use in other sectors like finance or healthcare. Key findings highlight persistent challenges in data availability, limited use of state-of-the-art LLMs, and an overreliance on FAQ retrieval systems. Despite this, some promising hybrid and GPT-based approaches—such as those using LangChain and Retrieval-Augmented Generation (RAG)—are emerging. The study emphasizes the need for curated training datasets, modular hybrid architectures, and pragmatic development strategies to enable more effective, scalable chatbot implementations. Implications extend to institutional policy and infrastructure: universities must strategically invest in data preparation and adopt frameworks that combine generative power with robust domain relevance to realize the full potential of AI-based student support.",
+  "authors": [
+    "Kevin Peyton",
+    "Saritha Unnikrishnan",
+    "Brian Mulligan"
+  ],
+  "publicationYear": 2025
+}

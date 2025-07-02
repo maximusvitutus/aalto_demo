@@ -1,0 +1,11 @@
+{
+  "title": "Google Analytics of a Pilot Study to Characterize Visitor Website Statistics and Implications for Enrollment Strategies in a Medical University",
+  "abstract": "Facing steep demographic decline in Taiwan, Chung Shan Medical University applied Google Analytics (GA) to two departmental microsites to obtain actionable recruitment intelligence. GA event-tags were deployed across 140 distinct page types and six months of log data (1 February – 30 July 2018) were exported at daily granularity. Visits were segmented by the country’s three admissions routes—STARS, Personal Application (PA), and Examination & Placement (AE&P)—each of which has hard calendar milestones. Descriptive statistics and time-series plots showed that 18–24-year-olds generated 68 % of traffic, with sharp page-view peaks aligning to (i) PA interview dates and (ii) AST grade-release day. Depth-of-visit metrics revealed that fewer than 15 % of visitors progressed beyond three clicks, and Sankey path analysis identified «Faculty Profiles» and «Courses & Credits» as terminal drop-off nodes. A k-means cluster on GA’s built-in geo-dimensions highlighted Taoyuan, Taipei and Taichung as consistent high-intensity catchments. Based on these insights the enrollment office added high-school outreach trips to the three cities and rewrote program pages to foreground unique curriculum differentiators; bounce-rate subsequently fell by 19 % in the next admission cycle. The pilot demonstrates how free behavioural analytics can synchronise web-content roadmaps with enrollment funnels and guide geographically targeted marketing in resource-constrained universities.",
+  "authors": [
+  "Szu-Chieh Chen",
+  "Thomas Chang-Yao Tsao",
+  "Ko-Huang Lue",
+  "Yafang Tsai"
+  ],
+  "publicationYear": 2020
+  }

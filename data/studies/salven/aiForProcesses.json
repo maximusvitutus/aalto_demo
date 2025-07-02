@@ -1,0 +1,13 @@
+{
+  "title": "Implementing artificial intelligence in academic and administrative processes through responsible strategic leadership in higher-education institutions",
+  "abstract": "Using a scoping-review design guided by PRISMA-ScR, this article synthesizes 121 peer-reviewed studies (2018–April 2025) that document concrete AI deployments in universities worldwide. Database searches (Scopus, Web of Science, ERIC) combined Boolean strings for “artificial intelligence,” “machine learning,” and “higher education operations,” yielding 2 ,347 records; 187 articles passed full-text screening, and 121 met quality-appraisal criteria. Thematic coding identified four dominant application clusters: (1) student-facing personalization (n = 47), (2) learning analytics and early-alert dashboards (n = 38), (3) back-office workflow automation such as admissions triage and transcript processing (n = 22), and (4) predictive campus-planning and resource optimisation (n = 14). Reported efficiency gains ranged from 20–60 % time savings in administrative units to 8–18 % improvements in student retention when predictive alerts were actioned. Nonetheless, fewer than one-third of papers addressed governance, privacy, or workforce-transition strategies. The authors propose a Responsible AI Leadership Framework comprising six pillars—vision articulation, stakeholder co-creation, ethical oversight, data-governance infrastructure, capacity building, and iterative evaluation—with illustrative KPIs for provost offices. They argue that strategic leadership anchoring AI roll-outs in institutional mission and ethics is pivotal for sustainable value creation, and they outline an agenda for empirical evaluation of organisational change, staff reskilling, and equity impacts.",
+  "authors": [
+  "Suleman Ahmad Khairullah",
+  "Sheetal Harris",
+  "Hassan Jalil Hadi",
+  "Rida Anjum Sandhu",
+  "Naveed Ahmad",
+  "Mohammed Ali Alshara"
+  ],
+  "publicationYear": 2025
+}
